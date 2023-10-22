@@ -28,8 +28,8 @@ export const Hero = () => {
           </p>
           <Button extraClassName="mt-14 relative">INSCRIBITE EN NUESTROS CURSOS</Button>
         </div>
+      <div className="w-full h-32 bg-violet opacity-80 brightness-[.35]  absolute bottom-0"></div>
       </div>
-      <div className="w-full h-32 bg-violet opacity-80 brightness-[.35]  absolute bottom-[-2.59rem]"></div>
     </section>
   );
 };
