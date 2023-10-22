@@ -11,7 +11,7 @@ export const Hero = () => {
             Ampliá tu horizonte
           </p>
           <p className="drop-shadow-md text-white text-4xl font-thin w-[40.93rem]  ">
-            de posibilidades personales & profesionales
+            de posibilidades personales <br /> & profesionales
           </p>
           <p
             className={`${hepta_slab.className} text-white w-[41.5rem] text-xl pt-4 `}
