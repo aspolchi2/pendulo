@@ -26,7 +26,7 @@ export const Hero = () => {
             entorno agradable.{" "}
             <span className="font-extrabold">Nosotras te acompañamos.</span>
           </p>
-          <Button extraClassName="mt-14 relative">INSCRIBITE EN NUESTROS CURSOS</Button>
+          <Button extraclassname="mt-14 relative">INSCRIBITE EN NUESTROS CURSOS</Button>
         </div>
       <div className="w-full h-32 bg-violet opacity-80 brightness-[.35]  absolute bottom-0"></div>
       </div>

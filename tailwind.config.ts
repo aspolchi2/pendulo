@@ -17,7 +17,8 @@ const config: Config = {
       colors: {
         accent: '#E05FE0',
         primary: '#5959F7',
-        violet: '#9D00B1'
+        violet: '#9D00B1',
+        gray: '#D9D9DD'
       }
     },
    

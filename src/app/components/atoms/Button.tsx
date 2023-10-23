@@ -5,13 +5,13 @@ export interface ButtonProps
     HTMLButtonElement
   > {
   children: React.ReactNode;
-  extraClassName?: string;
+  extraclassname?: string;
 }
 
 export const Button = (props: ButtonProps) => {
   return (
     <button
-      className={`${props.extraClassName} bg-accent px-8 py-5 text-2xl rounded-[50px] text-white font-semibold`}
+      className={`${props.extraclassname} bg-accent px-8 py-5 text-2xl rounded-[50px] text-white font-semibold`}
       {...props}
     >
       {props.children}
