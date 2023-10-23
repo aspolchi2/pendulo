@@ -1,5 +1,12 @@
-import Image from 'next/image'
-import { CoursesCard, CoursesCardList, CoursesFrame, Header, Hero } from './components'
+import Image from "next/image";
+import {
+  CoursesCard,
+  CoursesCardList,
+  CoursesFrame,
+  Header,
+  Hero,
+  WhyPendulo,
+} from "./components";
 
 export default function Home() {
   return (
@@ -7,6 +14,7 @@ export default function Home() {
       <Header />
       <Hero />
       <CoursesFrame />
+      <WhyPendulo />
     </main>
-  )
+  );
 }
