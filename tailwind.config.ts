@@ -13,6 +13,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "hero-bg": "url('./images/heroimage.png')",
+        lograr: "url('./images/lograr.png')",
+        "gradient-accomplish":
+          "linear-gradient(90deg, rgba(0, 0, 0, 0.60) -0.21%, rgba(0, 0, 0, 0.00) 145.63%)",
       },
       colors: {
         accent: "#E05FE0",

@@ -5,7 +5,7 @@ import { cardsProps } from ".";
 
 export const CoursesCard = ({ id, title, description, image }: cardsProps) => {
   return (
-    <article className="bg-white md:w-[308px] md:h-[42rem] shadow-md flex flex-col  flex-shrink-0 justify-center p-9 ">
+    <article className="bg-white shadow-md flex flex-col  flex-shrink-0 justify-center p-9 ">
       <header>
         <p
           className={`${hepta_slab.className} font-semibold text-[90px] text-gray leading-none`}
@@ -14,7 +14,7 @@ export const CoursesCard = ({ id, title, description, image }: cardsProps) => {
         </p>
       </header>
       <main>
-        <h2 className="font-semibold text-primary text-[45px] leading-[45px] w-64">
+        <h2 className="font-semibold text-primary md:text-4xl sm:text-2xl  w-60">
           {title}
         </h2>
         <p

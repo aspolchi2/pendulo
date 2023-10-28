@@ -1,5 +1,7 @@
 import Image from "next/image";
 import {
+  Accomplish,
+  AchievedFrame,
   CoursesCard,
   CoursesCardList,
   CoursesFrame,
@@ -15,6 +17,8 @@ export default function Home() {
       <Hero />
       <CoursesFrame />
       <WhyPendulo />
+      <Accomplish/>
+      <AchievedFrame />
     </main>
   );
 }
