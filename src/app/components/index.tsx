@@ -5,3 +5,4 @@ export * from "./courses";
 export * from "./WhyPendulo";
 export * from './accomplish'
 export * from './achieved'
+export * from './offering'

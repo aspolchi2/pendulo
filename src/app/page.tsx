@@ -7,6 +7,7 @@ import {
   CoursesFrame,
   Header,
   Hero,
+  Offering,
   WhyPendulo,
 } from "./components";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <WhyPendulo />
       <Accomplish/>
       <AchievedFrame />
+      <Offering/>
     </main>
   );
 }

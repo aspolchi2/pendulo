@@ -7,11 +7,11 @@ import { TrianguloRosa } from "../svg/TrianguloRosa";
 
 export const WhyPendulo = () => {
   return (
-    <section className="flex justify-center ">
-      <div className="md:w-10/12 xl:max-w-6xl text-primary mt-12 ">
+    <section className="flex justify-center pb-40">
+      <div className="md:w-10/12  text-primary mt-12  ">
         <h3 className="text-black text-2xl">¿POR QUÉ CREAMOS PÉNDULO?</h3>
         <hr className="text-black mt-5" />
-        <div className="flex flex-col justify-end items-end max-w-full">
+        <div className="flex flex-col justify-end items-center max-w-full">
           <div className="flex items-center gap-10">
             <span className="animate-wiggle animate-infinite animate-duration-[10000ms] animate-ease-in">
               <Codito />

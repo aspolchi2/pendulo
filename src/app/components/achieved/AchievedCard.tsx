@@ -22,7 +22,7 @@ export const AchievedCard: React.FC<Propuesta> = ({
   return (
     <article
       ref={containerRef}
-      className={`w-[1115px] m-auto flex justify-center gap-10 h-[350px] 
+      className={`w-[1115px] m-auto flex justify-center - gap-10 h-[350px] 
       ${
         isVisible
           ? `opacity-100 blur-none translate-x-0 ${
