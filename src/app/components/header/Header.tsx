@@ -54,7 +54,7 @@ const icons = [
 
 export const Header = () => {
   return (
-    <header className="w-full  h-28 flex items-end  ">
+    <header className="w-full  h-28 flex items-end sticky top-0 bg-white z-10 ">
       <nav className="flex justify-between w-11/12 m-auto h-full pb-6">
         <div className="flex items-end  gap-2">
           <Image
