@@ -1,6 +1,7 @@
 import React from "react";
+import { MyData } from "./OfferingCardList";
 
-export const OfferingCard = ({ svg, title, description }) => {
+export const OfferingCard = ({ svg, title, description }: MyData) => {
   return (
     <article className="bg-white text-black w-[376px] flex flex-col justify-center items-center gap-8 rounded-3xl">
       <header className="text-pink flex flex-col gap-5 justify-center items-center mt-[56px]">

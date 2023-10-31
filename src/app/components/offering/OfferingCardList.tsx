@@ -7,7 +7,14 @@ import { Pdfsvg } from "../svg/Pdfsvg";
 import { Credit } from "../svg/Credit";
 import { Certificate } from "../svg/Certificate";
 
-const data = [
+export interface MyData {
+  id: string;
+  svg: JSX.Element;
+  title: string;
+  description: string;
+}
+
+const data : MyData[]  = [
   {
     id: crypto.randomUUID(),
     svg: <Red />,
@@ -54,9 +61,9 @@ const data = [
 
 export const OfferingCardList = () => {
   return (
-    <div className="flex">
+    <div className="flex flex-row w-[1212px] m-auto flex-wrap gap-[38px]">
       {data.map(({id, svg, title, description}) => (
-        <OfferingCard key={id} svg={svg} title={title} description={description} />
+        <OfferingCard key={id} svg={svg} title={title} description={description} id={id} />
       ))}
     </div>
   );

@@ -1,12 +1,22 @@
-import React from 'react'
-import { OfferingCardList } from './OfferingCardList'
+import React from "react";
+import { OfferingCardList } from "./OfferingCardList";
 
 export const Offering = () => {
   return (
-    <section className='bg-black'>
-      <h3 className=" text-2xl text-white">¿POR QUÉ CREAMOS PÉNDULO?</h3>
-        <hr className=" mt-5 text-white" />
-        <OfferingCardList />
+    <section className="bg-offering">
+      <div className="bg-black bg-opacity-60 ">
+        <div className="w-10/12 m-auto pt-10 flex flex-col gap-20 pb-28">
+          <div>
+            <h3 className="text-white text-2xl">
+              ¿CÓMO LO ESTAMOS CONSIGUIENDO?
+            </h3>
+            <hr className="text-white mt-5" />
+          </div>
+          <div className="">
+            <OfferingCardList />
+          </div>
+        </div>
+      </div>
     </section>
-  )
-}
+  );
+};
