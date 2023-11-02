@@ -8,6 +8,7 @@ import {
   Header,
   Hero,
   Offering,
+  Participate,
   WhyPendulo,
 } from "./components";
 
@@ -18,9 +19,10 @@ export default function Home() {
       <Hero />
       <CoursesFrame />
       <WhyPendulo />
-      <Accomplish/>
+      <Accomplish />
       <AchievedFrame />
-      <Offering/>
+      <Offering />
+      <Participate />
     </main>
   );
 }
