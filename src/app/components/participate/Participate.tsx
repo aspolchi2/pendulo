@@ -24,7 +24,7 @@ export const Participate = () => {
       <div className="w-10/12 m-auto pt-14">
         <div>
           <h3 className="text-white text-2xl">
-            ¿CÓMO LO ESTAMOS CONSIGUIENDO?
+            ¿QUÉ SE NECESITA PARA PARTICIPAR?
           </h3>
           <hr className="text-white mt-5" />
           <div className="flex gap-9 w-full justify-center mt-20 pb-28">

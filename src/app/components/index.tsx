@@ -7,3 +7,4 @@ export * from "./accomplish";
 export * from "./achieved";
 export * from "./offering";
 export * from "./participate";
+export * from "./quotes";
