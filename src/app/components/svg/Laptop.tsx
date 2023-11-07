@@ -1,6 +1,6 @@
 import React from "react";
 
-export const laptop = () => {
+export const Laptop = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
