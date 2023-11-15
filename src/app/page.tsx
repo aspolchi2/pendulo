@@ -20,7 +20,6 @@ const quote1 =
 export default function Home() {
   return (
     <main className="">
-      <Header />
       <Hero />
       <CoursesFrame />
       <WhyPendulo />
