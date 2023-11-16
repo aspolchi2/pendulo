@@ -10,11 +10,13 @@ export type cardsProps = {
   title: string;
   description: string;
   image: string;
+  href: string;
 };
 
 const cards: cardsProps[] = [
   {
     id: 1,
+    href: "marketingdigital",
     title: "Marketing Digital",
     description:
       "Aprende a gestionar las redes sociales y plataformas digitales de una marca o emprendimiento a través del desarrollo de la creatividad y el pensamiento estratégico para lograr tus objetivos.",
@@ -22,6 +24,7 @@ const cards: cardsProps[] = [
   },
   {
     id: 2,
+    href: "diseñografico",
     title: "Diseño Gráfico",
     description:
       "Inicia tu recorrido en esta apasionante disciplina apren- diendo a usar las herramientas profesionales e incorporando los principales fundamentos de color, diagramación y tipografía necesarios para lograr piezas gráficas increíbles.",
@@ -29,6 +32,7 @@ const cards: cardsProps[] = [
   },
   {
     id: 3,
+    href: "asesoriadeimagen",
     title: "Asesoría de Imagen",
     description:
       "Inicia tu recorrido en el apasio- nante mundo del asesoramiento de imagen aprendiendo a reflejar tu personalidad y estilo o el de otras personas a través de prendas, maquillaje, peinado, estampados, colores.",
@@ -36,6 +40,7 @@ const cards: cardsProps[] = [
   },
   {
     id: 4,
+    href: "diseñodeinteriores",
     title: "Diseño de Interiores",
     description:
       "Iniciá tu recorrido en esta apasionante disciplina aprendiendo sobre iluminación, estética, color, texturas, planos y proporciones para lograr espacios increíbles y funcionales.",
@@ -47,7 +52,14 @@ export const CoursesCardList = () => {
   return (
     <div className="flex gap-4">
       {cards.map((card) => (
-        <CoursesCard key={card.id} id={card.id} description={card.description} image={card.image} title={card.title}/>
+        <CoursesCard
+          key={card.id}
+          id={card.id}
+          description={card.description}
+          image={card.image}
+          title={card.title}
+          href={card.href}
+        />
       ))}
     </div>
   );

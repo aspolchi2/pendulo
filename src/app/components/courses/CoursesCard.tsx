@@ -2,8 +2,15 @@ import React from "react";
 import Image from "next/image";
 import { hepta_slab } from "@/app/layout";
 import { cardsProps } from ".";
+import Link from "next/link";
 
-export const CoursesCard = ({ id, title, description, image }: cardsProps) => {
+export const CoursesCard = ({
+  id,
+  title,
+  description,
+  image,
+  href,
+}: cardsProps) => {
   return (
     <article className="bg-white shadow-md flex flex-col  flex-shrink-0 justify-center p-9 ">
       <header>
@@ -27,13 +34,16 @@ export const CoursesCard = ({ id, title, description, image }: cardsProps) => {
           alt="image"
           width={230}
           height={170}
-          className="pb-7 w-60"
+          className="pb-7"
         />
       </main>
       <footer>
-        <button className="flex-shrink-0 bg-primary text-white font-bold w-60 h-11 rounded-lg   ">
-          +INFORMACION
-        </button>
+        <Link
+          href={`/${href}`}
+          className="flex-shrink-0 bg-primary text-white font-bold text-xl w-full h-11 rounded-lg px-7 py-3   "
+        >
+          +INFORMACIÓN
+        </Link>
       </footer>
     </article>
   );

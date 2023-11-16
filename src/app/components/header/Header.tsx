@@ -52,9 +52,9 @@ const icons = [
   },
 ];
 
-export const Header = () => {
+export const Header = ({ bg, position }: { bg: string; position: string }) => {
   return (
-    <header className="w-full  h-28 flex items-end sticky top-0 bg-white z-50 ">
+    <header className={`w-full  h-28 flex items-end ${position} ${bg} z-50 `}>
       <nav className="flex justify-between w-11/12 m-auto h-full pb-6 z-20">
         <div className="flex items-end  gap-2">
           <Image

@@ -14,6 +14,7 @@ import {
   Testimonials,
   WhyPendulo,
 } from "./components";
+import { Footer } from "./components/footer";
 const quote1 =
   "Nos interesan las personas que <strong>se animan a explorar distintas disciplinas y queremos animarlos liberar su potencial </strong>";
 
@@ -30,6 +31,7 @@ export default function Home() {
       <Quotes text={quote1} bg="bg-[#F0EBEB]" color="text-black" />
       <Testimonials />
       <Stadistics />
+      <Footer />
     </main>
   );
 }
