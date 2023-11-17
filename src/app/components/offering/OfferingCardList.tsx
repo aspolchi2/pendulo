@@ -17,7 +17,7 @@ export interface MyData {
 const data : MyData[]  = [
   {
     id: crypto.randomUUID(),
-    svg: <Red />,
+    svg: <Red fill="#E05FE0"/>,
     title: "CLASES EN VIVO",
     description:
       "Se podrá <strong> interactuar en tiempo real </strong> y resolver las dudas durante la clase con el equipo de aprendizaje.",

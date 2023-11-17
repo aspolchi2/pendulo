@@ -14,7 +14,7 @@ export const WhyPendulo = () => {
         <div className="flex flex-col justify-end items-center max-w-full">
           <div className="flex items-center gap-10">
             <span className="animate-wiggle animate-infinite animate-duration-[10000ms] animate-ease-in">
-              <Codito />
+              <Codito fill="#E05FE0"/>
             </span>
             <div className="text text-2xl">
               <p className={`${hepta_slab.className}font-black text-5xl`}>
@@ -67,7 +67,7 @@ export const WhyPendulo = () => {
           </div>
           <div className="flex items-center gap-10 flex-row-reverse">
             <span className="animate-jump animate-infinite animate-duration-[20000ms] animate-ease-linear ">
-              <TrianguloRosa />
+              <TrianguloRosa fill="#E05FE0" />
             </span>
             <div className="text text-2xl pr-48">
               <p className={`${hepta_slab.className}font-black text-5xl`}>
