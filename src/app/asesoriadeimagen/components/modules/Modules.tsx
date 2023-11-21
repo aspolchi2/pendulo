@@ -1,5 +1,7 @@
 import { hepta_slab } from "@/app/layout";
 import React from "react";
+import fotis from '@/../public/images/fotis.png'
+import Image from "next/image";
 
 const Modules = () => {
   const moduleOne = [
@@ -154,8 +156,37 @@ const Modules = () => {
         ))}
         <div className="h-px bg-white"></div>
       </div>
+      <div className="flex justify-center items-center">
+        <div className="relative bg-primary flex justify-center items-center text-white w-full">
+          <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 h-72 flex justify-center items-center">
+            <p className="w-[60 ch] text-center text-2xl">
+              HERRAMIENTAS PARA EL DESARROLLO EFECTIVO <br /> DE LA RELACIÓN
+              CLIENTE - PROFESIONAL
+            </p>
+          </div>
+          <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex  justify-center items-center text-6xl text-white font-semibold bg-primary flex-col w-full">
+            <ul className="bg-primary text-lg  flex flex-col  ">
+              <li className="">
+                · Cómo planificar objetivos y realizar el seguimiento
+              </li>
+              <li className="">· Análisis de las necesidades del cliente</li>
+              <li className="">
+                · Herramientas para llevar adelante los objetivos de la imagen
+                interna
+              </li>
+              <li className="">· Lenguaje no verbal y rapport</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+            <div className="h-px bg-white"></div>
+            <div className=" flex justify-center items-center h-96">
+              <p className="text-center w-[55ch] text-yellow hover:text-white text-2xl font-bold">Al finalizar el curso para participante desarrollará un análisis y asesoramiento integral de imagen a una persona real teniendo en cuenta sus características físicas, personalidad y estilo de vida. Además, se llevará las herramientas para implementar el conocimiento en cualquier otro potencial cliente en el futuro.</p>
+            </div>
+            
     </section>
   );
-};
+}; 
 
 export default Modules;
