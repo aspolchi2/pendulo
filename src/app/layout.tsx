@@ -3,7 +3,10 @@ import { Lexend, Hepta_Slab } from "next/font/google";
 import "./globals.css";
 import { Header } from "./components";
 
-const lexend = Lexend({ subsets: ["latin"], weight: ["400", "600", "800"] });
+export const lexend = Lexend({
+  subsets: ["latin"],
+  weight: ["300", "400", "600", "800"],
+});
 
 export const hepta_slab = Hepta_Slab({
   subsets: ["latin"],

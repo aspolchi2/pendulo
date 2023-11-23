@@ -14,10 +14,10 @@ export interface MyData {
   description: string;
 }
 
-const data : MyData[]  = [
+const data: MyData[] = [
   {
     id: crypto.randomUUID(),
-    svg: <Red fill="#E05FE0"/>,
+    svg: <Red fill="#E05FE0" />,
     title: "CLASES EN VIVO",
     description:
       "Se podrá <strong> interactuar en tiempo real </strong> y resolver las dudas durante la clase con el equipo de aprendizaje.",
@@ -41,14 +41,14 @@ const data : MyData[]  = [
     svg: <Pdfsvg />,
     title: "MATERIAL <br/> DE ESTUDIO",
     description:
-      "Después de cada clase se podrá descargar el material teórico desde la plataforma del curso.",
-  }, 
+      "Después de cada clase se podrá descargar el <strong>material teórico </strong> desde la plataforma del curso.",
+  },
   {
     id: crypto.randomUUID(),
     svg: <Credit />,
     title: "FACILIDADES <br/> DE PAGO",
     description:
-      "Después de cada clase se podrá descargar el <strong>material teórico </strong> desde la plataforma del curso.",
+      "Aceptamos todos los medios de pago: tarjetas de débito, crédito, transferencia, efectivo, Mercado Pago y Paypal.",
   },
   {
     id: crypto.randomUUID(),
@@ -62,8 +62,14 @@ const data : MyData[]  = [
 export const OfferingCardList = () => {
   return (
     <div className="flex flex-row w-[1212px] m-auto flex-wrap gap-[38px]">
-      {data.map(({id, svg, title, description}) => (
-        <OfferingCard key={id} svg={svg} title={title} description={description} id={id} />
+      {data.map(({ id, svg, title, description }) => (
+        <OfferingCard
+          key={id}
+          svg={svg}
+          title={title}
+          description={description}
+          id={id}
+        />
       ))}
     </div>
   );

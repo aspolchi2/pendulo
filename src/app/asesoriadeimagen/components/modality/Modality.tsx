@@ -6,11 +6,19 @@ import { Sobre } from "@/app/components/svg/Sobre";
 import SobreSmall from "@/app/components/svg/SobreSmall";
 import React from "react";
 
-const Divider = ({ title }: { title: string }) => {
+export const Divider = ({
+  title,
+  color,
+  bgcolor,
+}: {
+  title: string;
+  color?: string;
+  bgcolor?: string;
+}) => {
   return (
     <div className="flex flex-col gap-5">
-      <p className="text-right">{title}</p>
-      <div className="h-px bg-black"></div>
+      <p className={`${color} text-right`}>{title}</p>
+      <div className={`${bgcolor} h-px bg-black`}></div>
     </div>
   );
 };
