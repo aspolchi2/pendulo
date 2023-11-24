@@ -6,9 +6,11 @@ import Questions from "./components/questions/Questions";
 import fotis from "@/../public/images/fotis.png";
 import Modality from "./components/modality/Modality";
 import Teacher from "./components/teacher/Teacher";
-import { Offering } from "../components";
+import { Offering, Price } from "../components";
 import JoinUs from "./components/joinUs/JoinUs";
 import { lexend } from "../layout";
+import NextCourses from "./nextCourses/NextCourses";
+import NextCoursesData from "./nextCourses/NextCoursesData";
 
 export default function Home() {
   return (
@@ -28,6 +30,8 @@ export default function Home() {
       <Teacher />
       <Offering />
       <JoinUs />
+      <NextCoursesData />
+      <Price />
     </main>
   );
 }

@@ -10,3 +10,4 @@ export * from "./participate";
 export * from "./quotes";
 export * from "./testimonials";
 export * from "./stadistics";
+export * from "./price";

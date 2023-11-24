@@ -6,13 +6,13 @@ import { Sobre } from "../svg/Sobre";
 const data = [
   {
     id: crypto.randomUUID(),
-    svg: <Laptop />,
+    svg: <Laptop fill="white" />,
     description:
       "Computadora o dispositivo </br> que cuente con conexión </br>a Internet, en lo posible con  </br> cámara y micrófono activados.",
   },
   {
     id: crypto.randomUUID(),
-    svg: <Sobre />,
+    svg: <Sobre fill="white" />,
     description:
       "Dirección de correo electrónico </br> donde se recibirán los datos de </br> acceso al curso y comunicados </br> oficiales de la escuela.",
   },
