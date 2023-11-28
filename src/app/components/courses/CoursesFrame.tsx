@@ -6,7 +6,7 @@ export const CoursesFrame = () => {
   return (
     <section className="bg-gray flex-col flex gap-24 w-full justify-center items-center pt-32 pb-40">
       <div>
-        <CoursesCardList />
+        <CoursesCardList isFilter={false} />
       </div>
       <p className={`${hepta_slab.className} text-3xl text-center`}>
         Descubrir una nueva disciplina te puede permitir{" "}
