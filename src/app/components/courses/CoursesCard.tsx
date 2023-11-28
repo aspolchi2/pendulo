@@ -10,15 +10,19 @@ export const CoursesCard = ({
   description,
   image,
   href,
+  filter,
+  isFilter,
 }: cardsProps) => {
   return (
     <article className="bg-white shadow-md flex flex-col  flex-shrink-0 justify-center p-9 ">
       <header>
-        <p
-          className={`${hepta_slab.className} font-semibold text-[90px] text-gray leading-none`}
-        >
-          0{id}.
-        </p>
+        {!isFilter && (
+          <p
+            className={`${hepta_slab.className} font-semibold text-[90px] text-gray leading-none`}
+          >
+            0{id}.
+          </p>
+        )}
       </header>
       <main>
         <h2 className="font-semibold text-primary md:text-4xl sm:text-2xl  w-60">

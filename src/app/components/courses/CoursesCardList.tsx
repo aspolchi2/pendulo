@@ -11,6 +11,8 @@ export type cardsProps = {
   description: string;
   image: string;
   href: string;
+  filter?: boolean;
+  isFilter?: boolean;
 };
 
 const cards: cardsProps[] = [
@@ -48,10 +50,19 @@ const cards: cardsProps[] = [
   },
 ];
 
-export const CoursesCardList = () => {
+export const CoursesCardList = ({
+  filter,
+  isFilter,
+}: {
+  filter?: number;
+  isFilter: boolean;
+}) => {
+  const filteredCards = filter
+    ? cards.filter((card) => card.id !== filter)
+    : cards;
   return (
     <div className="flex gap-4">
-      {cards.map((card) => (
+      {filteredCards.map((card) => (
         <CoursesCard
           key={card.id}
           id={card.id}
@@ -59,6 +70,8 @@ export const CoursesCardList = () => {
           image={card.image}
           title={card.title}
           href={card.href}
+          filter
+          isFilter={isFilter}
         />
       ))}
     </div>

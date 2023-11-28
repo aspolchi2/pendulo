@@ -3,15 +3,15 @@ import React from "react";
 export const PriceInfo = ({
   title,
   description,
+  color,
 }: {
   title: string;
   description: any;
+  color: string;
 }) => {
   return (
     <div className="flex flex-col gap-6">
-      <h3 className="text-primary font-semibold text-center text-4xl">
-        {title}
-      </h3>
+      <h3 className={`${color} font-semibold text-center text-4xl`}>{title}</h3>
       {description}
     </div>
   );
