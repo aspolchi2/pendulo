@@ -1,6 +1,18 @@
-import React, { ReactNode } from "react";
+"use client";
+import useBooleanStore from "@/app/zustand/useBooleanStore";
+import React from "react";
 
-const NextCourses = ({ data }: { data: any }) => {
+export const NextCourses = ({ data }: { data: any }) => {
+  const { toggle, booleanValue } = useBooleanStore();
+
+  const scrollToTarget = () => {
+    toggle();
+    const element = document.getElementById("prices");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="bg-black p-28 text-white">
       <div className="flex flex-col gap-6">
@@ -18,9 +30,12 @@ const NextCourses = ({ data }: { data: any }) => {
             );
           })}
           <div className="self-center">
-            <a href="/" className="bg-primary py-3 px-8 rounded-lg">
-              VER PRECIOS
-            </a>
+            <button
+              onClick={() => scrollToTarget()}
+              className="bg-primary py-3 px-8 rounded-lg w-60"
+            >
+              {booleanValue ? "OCULTAR PRECIOS" : "VER PRECIOS"}
+            </button>
           </div>
         </div>
       </div>

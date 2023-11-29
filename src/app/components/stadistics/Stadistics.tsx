@@ -3,7 +3,7 @@ import React from "react";
 
 export const Stadistics = () => {
   return (
-    <section className="bg-mundi bg-[#D9D9DD] h-[1078px] flex justify-center items-center mt-[102px] bg-no-repeat bg-center">
+    <section className="bg-mundi bg-[#D9D9DD] h-[1078px] flex justify-center items-center bg-no-repeat bg-center">
       <div className="container mx-auto flex flex-col gap-12 h-full justify-center  w-[1000px] ">
         <p className="flex items-center gap-5 text-2xl font-medium max-w-4xl ">
           <span

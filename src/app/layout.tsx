@@ -13,11 +13,11 @@ export const hepta_slab = Hepta_Slab({
   weight: ["400", "600", "700", "800", "900"],
 });
 
-export const metadata: Metadata = {
-  title: "Péndulo",
-  description:
-    "Ampliá tu horizonte de posibilidades personales & profecionales",
-};
+// export const metadata: Metadata = {
+//   title: "Péndulo",
+//   description:
+//     "Ampliá tu horizonte de posibilidades personales & profecionales",
+// };
 
 export default function RootLayout({
   children,

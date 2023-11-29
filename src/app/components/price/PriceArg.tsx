@@ -1,7 +1,9 @@
-import React from "react";
+"use client";
+import React, { useContext } from "react";
 import { PriceInfo } from "./PriceInfo";
 import { CardProp, PriceCard } from "./PriceCard";
 import { hepta_slab } from "@/app/layout";
+import useBooleanStore from "@/app/zustand/useBooleanStore";
 export type priceType = {
   title: string;
   description: string;
@@ -69,6 +71,7 @@ const cardData: CardProp[] = [
 ];
 
 export const PriceArg = () => {
+  const { booleanValue } = useBooleanStore();
   const desc = (
     <p className="text-2xl text-center w-11/12 m-auto">
       El precio de la capacitación profesional{" "}
@@ -79,7 +82,14 @@ export const PriceArg = () => {
   );
 
   return (
-    <section className="p-28">
+    <section
+      id="prices"
+      className={`${
+        booleanValue
+          ? "max-h-full  opacity-100 p-28"
+          : "max-h-0 overflow-hidden opacity-0 "
+      } transition-opacity  duration-500 `}
+    >
       <div className="flex flex-col gap-12">
         <PriceInfo
           color="text-primary"
