@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lexend, Hepta_Slab } from "next/font/google";
 import "./globals.css";
 import { Header } from "./components";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const lexend = Lexend({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({
         {" "}
         <Header bg="bg-white" position="sticky top-0" />
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
