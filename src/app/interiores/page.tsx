@@ -1,7 +1,12 @@
+import { Lexend } from "next/font/google";
+import { Hero } from "../asesoriadeimagen/components/hero/Hero";
+
+const lexend = Lexend({ subsets: ["latin"] });
+
 export default function Home() {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className={lexend.className}>
+      <Hero bg="interioresBg" />
     </div>
   );
 }

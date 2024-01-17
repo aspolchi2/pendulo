@@ -17,6 +17,7 @@ const config: Config = {
         mundi: "url('./images/mundi.png')",
         asesoriadeimagen: "url('./images/asesoriadeimagen.png')",
         fotis: "url('./images/fotis.png')",
+        interioresBg: "url('./images/interioresbg.png')",
       },
       colors: {
         accent: "#E05FE0",

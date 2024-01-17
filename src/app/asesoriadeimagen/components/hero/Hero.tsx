@@ -3,7 +3,7 @@ import React from "react";
 export const Hero = ({ bg }: { bg: string }) => {
   return (
     <section
-      className={`${bg}  h-[842px] bg-no-repeat bg-cover bg-blend-multiply `}
+      className={`bg-${bg}  h-[842px] bg-no-repeat bg-cover bg-blend-multiply `}
     >
       <div className="w-full h-full flex items-center ">
         <div className="w-[709px] ml-40 flex flex-col gap-6 ">
