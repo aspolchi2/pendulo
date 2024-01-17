@@ -42,7 +42,7 @@ const cards: cardsProps[] = [
   },
   {
     id: 4,
-    href: "diseñodeinteriores",
+    href: "interiores",
     title: "Diseño de Interiores",
     description:
       "Iniciá tu recorrido en esta apasionante disciplina aprendiendo sobre iluminación, estética, color, texturas, planos y proporciones para lograr espacios increíbles y funcionales.",

@@ -9,7 +9,7 @@ const Ligth = () => {
       viewBox="0 0 71 68"
       fill="none"
     >
-      <g clip-path="url(#clip0_353_34)">
+      <g clipPath="url(#clip0_353_34)">
         <path d="M61.7024 32.6006H71V35.8936H61.7024V32.6006Z" fill="black" />
         <path d="M0 32.6006H9.29762V35.8936H0V32.6006Z" fill="black" />
         <path d="M33.8095 0H37.1905V8.56174H33.8095V0Z" fill="black" />

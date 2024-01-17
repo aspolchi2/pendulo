@@ -25,7 +25,7 @@ import { Interesed } from "./components/interesed";
 export default function Home() {
   return (
     <main className={lexend.className}>
-      <Hero />
+      <Hero bg="bg-asesoriadeimagen" />
       <Modalidad />
       <Questions />
       <Modules />
