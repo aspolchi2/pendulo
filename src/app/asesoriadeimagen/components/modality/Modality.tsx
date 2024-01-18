@@ -4,6 +4,7 @@ import Ligth from "@/app/components/svg/Ligth";
 import PcSmall from "@/app/components/svg/PcSmall";
 import { Sobre } from "@/app/components/svg/Sobre";
 import SobreSmall from "@/app/components/svg/SobreSmall";
+import { Lexend } from "next/font/google";
 import React from "react";
 
 export const Divider = ({
@@ -23,28 +24,24 @@ export const Divider = ({
   );
 };
 
+const lexend = Lexend({ weight: ["800", "500"], subsets: ["latin"] });
+
 const Modality = () => {
   return (
-    <section className="p-32">
+    <section className={`${lexend.className} ${lexend.style} p-32`}>
       <Divider title={"MODALIDAD"} />
       <div className=" flex justify-center align-top gap-6 py-16">
         <Ligth />
-        <div className="">
-          <p className="w-[65ch] text-2xl">
-            Este curso de capacitación profesional con modalidad{" "}
-            <span className="text-primary font-extrabold text-2xl">
-              intensiva está pensado para las personas que busquen una formación
-              muy completa en un período corto de duración.{" "}
-            </span>
+        <div className="w-[97ch]">
+          <p className="text-2xl text-pretty">
+            Nuestros planes de estudio son desarrollados por educadores de
+            amplia trayectoria y se actualizan de forma constante con el
+            objetivo de ofrecer una formación sólida e integral.
           </p>
-          <p className="w-[65ch] text-2xl">
-            {" "}
-            Con una mayor carga horaria que la modalidad regular,
-            <span className="text-primary font-extrabold text-2xl">
-              {" "}
-              durante cinco meses se desarrolla el mismo contenido teórico de
-              los programas de formación anuales.
-            </span>
+          <p className="text-2xl text-primary font-extrabold ">
+            La duración de este curso contempla los tiempos de aprendizaje
+            promedio para la apropiación e implementación del contenido de una
+            forma progresiva.
           </p>
         </div>
       </div>

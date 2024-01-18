@@ -25,7 +25,12 @@ import { Interesed } from "./components/interesed";
 export default function Home() {
   return (
     <main className={lexend.className}>
-      <Hero bg="bg-asesoriadeimagen" />
+      <Hero
+        bg="bg-asesoriadeimagen"
+        span="de Imagen"
+        text="CAPACITACIÓN PROFESIONAL"
+        title="Asesoría"
+      />
       <Modalidad />
       <Questions />
       <Modules />

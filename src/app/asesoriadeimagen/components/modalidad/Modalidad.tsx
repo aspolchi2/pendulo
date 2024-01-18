@@ -13,12 +13,12 @@ import third from "@/../public/images/thirdModalidad.png";
 const Modalidad = () => {
   return (
     <section className="flex flex-col  bg-primary ">
-      <div className="bg-primary flex w-10/12 m-auto justify-around items-center h-[350px] ">
+      <div className="bg-primary flex w-10/12 m-auto justify-around items-center h-[350px] font-medium">
         <Codito fill="black" />
-        <div className="flex flex-col justify-center items-center gap-6">
+        <div className="flex flex-col justify-center items-center gap-6 ">
           <Thunder />
           <p className="text-white text-center">
-            MODALIDAD <br /> INTENSIVA
+            MODALIDAD <br /> REGULAR
           </p>
         </div>
         <div className="flex flex-col justify-center items-center gap-6">
@@ -45,7 +45,7 @@ const Modalidad = () => {
           className=" w-[31vw] object-cover    flex-shrink: 0; "
         />
         <Image
-          src={second.src} 
+          src={second.src}
           alt="imagen generica a cambiar"
           width={517}
           height={576}

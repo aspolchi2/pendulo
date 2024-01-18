@@ -6,7 +6,7 @@ const lexend = Lexend({ subsets: ["latin"] });
 export default function Home() {
   return (
     <div className={lexend.className}>
-      <Hero bg="interioresBg" />
+      <Hero bg="bg-interioresBg" />
     </div>
   );
 }

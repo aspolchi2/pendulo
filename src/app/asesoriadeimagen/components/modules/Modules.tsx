@@ -1,6 +1,6 @@
 import { hepta_slab } from "@/app/layout";
 import React from "react";
-import fotis from '@/../public/images/fotis.png'
+import fotis from "@/../public/images/fotis.png";
 import Image from "next/image";
 
 const Modules = () => {
@@ -93,7 +93,7 @@ const Modules = () => {
     },
   ];
   return (
-    <section className="bg-primary p-32">
+    <section className="bg-primary p-32 font-medium">
       <p className="text-right text-xl text-white pb-2">CONTENIDOS</p>
       <div className="h-px bg-white"></div>
       <div
@@ -176,17 +176,21 @@ const Modules = () => {
               </li>
               <li className="">· Lenguaje no verbal y rapport</li>
             </ul>
-
           </div>
         </div>
       </div>
-            <div className="h-px bg-white"></div>
-            <div className=" flex justify-center items-center h-96">
-              <p className="text-center w-[55ch] text-yellow hover:text-white text-2xl font-bold">Al finalizar el curso para participante desarrollará un análisis y asesoramiento integral de imagen a una persona real teniendo en cuenta sus características físicas, personalidad y estilo de vida. Además, se llevará las herramientas para implementar el conocimiento en cualquier otro potencial cliente en el futuro.</p>
-            </div>
-            
+      <div className="h-px bg-white"></div>
+      <div className=" flex justify-center items-center h-96">
+        <p className="text-center w-[55ch] text-yellow hover:text-white text-2xl font-bold">
+          Al finalizar el curso para participante desarrollará un análisis y
+          asesoramiento integral de imagen a una persona real teniendo en cuenta
+          sus características físicas, personalidad y estilo de vida. Además, se
+          llevará las herramientas para implementar el conocimiento en cualquier
+          otro potencial cliente en el futuro.
+        </p>
+      </div>
     </section>
   );
-}; 
+};
 
 export default Modules;
