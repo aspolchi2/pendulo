@@ -19,7 +19,7 @@ export const Hero = ({ bg, span, text, title }: props) => {
     >
       <div className="w-full h-full flex items-center ">
         <div className="ml-40 flex flex-col gap-6 ">
-          <h1 className="text-8xl font-black text-white leading-[95px]">
+          <h1 className="text-8xl font-black text-yellow leading-[95px]">
             {title} <br /> <span className="font-medium "> {span}</span>{" "}
           </h1>
           <p className="text-white text-3xl">{text}</p>

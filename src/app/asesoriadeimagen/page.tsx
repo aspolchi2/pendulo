@@ -21,8 +21,17 @@ import NextCoursesData from "./nextCourses/NextCoursesData";
 import PriceOutside from "../components/price/PriceOutside";
 import { Footer } from "../components/footer";
 import { Interesed } from "./components/interesed";
+import first from "public/images/firstModalidad.png";
+import second from "public/images/secondModalidad.png";
+import third from "public/images/thirdModalidad.png";
 
 export default function Home() {
+  const imagesForModalidad = [
+    { image: first },
+    { image: second },
+    { image: third },
+  ];
+
   return (
     <main className={lexend.className}>
       <Hero
@@ -31,7 +40,7 @@ export default function Home() {
         text="CAPACITACIÓN PROFESIONAL"
         title="Asesoría"
       />
-      <Modalidad />
+      <Modalidad images={imagesForModalidad} />
       <Questions />
       <Modules />
       <Image

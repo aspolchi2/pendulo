@@ -2,15 +2,11 @@ import { Calendar } from "@/app/components/svg/Calendar";
 import { Codito } from "@/app/components/svg/Codito";
 import { Red } from "@/app/components/svg/Red";
 import { Thunder } from "@/app/components/svg/Thunder";
-import { TrianguloAzul } from "@/app/components/svg/TrianguloAzul";
 import { TrianguloRosa } from "@/app/components/svg/TrianguloRosa";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
-import first from "@/../public/images/firstModalidad.png";
-import second from "@/../public/images/secondModalidad.png";
-import third from "@/../public/images/thirdModalidad.png";
 
-const Modalidad = () => {
+const Modalidad = ({ images }: { images: { image: StaticImageData }[] }) => {
   return (
     <section className="flex flex-col  bg-primary ">
       <div className="bg-primary flex w-10/12 m-auto justify-around items-center h-[350px] font-medium">
@@ -37,27 +33,16 @@ const Modalidad = () => {
         <TrianguloRosa fill="black" />
       </div>
       <div className="  flex justify-between  w-full ">
-        <Image
-          src={first.src}
-          alt="imagen generica a cambiar"
-          width={517}
-          height={576}
-          className=" w-[31vw] object-cover    flex-shrink: 0; "
-        />
-        <Image
-          src={second.src}
-          alt="imagen generica a cambiar"
-          width={517}
-          height={576}
-          className="  w-[35vw] object-cover flex-shrink: 0;"
-        />
-        <Image
-          src={third.src}
-          alt="imagen generica a cambiar"
-          width={517}
-          height={576}
-          className="  w-[31vw] object-cover  flex-shrink: 0;"
-        />
+        {images.map((img: any, index: number) => (
+          <Image
+            key={index}
+            src={img.image}
+            alt="imagen generica a cambiar"
+            width={517}
+            height={576}
+            className=" w-[32.5vw] object-cover    flex-shrink: 0; "
+          />
+        ))}
       </div>
     </section>
   );
