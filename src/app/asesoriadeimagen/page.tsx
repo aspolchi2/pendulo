@@ -24,6 +24,7 @@ import { Interesed } from "./components/interesed";
 import first from "public/images/firstModalidad.png";
 import second from "public/images/secondModalidad.png";
 import third from "public/images/thirdModalidad.png";
+import { moduleOne, moduleTwo, textModule } from "./components/modules/data";
 
 export default function Home() {
   const imagesForModalidad = [
@@ -42,7 +43,12 @@ export default function Home() {
       />
       <Modalidad images={imagesForModalidad} />
       <Questions />
-      <Modules />
+      <Modules
+        moduleOne={moduleOne}
+        moduleTwo={moduleTwo}
+        show
+        text={textModule}
+      />
       <Image
         src={fotis.src}
         alt="fotos de una chica con remera a rayas"
