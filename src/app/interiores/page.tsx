@@ -13,6 +13,24 @@ import {
 } from "../asesoriadeimagen/components/modules/data";
 import Image from "next/image";
 import interiorfoto from "public/images/interiorfoto.png";
+import Modality from "../asesoriadeimagen/components/modality/Modality";
+import { dataInterior } from "../asesoriadeimagen/components/modality/data";
+import Teacher from "../asesoriadeimagen/components/teacher/Teacher";
+import {
+  extraTextTeacher,
+  liInteriores,
+  natalia,
+  teacherInteriores,
+} from "../asesoriadeimagen/components/teacher/data";
+import { Offering, Stadistics, Testimonials } from "../components";
+import { Interesed } from "../asesoriadeimagen/components/interesed";
+import { Footer } from "../components/footer";
+
+const innerText = (
+  <p>
+    hola <br /> andoni
+  </p>
+);
 
 const lexend = Lexend({ subsets: ["latin"] });
 
@@ -50,6 +68,18 @@ export default function Home() {
         height={1000}
         className="w-[100vw]"
       />
+      <Modality text={dataInterior} />
+      <Teacher
+        li={liInteriores}
+        name={teacherInteriores}
+        teacher={natalia}
+        extraText={extraTextTeacher}
+      />
+      <Offering />
+      <Stadistics />
+      <Testimonials />
+      <Interesed filter={4} isFilter />
+      <Footer />
     </div>
   );
 }

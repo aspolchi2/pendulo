@@ -25,6 +25,12 @@ import first from "public/images/firstModalidad.png";
 import second from "public/images/secondModalidad.png";
 import third from "public/images/thirdModalidad.png";
 import { moduleOne, moduleTwo, textModule } from "./components/modules/data";
+import { dataAsesoria } from "./components/modality/data";
+import {
+  claudia,
+  liAsesoria,
+  teacherAsesoria,
+} from "./components/teacher/data";
 
 export default function Home() {
   const imagesForModalidad = [
@@ -56,13 +62,10 @@ export default function Home() {
         height={569}
         className="w-full"
       />
-      <Modality />
-      <Teacher />
+      <Modality text={dataAsesoria} />
+      <Teacher li={liAsesoria} teacher={claudia} name={teacherAsesoria} />
       <Offering />
-      <JoinUs />
-      <NextCoursesData />
-      <PriceArg />
-      <PriceOutside />
+
       <Stadistics />
       <Testimonials />
       <Interesed filter={3} isFilter />

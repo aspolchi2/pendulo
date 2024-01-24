@@ -24,7 +24,7 @@ export const Interesed = ({
         </p>
       </div>
       <div className="">
-        <CoursesCardList filter={3} isFilter />
+        <CoursesCardList filter={filter} isFilter />
       </div>
     </section>
   );

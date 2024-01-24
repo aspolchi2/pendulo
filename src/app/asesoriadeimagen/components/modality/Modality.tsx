@@ -26,7 +26,7 @@ export const Divider = ({
 
 const lexend = Lexend({ weight: ["800", "500"], subsets: ["latin"] });
 
-const Modality = () => {
+const Modality = ({ text }: any) => {
   return (
     <section className={`${lexend.className} ${lexend.style} p-32`}>
       <Divider title={"MODALIDAD"} />
@@ -47,42 +47,12 @@ const Modality = () => {
       </div>
       <Divider title={"DESTINATARIOS"} />
       <div className="flex flex-col py-16 gap-12">
-        <div className=" flex justify-center align-top gap-6 ">
-          <CheckBox />
-          <div className="flex flex-col">
-            <p className="w-[65ch] text-2xl">
-              <span className="text-primary font-extrabold text-2xl">
-                Profesionales de disciplinas afines que busquen adquirir mayores
-                herramientas para el ejercicio de su profesión:{" "}
-              </span>{" "}
-              maquilladores, estilistas, peluqueros, diseñadores de
-              indumentaria, fotógrafos de moda, vestuaristas, etc.
-            </p>
+        {text.map((item: any, index: number) => (
+          <div key={index} className=" flex justify-center align-top gap-6 ">
+            <CheckBox />
+            <div className="">{item}</div>
           </div>
-        </div>
-        <div className=" flex justify-center align-top gap-6 ">
-          <CheckBox />
-          <div className="">
-            <p className="w-[65ch] text-2xl">
-              <span className="text-primary font-extrabold text-2xl">
-                {" "}
-                Personas que busquen iniciarse en el Asesoramiento de Imagen{" "}
-              </span>{" "}
-              para la práctica profesional de la disciplina.
-            </p>
-          </div>
-        </div>
-        <div className=" flex justify-center align-top gap-6 ">
-          <CheckBox />
-          <div className="">
-            <p className="w-[65ch] text-2xl">
-              <span className="text-primary font-extrabold text-2xl">
-                Personas interesadas en adquirir las principales herramientas{" "}
-              </span>{" "}
-              del asesoramiento de imagen para aplicarlas a su propia imagen.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
       <div className="">
         <Divider title="REQUISITOS" />
