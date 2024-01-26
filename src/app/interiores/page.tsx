@@ -22,9 +22,12 @@ import {
   natalia,
   teacherInteriores,
 } from "../asesoriadeimagen/components/teacher/data";
-import { Offering, Stadistics, Testimonials } from "../components";
+import { Offering, PriceArg, Stadistics, Testimonials } from "../components";
 import { Interesed } from "../asesoriadeimagen/components/interesed";
 import { Footer } from "../components/footer";
+import JoinUs from "../asesoriadeimagen/components/joinUs/JoinUs";
+import NextCoursesData from "../asesoriadeimagen/nextCourses/NextCoursesData";
+import PriceOutside from "../components/price/PriceOutside";
 
 const innerText = (
   <p>
@@ -77,6 +80,10 @@ export default function Home() {
       />
       <Offering />
       <Stadistics />
+      <JoinUs />
+      <NextCoursesData />
+      <PriceArg />
+      <PriceOutside />
       <Testimonials />
       <Interesed filter={4} isFilter />
       <Footer />

@@ -65,7 +65,10 @@ export default function Home() {
       <Modality text={dataAsesoria} />
       <Teacher li={liAsesoria} teacher={claudia} name={teacherAsesoria} />
       <Offering />
-
+      <JoinUs />
+      <NextCoursesData />
+      <PriceArg />
+      <PriceOutside />
       <Stadistics />
       <Testimonials />
       <Interesed filter={3} isFilter />
