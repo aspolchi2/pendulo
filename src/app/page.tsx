@@ -23,8 +23,8 @@ export default function Home() {
     <main className="">
       <Hero />
       <CoursesFrame />
-      <WhyPendulo />
       <Accomplish />
+      <WhyPendulo />
       <AchievedFrame />
       <Offering />
       <Participate />

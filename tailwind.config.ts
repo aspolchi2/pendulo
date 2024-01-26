@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "hero-bg": "url('./images/heroimage.png')",
-        lograr: "url('./images/lograr.png')",
+        lograr: "url('./images/acomplishpick.png')",
         "gradient-accomplish":
           "linear-gradient(90deg, rgba(0, 0, 0, 0.60) -0.21%, rgba(0, 0, 0, 0.00) 145.63%)",
         offering: "url('./images/offering.png')",
