@@ -24,7 +24,6 @@ export default function Home() {
       <Hero />
       <CoursesFrame />
       <Accomplish />
-      <WhyPendulo />
       <AchievedFrame />
       <Offering />
       <Participate />

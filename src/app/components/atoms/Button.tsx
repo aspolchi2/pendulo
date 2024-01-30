@@ -11,7 +11,7 @@ export interface ButtonProps
 export const Button = (props: ButtonProps) => {
   return (
     <button
-      className={`${props.extraclassname} bg-accent px-8 py-5 text-2xl rounded-[50px] text-white font-semibold`}
+      className={`${props.extraclassname} bg-accent px-8 py-5 text-2xl rounded-2xl text-white font-semibold`}
       {...props}
     >
       {props.children}

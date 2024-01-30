@@ -21,7 +21,7 @@ const data = [
 export const Participate = () => {
   return (
     <section className="bg-primary">
-      <div className="w-10/12 m-auto pt-14">
+      <div className="w-10/12 m-auto pt-28">
         <div>
           <h3 className="text-white text-2xl">
             ¿QUÉ SE NECESITA PARA PARTICIPAR?
