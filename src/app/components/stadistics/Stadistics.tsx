@@ -1,5 +1,7 @@
+"use client";
 import { hepta_slab } from "@/app/layout";
 import React from "react";
+import Counter from "./Counter";
 
 export const Stadistics = () => {
   return (
@@ -9,7 +11,7 @@ export const Stadistics = () => {
           <span
             className={`${hepta_slab.className} text-primary text-6xl font-semibold`}
           >
-            +7 AÑOS
+            + <Counter value={7} /> AÑOS
           </span>
           {"    "}
           en actividad
@@ -18,7 +20,7 @@ export const Stadistics = () => {
           <span
             className={`${hepta_slab.className} text-primary text-6xl font-semibold`}
           >
-            +200
+            + <Counter value={200} />
           </span>{" "}
           CURSOS DICTADOS
         </p>
@@ -27,7 +29,7 @@ export const Stadistics = () => {
           <span
             className={`${hepta_slab.className} text-primary text-6xl font-semibold`}
           >
-            +2.000
+            +<Counter value={2000} />
           </span>{" "}
           ESTUDIANTES SE CAPACITARON <br /> EN NUESTRA ESCUELA
         </p>
@@ -36,7 +38,7 @@ export const Stadistics = () => {
           <span
             className={`${hepta_slab.className} text-primary text-6xl font-semibold`}
           >
-            +33
+            +<Counter value={33} />
           </span>{" "}
           PROFESORES TRABAJARON <br /> EN PENDULO
         </p>
@@ -45,7 +47,7 @@ export const Stadistics = () => {
           <span
             className={`${hepta_slab.className} text-primary text-6xl font-semibold`}
           >
-            +10 PAÍSES
+            + <Counter value={10} /> PAÍSES
           </span>{" "}
           NOS ELIGEN PARA <br /> SU FORMACIÓN
         </p>

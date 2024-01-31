@@ -30,12 +30,6 @@ import JoinUs from "../asesoriadeimagen/components/joinUs/JoinUs";
 import NextCoursesData from "../asesoriadeimagen/nextCourses/NextCoursesData";
 import PriceOutside from "../components/price/PriceOutside";
 
-const innerText = (
-  <p>
-    hola <br /> andoni
-  </p>
-);
-
 const lexend = Lexend({ subsets: ["latin"] });
 
 export default function Interiores() {
