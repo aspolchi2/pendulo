@@ -1,3 +1,4 @@
+"use client";
 import { Lexend } from "next/font/google";
 import { Hero } from "../asesoriadeimagen/components/hero/Hero";
 import Modalidad from "../asesoriadeimagen/components/modalidad/Modalidad";
@@ -37,7 +38,7 @@ const innerText = (
 
 const lexend = Lexend({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Interiores() {
   const interioresArray = [
     {
       image: interiores1,
