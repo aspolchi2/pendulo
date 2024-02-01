@@ -66,7 +66,7 @@ const cardData: CardProp[] = [
     desc: descThree,
     goTo: "#",
     textColor: "text-primary",
-    bgColor: "bg-primaryy",
+    bgColor: "bg-primary",
   },
 ];
 

@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { Propuesta } from "./AchievedCardList";
 import { useElementOnScreen } from "../hook/useElementOnScreen";
+import { motion } from "framer-motion";
 
 export const AchievedCard: React.FC<Propuesta> = ({
   title,
@@ -20,16 +21,13 @@ export const AchievedCard: React.FC<Propuesta> = ({
   });
 
   return (
-    <article
+    <motion.article
       ref={containerRef}
-      className={`w-[1115px] m-auto flex justify-center - gap-10 h-[350px] 
-      ${
-        isVisible
-          ? `opacity-100 blur-none translate-x-0 ${
-              isEven ? "animate-fade-left" : "animate-fade-right"
-            }`
-          : `opacity-0 blur-lg `
-      } motion-reduce:transition-none motion-reduce:hover:transform-none`}
+      className="w-[1115px] m-auto flex justify-center - gap-10 h-[350px] "
+      initial={isEven ? { opacity: 0, x: 100 } : { opacity: 0, x: -100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
     >
       <header
         className={`flex gap-10 ${
@@ -61,6 +59,6 @@ export const AchievedCard: React.FC<Propuesta> = ({
           ></Image>
         </main>
       </header>
-    </article>
+    </motion.article>
   );
 };

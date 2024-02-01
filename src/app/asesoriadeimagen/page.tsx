@@ -31,6 +31,7 @@ import {
   liAsesoria,
   teacherAsesoria,
 } from "./components/teacher/data";
+import useBooleanStore from "../zustand/useBooleanStore";
 
 export default function Home() {
   const imagesForModalidad = [

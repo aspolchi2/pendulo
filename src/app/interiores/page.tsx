@@ -29,10 +29,13 @@ import { Footer } from "../components/footer";
 import JoinUs from "../asesoriadeimagen/components/joinUs/JoinUs";
 import NextCoursesData from "../asesoriadeimagen/nextCourses/NextCoursesData";
 import PriceOutside from "../components/price/PriceOutside";
+import useBooleanStore from "../zustand/useBooleanStore";
 
 const lexend = Lexend({ subsets: ["latin"] });
 
 export default function Interiores() {
+  const { toggle, booleanValue } = useBooleanStore();
+
   const interioresArray = [
     {
       image: interiores1,

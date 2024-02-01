@@ -12,8 +12,8 @@ export const TestimonialsCard = ({ pic, name, course, testimonial }: card) => {
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.275, delay: 0.131 }}
-      exit={{}}
+      exit={{ transition: { ease: "easeIn", duration: 10 } }}
+      transition={{ duration: 1, type: "spring", stiffness: 200 }}
     >
       <header className="flex flex-col items-center gap-6 ">
         <Image src={pic} alt="" width={107} height={107} className="" />
