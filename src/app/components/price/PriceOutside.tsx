@@ -37,7 +37,7 @@ const descThree = (
 const cardData: CardProp[] = [
   {
     id: 1,
-    fee: "6 CUOTAS DE $48 USD",
+    fee: "9 CUOTAS DE $48 USD",
     desc: descOne,
     goTo: "#",
     bgColor: "bg-pink",
@@ -45,7 +45,7 @@ const cardData: CardProp[] = [
   },
   {
     id: 2,
-    fee: "1 PAGO DE $250 USD",
+    fee: "12 PAGO DE $29 USD",
     desc: descTwo,
     goTo: "#",
     bgColor: "bg-pink",
@@ -53,7 +53,7 @@ const cardData: CardProp[] = [
   },
   {
     id: 3,
-    fee: "1 PAGO DE $250 USD",
+    fee: "1 PAGO DE $290 USD",
     desc: descThree,
     goTo: "#",
     bgColor: "bg-pink",

@@ -3,8 +3,8 @@ import NextCourses from "./NextCourses";
 
 const NextCoursesData = () => {
   const data = {
-    "Fecha estimada de inicio": "Miércoles 16 de Agosto.",
-    Horario: "Miércoles de 20:00 a 22:30 </br>(Hora de Argentina)",
+    "Fecha estimada de inicio": "Lunes 18 de Marzo",
+    Horario: "Lunes de 20.30 a 22 </br>(Hora de Argentina)",
     Duración: "9 meses",
   };
   return (

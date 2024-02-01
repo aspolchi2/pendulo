@@ -46,7 +46,7 @@ const descThree = (
 const cardData: CardProp[] = [
   {
     id: 1,
-    fee: "12 CUOTAS DE $7.900",
+    fee: "9 CUOTAS DE $35.000",
     desc: descOne,
     goTo: "#",
     textColor: "text-primary",
@@ -54,7 +54,7 @@ const cardData: CardProp[] = [
   },
   {
     id: 2,
-    fee: "6 CUOTAS DE $15.800",
+    fee: "12 CUOTAS DE $19.000",
     desc: descTwo,
     goTo: "#",
     textColor: "text-primary",
@@ -62,7 +62,7 @@ const cardData: CardProp[] = [
   },
   {
     id: 3,
-    fee: "UN PAGO DE $59.900",
+    fee: "UN PAGO DE $95.000",
     desc: descThree,
     goTo: "#",
     textColor: "text-primary",
@@ -74,10 +74,7 @@ export const PriceArg = () => {
   const { booleanValue } = useBooleanStore();
   const desc = (
     <p className="text-2xl text-center w-11/12 m-auto">
-      El precio de la capacitación profesional{" "}
-      <span className="font-bold"> intensiva de 5 meses</span> de duración es de
-      <span className="font-bold"> $94.800</span>. Para mayor facilidad,
-      ofrecemos las siguientes opciones y planes de pago:
+      Para mayor facilidad, ofrecemos las siguientes opciones y planes de pago:
     </p>
   );
 

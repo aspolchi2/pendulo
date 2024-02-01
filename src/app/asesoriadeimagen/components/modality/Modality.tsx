@@ -29,7 +29,7 @@ const lexend = Lexend({ weight: ["800", "500"], subsets: ["latin"] });
 const Modality = ({ text }: any) => {
   return (
     <section className={`${lexend.className} ${lexend.style} p-32`}>
-      <Divider title={"MODALIDAD"} />
+      <Divider title={"PROPUESTA EDUCATIVA"} />
       <div className=" flex justify-center align-top gap-6 py-16">
         <Ligth />
         <div className="w-[97ch]">
