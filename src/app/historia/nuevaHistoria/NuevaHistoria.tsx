@@ -78,7 +78,7 @@ const data: card[] = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     year: 2022,
     title: "Nos expandimos",
     point: [
@@ -87,7 +87,7 @@ const data: card[] = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     year: 2023,
     title: "Ampliamos el equipo",
     point: [
@@ -110,7 +110,7 @@ const NuevaHistoria = () => {
         <div
           key={card.id}
           className={`grid grid-flow-col grid-cols-8 ${
-            card.id == 8 ? "h-auto" : "min-h-[200px] pb-4"
+            card.point.length < 3 ? "min-h-[150px]" : "min-h-[350px] pb-4"
           }`}
         >
           <div className="w-full border-r-2 border-primaryWash border-dashed col-span-5 ">
@@ -141,7 +141,7 @@ const NuevaHistoria = () => {
                     isEven(card.id) ? "bg-primaryWash" : "bg-primary"
                   }  rounded-full`}
                 ></div>
-                <p className="text-xl w-5/6 relative -top-1.5">{point}</p>
+                <p className="text-lg w-5/6 relative -top-1.5">{point}</p>
               </div>
             ))}
           </div>
