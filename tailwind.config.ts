@@ -18,10 +18,13 @@ const config: Config = {
         asesoriadeimagen: "url('./images/asesoriadeimagen.png')",
         fotis: "url('./images/fotis.png')",
         interioresBg: "url('./images/interioresbg.png')",
+        historiaHero: "url('./images/historiaHero.png')",
+        historiaSep: "url('./images/historiaSep.png')",
       },
       colors: {
         accent: "#E05FE0",
         primary: "#5959F7",
+        primaryWash: '#A3A3FB',
         violet: "#9D00B1",
         gray: "#D9D9DD",
         pink: "#E05FE0",

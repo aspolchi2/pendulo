@@ -17,7 +17,7 @@ export const WhyPendulo = () => {
               <Codito fill="#E05FE0"/>
             </span>
             <div className="text text-2xl">
-              <p className={`${hepta_slab.className}font-black text-5xl`}>
+              <p className={`${hepta_slab.className} font-black text-5xl`}>
                 01.
               </p>
               <p>
@@ -35,7 +35,7 @@ export const WhyPendulo = () => {
               <TrianguloAzul />
             </span>
             <div className="text text-2xl pr-44">
-              <p className={`${hepta_slab.className}font-black text-5xl`}>
+              <p className={`${hepta_slab.className} font-black text-5xl`}>
                 02.
               </p>{" "}
               <p>
@@ -52,7 +52,7 @@ export const WhyPendulo = () => {
               <CoditoInvertido />
             </span>
             <div className="text text-2xl pl-32">
-              <p className={`${hepta_slab.className}font-black text-5xl`}>
+              <p className={`${hepta_slab.className} font-black text-5xl`}>
                 03.
               </p>
               <p className="">
@@ -70,7 +70,7 @@ export const WhyPendulo = () => {
               <TrianguloRosa fill="#E05FE0" />
             </span>
             <div className="text text-2xl pr-48">
-              <p className={`${hepta_slab.className}font-black text-5xl`}>
+              <p className={`${hepta_slab.className} font-black text-5xl`}>
                 04.
               </p>{" "}
               <p>

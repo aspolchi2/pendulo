@@ -1,4 +1,4 @@
-import { hepta_slab } from "@/app/layout";
+import { hepta_slab, lexend } from "@/app/layout";
 import React from "react";
 import { Header } from "..";
 
@@ -7,9 +7,9 @@ export const Footer = () => {
     <section className="bg-black text-white">
       <div className="grid grid-cols-2 h-[500px] place-content-center">
         <div className=""></div>
-        <div className="flex flex-col gap-16">
+        <div className={`flex flex-col gap-16`}>
           <div className="flex flex-col gap-5">
-            <p className="">TRABAJA CON NOSOTRAS</p>
+            <p className={`${lexend.className} text-2xl`}>TRABAJA CON NOSOTRAS</p>
             <p className={`${hepta_slab.className} w-96`}>
               Envíanos tu curriculum y <br /> motivación por correo electrónico
               a:

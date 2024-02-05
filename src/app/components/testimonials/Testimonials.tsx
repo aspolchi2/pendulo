@@ -15,7 +15,7 @@ export const Testimonials = () => {
     }
   };
   return (
-    <section className="flex flex-col items-center gap-9 p-28 overflow-x-hidden">
+    <section className="flex flex-col items-center gap-9 p-28 overflow-x-hidden" id="testimonios">
       <h3 className="text-[55px]">¿QUIENES NOS ELIGEN?</h3>
       <p className="text-3xl font-medium">
         Conocé la experiencia de nuestros estudiantes:
