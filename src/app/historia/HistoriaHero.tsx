@@ -1,5 +1,6 @@
 import { Hepta_Slab, Lexend } from "next/font/google";
 import React from "react";
+import { Button } from "../components/atoms/Button";
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -22,9 +23,12 @@ const HistoriaHero = () => {
         fundada por dos fotógrafas y educadoras
       </p>
       <p className={`${hepta_slab.className} w-[463px] text-xl pb-9`}>
-      que después de <span className="font-bold"> 10 años de experiencia </span> dictando cursos decidimos crear nuestra propia academia con el propósito de <span className="font-bold"> humanizar la educación profesional. </span> 
+        que después de{" "}
+        <span className="font-bold"> 10 años de experiencia </span> dictando
+        cursos decidimos crear nuestra propia academia con el propósito de{" "}
+        <span className="font-bold"> humanizar la educación profesional. </span>
       </p>
-      <button className="bg-accent py-3 px-5 rounded-full ">CONOCENOS</button>
+      <Button extraclassname="">CONOCENOS</Button>
     </div>
   );
 };
