@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export const TestimonialsCard = ({ pic, name, course, testimonial }: card) => {
   return (
     <motion.article
-      className="bg-yellow flex flex-col py-6 px-9 rounded-[40px] justify-start items-center gap-7 h-[500px]"
+      className="bg-yellow flex flex-col py-6 px-9 rounded-[40px] justify-start items-center gap-7 h-[475px]"
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       viewport={{ once: true }}

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { hepta_slab } from "@/app/layout";
-import { cardsProps } from ".";
+import { cardsProps } from "./CoursesCardList";
 import Link from "next/link";
 
 export const CoursesCard = ({
