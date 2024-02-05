@@ -1,5 +1,7 @@
+"use client";
 import { Lexend } from "next/font/google";
 import React from "react";
+import { motion } from "framer-motion";
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -113,12 +115,23 @@ const NuevaHistoria = () => {
             card.point.length < 3 ? "min-h-[150px]" : "min-h-[350px] pb-4"
           }`}
         >
-          <div className="w-full border-r-2 border-primaryWash border-dashed col-span-5 ">
-            <div
+          <motion.div
+            className="w-full border-r-2 border-primaryWash border-dashed col-span-5 "
+            initial={{ borderRightWidth: "0px" }}
+            whileInView={{ borderRightWidth: "2px" }}
+          >
+            <motion.div
               className={`w-full h-0.5 ${
                 isEven(card.id) ? "bg-primaryWash" : "bg-primary"
               } mb-2`}
-            ></div>
+              initial={{ width: 0 }}
+              whileInView={{
+                transformOrigin: "left",
+                opacity: 1,
+                width: "100%",
+              }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+            ></motion.div>
             <div
               className={`flex ${
                 isEven(card.id) ? "text-primaryWash" : "text-primary"
@@ -129,7 +142,7 @@ const NuevaHistoria = () => {
                 {card.title}
               </p>
             </div>
-          </div>
+          </motion.div>
           <div className="flex flex-col gap-4  col-span-3">
             {card.point.map((point, i) => (
               <div
@@ -141,7 +154,14 @@ const NuevaHistoria = () => {
                     isEven(card.id) ? "bg-primaryWash" : "bg-primary"
                   }  rounded-full`}
                 ></div>
-                <p className="text-lg w-5/6 relative -top-1.5">{point}</p>
+                <motion.p
+                  className="text-lg w-5/6 relative -top-1.5"
+                  initial={{ x: 300 }}
+                  whileInView={{ x: 0 }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                >
+                  {point}
+                </motion.p>
               </div>
             ))}
           </div>
