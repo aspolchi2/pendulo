@@ -1,12 +1,15 @@
 import { Hepta_Slab } from "next/font/google";
 import { Hero } from "../asesoriadeimagen/components/hero/Hero";
-import { Quotes, Stadistics, Testimonials, WhyPendulo } from "../components";
 import HistoriaHero from "./HistoriaHero";
 import NuevaHistoria from "./nuevaHistoria/NuevaHistoria";
 import HistoriaSep from "./separator/HistoriaSep";
 import Founders from "./founders/Founders";
-import { Interesed } from "../asesoriadeimagen/components/interesed";
 import { Footer } from "../components/footer";
+import { WhyPendulo } from "../components/WhyPendulo";
+import { Quotes } from "../components/quotes/Quotes";
+import { Stadistics } from "../components/stadistics/Stadistics";
+import { Testimonials } from "../components/testimonials/Testimonials";
+import { Interesed } from "../asesoriadeimagen/components/interesed/Interesed";
 
 const hepta_slab = Hepta_Slab({
   subsets: ["latin"],
@@ -40,7 +43,7 @@ export default function Page() {
       <Stadistics />
       <Testimonials />
       <Interesed filter={6} isFilter />
-      <Footer/>
+      <Footer />
     </main>
   );
 }

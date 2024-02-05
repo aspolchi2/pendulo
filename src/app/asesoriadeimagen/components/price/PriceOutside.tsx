@@ -74,11 +74,8 @@ const PriceOutside = () => {
 
   return (
     <section
-      className={`${
-        booleanValue
-          ? "max-h-full  opacity-100 p-28"
-          : "max-h-0 overflow-hidden opacity-0 "
-      } transition-opacity  duration-500 `}
+      className={`
+          max-h-full  opacity-100 p-28 transition-opacity  duration-500 `}
     >
       <div className="flex flex-col gap-12">
         <PriceInfo

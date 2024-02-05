@@ -3,7 +3,7 @@ import marketinDigital from "../../../../public/images/adobe-stock-20554870721.p
 import graphic from "@/app/../../public/images/graphic.png";
 import asesoria from "@/app/../../public/images/asesoria.png";
 import interiores from "@/app/../../public/images/interiores.png";
-import { CoursesCard } from ".";
+import { CoursesCard } from "./CoursesCard";
 
 export type cardsProps = {
   id: number;

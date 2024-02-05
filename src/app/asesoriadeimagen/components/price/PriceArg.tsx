@@ -2,13 +2,18 @@
 import React, { useContext } from "react";
 import { PriceInfo } from "./PriceInfo";
 import { CardProp, PriceCard } from "./PriceCard";
-import { hepta_slab } from "@/app/layout";
 import useBooleanStore from "@/app/zustand/useBooleanStore";
+import { Hepta_Slab } from "next/font/google";
 export type priceType = {
   title: string;
   description: string;
   cards: any;
 };
+
+const hepta_slab = Hepta_Slab({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "800", "900"],
+});
 
 const descOne = (
   <p
@@ -81,11 +86,7 @@ export const PriceArg = () => {
   return (
     <section
       id="prices"
-      className={`${
-        booleanValue
-          ? "max-h-full  opacity-100 p-28"
-          : "max-h-0 overflow-hidden opacity-0 "
-      } transition-opacity  duration-500 `}
+      className="max-h-full  opacity-100 p-28 transition-opacity  duration-500 "
     >
       <div className="flex flex-col gap-12">
         <PriceInfo

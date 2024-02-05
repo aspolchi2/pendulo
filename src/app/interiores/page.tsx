@@ -23,13 +23,16 @@ import {
   natalia,
   teacherInteriores,
 } from "../asesoriadeimagen/components/teacher/data";
-import { Offering, PriceArg, Stadistics, Testimonials } from "../components";
-import { Interesed } from "../asesoriadeimagen/components/interesed";
 import { Footer } from "../components/footer";
 import JoinUs from "../asesoriadeimagen/components/joinUs/JoinUs";
 import NextCoursesData from "../asesoriadeimagen/nextCourses/NextCoursesData";
-import PriceOutside from "../components/price/PriceOutside";
+import PriceOutside from "../asesoriadeimagen/components/price/PriceOutside";
 import useBooleanStore from "../zustand/useBooleanStore";
+import { PriceArg } from "../asesoriadeimagen/components/price/PriceArg";
+import { Offering } from "../components/offering/Offering";
+import { Stadistics } from "../components/stadistics/Stadistics";
+import { Testimonials } from "../components/testimonials/Testimonials";
+import { Interesed } from "../asesoriadeimagen/components/interesed/Interesed";
 
 const lexend = Lexend({ subsets: ["latin"] });
 
@@ -80,8 +83,13 @@ export default function Interiores() {
       <Stadistics />
       <JoinUs />
       <NextCoursesData />
-      <PriceArg />
-      <PriceOutside />
+      {booleanValue && (
+        <>
+          {" "}
+          <PriceArg />
+          <PriceOutside />{" "}
+        </>
+      )}{" "}
       <Testimonials />
       <Interesed filter={4} isFilter />
       <Footer />

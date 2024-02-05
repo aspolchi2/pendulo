@@ -3,17 +3,17 @@ import Image from "next/image";
 import React from "react";
 import { Star } from "../svg/Star";
 import { card } from "./Data";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export const TestimonialsCard = ({ pic, name, course, testimonial }: card) => {
   return (
     <motion.article
-      className="bg-yellow flex flex-col py-6 px-9 rounded-[40px] justify-start items-center gap-7"
-      initial={{ opacity: 0, x: 100 }}
-      animate={{ opacity: 1, x: 0 }}
+      className="bg-yellow flex flex-col py-6 px-9 rounded-[40px] justify-start items-center gap-7 h-[500px]"
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
       viewport={{ once: true }}
-      exit={{ transition: { ease: "easeIn", duration: 10 } }}
-      transition={{ duration: 1, type: "spring", stiffness: 200 }}
+      exit={{}}
+      transition={{ duration: 0.5 }}
     >
       <header className="flex flex-col items-center gap-6 ">
         <Image src={pic} alt="" width={107} height={107} className="" />

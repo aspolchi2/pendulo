@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Lexend, Hepta_Slab } from "next/font/google";
 import "./globals.css";
-import { Header } from "./components";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Header } from "./components/header/Header";
 
 export const lexend = Lexend({
   subsets: ["latin"],

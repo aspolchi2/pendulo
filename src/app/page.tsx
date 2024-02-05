@@ -1,21 +1,15 @@
 import Image from "next/image";
-import {
-  Accomplish,
-  AchievedFrame,
-  CoursesCard,
-  CoursesCardList,
-  CoursesFrame,
-  Header,
-  Hero,
-  Offering,
-  Participate,
-  Quotes,
-  Stadistics,
-  Testimonials,
-  WhyPendulo,
-} from "./components";
 import { Footer } from "./components/footer";
 import { Hepta_Slab } from "next/font/google";
+import { Hero } from "./components/Hero/Hero";
+import { CoursesFrame } from "./components/courses/CoursesFrame";
+import { Accomplish } from "./components/accomplish";
+import { AchievedFrame } from "./components/achieved/AchievedFrame";
+import { Offering } from "./components/offering/Offering";
+import { Participate } from "./components/participate/Participate";
+import { Quotes } from "./components/quotes/Quotes";
+import { Testimonials } from "./components/testimonials/Testimonials";
+import { Stadistics } from "./components/stadistics/Stadistics";
 const quote1 =
   "Nos interesan las personas que <strong>se animan a explorar distintas disciplinas y queremos animarlos liberar su potencial </strong>";
 

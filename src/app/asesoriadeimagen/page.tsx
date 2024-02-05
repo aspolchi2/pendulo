@@ -7,20 +7,11 @@ import Questions from "./components/questions/Questions";
 import fotis from "@/../public/images/fotis.png";
 import Modality from "./components/modality/Modality";
 import Teacher from "./components/teacher/Teacher";
-import {
-  Offering,
-  PriceArg,
-  Stadistics,
-  Testimonials,
-  WhyPendulo,
-} from "../components";
 import JoinUs from "./components/joinUs/JoinUs";
 import { lexend } from "../layout";
-import NextCourses from "./nextCourses/NextCourses";
 import NextCoursesData from "./nextCourses/NextCoursesData";
-import PriceOutside from "../components/price/PriceOutside";
+import PriceOutside from "./components/price/PriceOutside";
 import { Footer } from "../components/footer";
-import { Interesed } from "./components/interesed";
 import first from "public/images/firstModalidad.png";
 import second from "public/images/secondModalidad.png";
 import third from "public/images/thirdModalidad.png";
@@ -32,6 +23,11 @@ import {
   teacherAsesoria,
 } from "./components/teacher/data";
 import useBooleanStore from "../zustand/useBooleanStore";
+import { PriceArg } from "./components/price/PriceArg";
+import { Stadistics } from "../components/stadistics/Stadistics";
+import { Testimonials } from "../components/testimonials/Testimonials";
+import { Offering } from "../components/offering/Offering";
+import { Interesed } from "./components/interesed/Interesed";
 
 export default function Home() {
   const imagesForModalidad = [
@@ -39,6 +35,8 @@ export default function Home() {
     { image: second },
     { image: third },
   ];
+
+  const { booleanValue } = useBooleanStore();
 
   return (
     <main className={lexend.className}>
@@ -68,8 +66,13 @@ export default function Home() {
       <Offering />
       <JoinUs />
       <NextCoursesData />
-      <PriceArg />
-      <PriceOutside />
+      {booleanValue && (
+        <>
+          {" "}
+          <PriceArg />
+          <PriceOutside />{" "}
+        </>
+      )}
       <Stadistics />
       <Testimonials />
       <Interesed filter={3} isFilter />

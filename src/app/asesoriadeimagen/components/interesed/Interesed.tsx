@@ -1,6 +1,11 @@
-import { CoursesCardList } from "@/app/components";
-import { hepta_slab } from "@/app/layout";
+import { CoursesCardList } from "@/app/components/courses/CoursesCardList";
 import React from "react";
+import { Hepta_Slab } from "next/font/google";
+
+const hepta_slab = Hepta_Slab({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "800", "900"],
+});
 
 export const Interesed = ({
   filter,
