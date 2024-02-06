@@ -167,3 +167,10 @@ export const interiorModuleTwo: modules[] = [
     description: ["LAS TEXTURAS Y EL COLOR"],
   },
 ];
+
+export const graficoModuleOne: modules[] = [
+  {
+    title: "ADOBE ILLUSTRATOR",
+    description: [],
+  },
+];
