@@ -8,6 +8,7 @@ import { Footer } from "../components/footer";
 import { Stadistics } from "../components/stadistics/Stadistics";
 import { Testimonials } from "../components/testimonials/Testimonials";
 import useBooleanStore from "../zustand/useBooleanStore";
+import Description from "./Description";
 import first from "/public/images/grafico1.png";
 import second from "/public/images/grafico2.png";
 import third from "/public/images/grafico3.png";
@@ -30,6 +31,7 @@ export default function Home() {
         extra="CAPACITACION PROFESIONAL"
       />
       <Modalidad images={imagesForModalidad} />
+      <Description />
 
       {booleanValue && (
         <>
