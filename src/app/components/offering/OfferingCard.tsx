@@ -11,8 +11,8 @@ export const OfferingCard = ({ svg, title, description }: MyData) => {
           dangerouslySetInnerHTML={{ __html: title }}
         ></p>
       </header>
-      <main className="w-10/12">
-        <p className="text-center h-[131px] w-9/12 m-auto">
+      <main className="w-9/12">
+        <p className="text-center h-[131px]  m-auto">
           <span dangerouslySetInnerHTML={{ __html: description }} />
         </p>
       </main>

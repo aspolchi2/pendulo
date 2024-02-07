@@ -19,6 +19,8 @@ import marketing3 from "/public/images/marketing3.png";
 import marketingSep from "/public/images/marketingSep.png";
 import Modality from "../asesoriadeimagen/components/modality/Modality";
 import { dataGrafico } from "../asesoriadeimagen/components/modality/data";
+import ModulesGrafico from "../grafico/ModulesGrafico";
+import ModulesMarketing from "./ModulesMarketing";
 
 const marketingArray = [
   { image: marketing1 },
@@ -44,8 +46,13 @@ export default function Home() {
       />
       <Modalidad images={marketingArray} formacion={formacion} />
       <Description />
-
-      <Image src={marketingSep} alt="marketing" width={1900} height={0} />
+      <ModulesMarketing />
+        <Image
+          src={marketingSep}
+          alt="marketing"
+          width={1920}
+          height={800}
+        />
       <Modality text={dataGrafico} />
       <Offering />
       <JoinUs />

@@ -1,15 +1,16 @@
 import React from "react";
+import '../globals.css'
 
 const Description = () => {
   return (
-    <section className="px-32 py-28 flex flex-col gap-16">
+    <section className="px-32 py-28 flex flex-col gap-16 ">
       <div className="grid grid-flow-col grid-cols-2">
         <div className="col-span-1">
-          <p className="font-bold text-primary text-[28px] lexend w-[512px] m-auto">
+          <p className="font-bold text-primary text-[28px]  w-[512px] m-auto">
             ¿Por qué aprender Marketing Digital en Péndulo?
           </p>
         </div>
-        <div className="col-span-2 flex flex-col hepta_slab text-xl gap-10">
+        <div className="col-span-2 flex flex-col  hepta_slab text-xl gap-10">
           <p className="w-9/12 m-auto">
             En esta capacitación, el participante va a adquirir{" "}
             <span className="text-primary font-bold">

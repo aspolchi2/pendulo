@@ -9,7 +9,7 @@ const Questions = () => {
           <p className="font-bold text-3xl text-primary">
             ¿Qué hace un profesional <br /> de la asesoría de imagen?
           </p>
-          <p className={`${hepta_slab.className} w-[563px]`}>
+          <p className="hepta_slab w-[563px]">
             {" "}
             Un asesor o asesora de imagen es una persona que acompaña a su{" "}
             <span className="text-primary font-bold">
@@ -29,7 +29,7 @@ const Questions = () => {
           <p className="font-bold text-3xl text-primary">
             ¿Qué vas a aprender en el curso?
           </p>
-          <p className={`${hepta_slab.className} w-[563px]`}>
+          <p className="hepta_slab w-[563px]">
             {" "}
             Aprenderás las herramientas para ofrecer el servicio de
             asesoramiento de imagen de forma profesional,
