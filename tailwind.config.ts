@@ -21,6 +21,7 @@ const config: Config = {
         historiaHero: "url('./images/historiaHero.png')",
         historiaSep: "url('./images/historiaSep.png')",
         diseno: "url('./images/diseno.png')",
+        marketingBg: "url('./images/marketingBg.png')",
       },
       colors: {
         accent: "#E05FE0",

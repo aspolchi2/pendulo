@@ -36,6 +36,11 @@ export default function Home() {
     { image: second },
     { image: third },
   ];
+  const formacion = (
+    <p className="text-white text-center">
+      FORMACION <br /> ANUAL
+    </p>
+  );
 
   return (
     <main>
@@ -46,7 +51,7 @@ export default function Home() {
         span="Gráfico"
         extra="CAPACITACION PROFESIONAL"
       />
-      <Modalidad images={imagesForModalidad} />
+      <Modalidad images={imagesForModalidad} formacion={formacion} />
 
       <Description />
       <ModulesGrafico />

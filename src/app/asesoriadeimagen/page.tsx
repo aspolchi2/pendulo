@@ -38,6 +38,12 @@ export default function Home() {
 
   const { booleanValue } = useBooleanStore();
 
+  const formacion = (
+    <p className="text-white text-center">
+      FORMACION <br /> ANUAL
+    </p>
+  );
+
   return (
     <main className={lexend.className}>
       <Hero
@@ -46,7 +52,7 @@ export default function Home() {
         text="CAPACITACIÓN PROFESIONAL"
         title="Asesoría"
       />
-      <Modalidad images={imagesForModalidad} />
+      <Modalidad images={imagesForModalidad} formacion={formacion} />
       <Questions />
       <Modules
         moduleOne={moduleOne}

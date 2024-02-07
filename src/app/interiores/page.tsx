@@ -50,6 +50,12 @@ export default function Interiores() {
       image: interiores3,
     },
   ];
+
+  const formacion = (
+    <p className="text-white text-center">
+      FORMACION <br /> ANUAL
+    </p>
+  );
   return (
     <div className={lexend.className}>
       <Hero
@@ -58,7 +64,7 @@ export default function Interiores() {
         title="Diseño"
         text="CAPACITACIÓN PROFESIONAL"
       />
-      <Modalidad images={interioresArray} />
+      <Modalidad images={interioresArray} formacion={formacion} />
       <Questions />
       <Modules
         moduleOne={interiorModuleOne}

@@ -102,3 +102,32 @@ const grafico3 = (
 );
 
 export const dataGrafico = [grafico1, grafico2, grafico3];
+
+const marketing1 = (
+  <p className="w-[57ch] text-2xl font-extrabold">
+    Personas que busquen iniciarse por primera vez en el{" "}
+    <span className="text-primary">
+      Marketing Digital para la práctica profesional.
+    </span>
+  </p>
+);
+
+const marketing2 = (
+  <p className="w-[57ch] text-2xl font-extrabold">
+    Estudiantes y profesionales de carreras afines que
+    <span className="text-primary">
+      quieran complementar su formación para poder ofrecer un servicio integral
+      a sus clientes
+    </span>
+    (diseñadores en comunicación visual, fotógrafos, desarrolladores web, etc).
+  </p>
+);
+
+const marketing3 = (
+  <p className="w-[57ch] text-2xl font-extrabold">
+    Emprendedores, figuras públicas y comerciantes que necesiten obtener
+    herramientas para llevar adelante su proyecto.
+  </p>
+);
+
+export const marketingArray = [marketing1, marketing2, marketing3];

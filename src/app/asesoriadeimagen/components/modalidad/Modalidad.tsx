@@ -6,7 +6,13 @@ import { TrianguloRosa } from "@/app/components/svg/TrianguloRosa";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 
-const Modalidad = ({ images }: { images: { image: StaticImageData }[] }) => {
+const Modalidad = ({
+  images,
+  formacion,
+}: {
+  images: { image: StaticImageData }[];
+  formacion: any;
+}) => {
   return (
     <section className="flex flex-col  bg-primary ">
       <div className="bg-primary flex w-10/12 m-auto justify-around items-center h-[350px] font-medium">
@@ -19,9 +25,7 @@ const Modalidad = ({ images }: { images: { image: StaticImageData }[] }) => {
         </div>
         <div className="flex flex-col justify-center items-center gap-6">
           <Calendar />
-          <p className="text-white text-center">
-            5 MESES DE <br /> DURACIÓN
-          </p>
+          {formacion}
         </div>
         <div className="flex flex-col justify-center items-center gap-6">
           <Red fill="white" />

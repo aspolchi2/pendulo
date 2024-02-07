@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Lexend, Hepta_Slab } from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";

@@ -18,7 +18,7 @@ export type cardsProps = {
 const cards: cardsProps[] = [
   {
     id: 1,
-    href: "marketingdigital",
+    href: "marketing",
     title: "Marketing Digital",
     description:
       "Aprende a gestionar las redes sociales y plataformas digitales de una marca o emprendimiento a través del desarrollo de la creatividad y el pensamiento estratégico para lograr tus objetivos.",
