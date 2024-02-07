@@ -71,3 +71,34 @@ export const dataInterior = [
   textInterior3,
   textInterior4,
 ];
+
+const grafico1 = (
+  <p className="w-[57ch] text-2xl text-primary  font-extrabold">
+    Estudiantes y profesionales{" "}
+    <span className=" font-medium text-2xl text-black">
+      de diseño, arquitectura, informática, artes audiovisuales, periodismo,
+      trabajadores de imprentas y afines.
+    </span>
+  </p>
+);
+const grafico2 = (
+  <p className="w-[57ch] text-2xl text-primary  font-extrabold">
+    Emprendedores o personas que tengan su propio negocio{" "}
+    <span className="font-medium text-2xl text-black">
+      y quieran desarrollar de manera autónoma las piezas gráficas de su propio
+      emprendimiento.
+    </span>{" "}
+  </p>
+);
+
+const grafico3 = (
+  <p className="w-[57ch] text-2xl text-primary  font-extrabold">
+    Cualquier persona interesada en desarrollar sus propias piezas de diseño
+    gráfico{" "}
+    <span className="text-black font-medium">
+      (tarjetas, logos, etiquetas, etc)
+    </span>
+  </p>
+);
+
+export const dataGrafico = [grafico1, grafico2, grafico3];

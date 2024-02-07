@@ -26,7 +26,7 @@ export const Divider = ({
 
 const lexend = Lexend({ weight: ["800", "500"], subsets: ["latin"] });
 
-const Modality = ({ text }: any) => {
+const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
   return (
     <section className={`${lexend.className} ${lexend.style} p-32`}>
       <Divider title={"PROPUESTA EDUCATIVA"} />
@@ -77,6 +77,35 @@ const Modality = ({ text }: any) => {
           </p>
         </div>
       </div>
+      {extra && (
+        <div className="mt-12">
+          <Divider title="REQUISITOS PARA TOMAR LA CAPACITACIÓN" />
+          <div className="flex  justify-center align-top gap-6 pt-20">
+            <PcSmall />
+            <p className="w-[65ch] text-2xl">
+              <span className="text-primary font-extrabold">Computadora </span>
+              portátil o de escritorio{" "}
+              <span className="text-primary font-extrabold ">
+                que cuente con los programas Adobe Illustrator y Adobe Photoshop
+                instalados.{" "}
+              </span>
+              Además se recomienda contar con un mouse para el uso de los
+              programas.
+            </p>
+          </div>
+          <div className="flex  justify-center align-top gap-6 pt-20">
+            <Ligth />
+            <p className="w-[65ch] text-2xl">
+              <span className="text-primary font-extrabold ">
+                Contar con conocimientos básicos a intermedios de informática.
+              </span>{" "}
+              Se recomienda saber crear carpetas en windows o mac, descargar
+              archivos de internet, copiar y pegar documentos, descargar
+              archivos desde un pen drive, etc.
+            </p>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

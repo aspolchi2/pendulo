@@ -26,7 +26,7 @@ const cards: cardsProps[] = [
   },
   {
     id: 2,
-    href: "diseñografico",
+    href: "grafico",
     title: "Diseño Gráfico",
     description:
       "Inicia tu recorrido en esta apasionante disciplina apren- diendo a usar las herramientas profesionales e incorporando los principales fundamentos de color, diagramación y tipografía necesarios para lograr piezas gráficas increíbles.",

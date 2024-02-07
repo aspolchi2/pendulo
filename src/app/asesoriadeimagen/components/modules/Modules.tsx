@@ -19,7 +19,7 @@ const Modules = ({
       <p className="text-right text-xl text-white pb-2">CONTENIDOS</p>
       <div className="h-px bg-white"></div>
       <div
-        className={`${hepta_slab.className} text-yellow flex justify-between pt-[98px] text-6xl font-bold pb-16`}
+        className={`${hepta_slab.className} text-yellow flex justify-between px-10 pt-[98px] text-6xl font-bold pb-16`}
       >
         <p>Módulo</p>
         <p>.01</p>
@@ -49,7 +49,7 @@ const Modules = ({
         <div className="h-px bg-white"></div>
       </div>
       <div
-        className={`${hepta_slab.className} text-yellow flex justify-between pt-[98px] text-6xl font-bold pb-16`}
+        className={`${hepta_slab.className} text-yellow flex justify-between px-10 pt-[98px] text-6xl font-bold pb-16`}
       >
         <p>Módulo</p>
         <p>.02</p>

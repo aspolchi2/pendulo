@@ -171,6 +171,26 @@ export const interiorModuleTwo: modules[] = [
 export const graficoModuleOne: modules[] = [
   {
     title: "ADOBE ILLUSTRATOR",
-    description: [],
+    description: [
+      "Introducción al programa: Uso de interfaz y espacio de trabajo. Atajos del teclado.",
+      " Herramientas: Selección directa. Creación de formas. Rellenos de color y degradado. Trazo. Texto: carácter y párrafo. Cuentagotas. Alineación y organización de elementos. Rotación y espejado. Líneas guía. Selección indirecta. Uso de nodos. Herramienta pluma. Buscatrazos. Uso de capas y máscaras.",
+      "· Preparación de archivo para impresión: Ajustes de salida. Exportación de archivos.",
+    ],
+  },
+  {
+    title: "ADOBE PHOTOSHOP",
+    description: [
+      "Introducción al programa: Uso de interfaz y espacio de trabajo.",
+      " Herramientas: Selección: lazos, varita mágica. Uso de capas. Modos de fusión. Ajustes de fotografía: iluminación, color, saturación. Pincel corrector. Tampón de clonar. Máscaras. Ajustes de salida. Exportación.",
+      "· Preparación de archivo para impresión: Ajustes de salida. Exportación de archivos.",
+    ],
+  },
+  {
+    title: "INTRODUCCIÓN A LA IMAGEN DIGITAL",
+    description: [
+      "Diferencia entre imágenes bitmap e imágenes vectoriales.",
+      "Resolución de imágenes.",
+      "Preparación de archivos para impresión o uso en redes sociales.",
+    ],
   },
 ];
