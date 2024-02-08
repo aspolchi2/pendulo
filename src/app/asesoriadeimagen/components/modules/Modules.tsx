@@ -26,26 +26,41 @@ const Modules = ({
       </div>
       <div className="h-px bg-white"></div>
       <div className="grid grid-cols-2 grid-rows-2  w-full bg-white gap-[1px]">
-        {moduleOne.map(({ title, description }) => (
-          <div
-            className="relative bg-primary flex justify-center items-center text-white h-60"
-            key={title}
-          >
-            <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0">
-              <p className="w-[25ch] text-center">{title}</p>
+        {moduleOne.map(({ title, description }) => {
+          console.log(description);
+          return (
+            <div
+              className="relative bg-primary flex justify-center items-center text-white h-60"
+              key={title}
+            >
+              <div
+                className={` bg-cover bg-center  ${
+                  description.length !== 0
+                    ? "hover:opacity-0 inset-0 z-0"
+                    : "z-10"
+                }`}
+              >
+                <p className="w-[25ch] text-center">{title}</p>
+              </div>
+              {description.length === 0 ? (
+                <div></div>
+              ) : (
+                <div
+                  className={`opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col`}
+                >
+                  <ul className="bg-primary text-lg w-[450px]">
+                    {description.map((desc, i) => (
+                      <span key={i} className="flex gap-1">
+                        <span>·</span>
+                        <li className="leading-6">{desc}</li>
+                      </span>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
-            <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
-              <ul className="bg-primary text-lg w-[450px]">
-                {description.map((desc, i) => (
-                  <span key={i} className="flex gap-1">
-                    <span>·</span>
-                    <li className="leading-6">{desc}</li>
-                  </span>
-                ))}
-              </ul>
-            </div>
-          </div>
-        ))}
+          );
+        })}
         <div className="h-px bg-white"></div>
       </div>
       <div
@@ -61,7 +76,13 @@ const Modules = ({
             className="relative bg-primary flex justify-center items-center text-white w-full"
             key={title}
           >
-            <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0">
+            <div
+              className={` bg-cover bg-center  ${
+                description.length !== 0
+                  ? "hover:opacity-0 inset-0 z-0"
+                  : "z-10"
+              }`}
+            >
               <p className="w-[25ch] text-center">{title}</p>
             </div>
             <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col w-full">

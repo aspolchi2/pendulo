@@ -15,15 +15,15 @@ const ModulesGrafico = () => {
         <p className="text-white text-3xl ">HERRAMIENTAS DEL DISEÑO</p>
       </div>
       <div className="h-px bg-white"></div>
-      <div className="grid grid-cols-2 grid-rows-2  w-full bg-white gap-[1px]">
-        <div className="relative bg-primary flex justify-center items-center text-white h-80">
+      <div className="grid grid-cols-2   w-full bg-white gap-[1px]">
+        <div className="relative bg-primary flex justify-center items-center text-white h-96">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0">
             <p className="w-[25ch] text-center font-bold">
               ADOBE ILLUSTRATOR <br />| Manejo de software
             </p>
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
-            <ul className="bg-primary text-lg w-[450px] flex flex-col gap-3">
+            <ul className="bg-primary text-lg w-[450px] flex flex-col gap-8">
               <span className="flex gap-1">
                 <span>·</span>
                 <li className="leading-6">
@@ -58,14 +58,14 @@ const ModulesGrafico = () => {
             </ul>
           </div>
         </div>
-        <div className="relative bg-primary flex justify-center items-center text-white h-80">
+        <div className="relative bg-primary flex justify-center items-center text-white h-96">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0">
             <p className="w-[25ch] text-center font-bold">
               ADOBE PHOTOSHOP <br />| Manejo de software
             </p>
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
-            <ul className="bg-primary text-lg w-[450px] flex flex-col gap-3">
+            <ul className="bg-primary text-lg w-[450px] flex flex-col gap-8">
               <span className="flex gap-1">
                 <span>·</span>
                 <li className="leading-6">
@@ -99,7 +99,7 @@ const ModulesGrafico = () => {
             </ul>
           </div>
         </div>
-        <div className="col-span-2 relative bg-primary flex justify-center items-center text-white h-80 ">
+        <div className="col-span-2 relative bg-primary flex justify-center items-center text-white h-64 ">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0">
             <p className="w-[25ch] text-center font-bold">
               INTRODUCCIÓN A LA IMAGEN DIGITAL
@@ -140,15 +140,15 @@ const ModulesGrafico = () => {
         <p className="text-white text-3xl ">HERRAMIENTAS DEL DISEÑO</p>
       </div>
       <div className="h-px bg-white"></div>
-      <div className="grid grid-cols-2 grid-rows-2  w-full bg-white gap-[1px]">
-        <div className="relative bg-primary flex justify-center items-center text-white h-80">
+      <div className="grid grid-cols-2   w-full bg-white gap-[1px]">
+        <div className="relative bg-primary flex justify-center items-center text-white h-96">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0">
             <p className="w-[25ch] text-center font-bold">
               INTRODUCCIÓN AL DISEÑO Y LA COMUNICACIÓN VISUAL
             </p>
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
-            <ul className="bg-primary text-lg w-[450px] flex flex-col gap-3">
+            <ul className="bg-primary text-lg w-[450px] flex flex-col gap-8">
               <span className="flex gap-1">
                 <span>·</span>
                 <li className="leading-6">
@@ -170,14 +170,14 @@ const ModulesGrafico = () => {
             </ul>
           </div>
         </div>
-        <div className="relative bg-primary flex justify-center items-center text-white h-80">
+        <div className="relative bg-primary flex justify-center items-center text-white h-96">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0">
             <p className="w-[25ch] text-center font-bold">
               COMPOSICIÓN Y LENGUAJE VISUAL
             </p>
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
-            <ul className="bg-primary text-lg w-[450px] flex flex-col gap-3">
+            <ul className="bg-primary text-lg w-[450px] flex flex-col gap-8">
               <span className="flex gap-1">
                 <span>·</span>
                 <li className="leading-6">
@@ -218,7 +218,7 @@ const ModulesGrafico = () => {
             </ul>
           </div>
         </div>
-        <div className="col-span-2 relative bg-primary flex justify-center items-center text-white h-80 ">
+        <div className="col-span-2 relative bg-primary flex justify-center items-center text-white h-64 ">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0">
             <p className="w-[25ch] text-center font-bold">
               IDENTIDAD / BRANDING

@@ -100,11 +100,11 @@ export const interiorTextModule =
 export const interiorModuleOne: modules[] = [
   {
     title: "INTRODUCCIÓN AL INTERIORISMO",
-    description: ["INTRODUCCIÓN AL INTERIORISMO"],
+    description: [],
   },
   {
     title: " MOVIMIENTOS ARTÍSTICOS Y ORIGEN DEL DISEÑO",
-    description: ["MOVIMIENTOS ARTÍSTICOS Y ORIGEN DEL DISEÑO"],
+    description: [],
   },
   {
     title: "PLANIMÉTRICA",
@@ -136,11 +136,11 @@ export const interiorModuleOne: modules[] = [
 export const interiorModuleTwo: modules[] = [
   {
     title: "REPASO MÓDULO 1",
-    description: ["REPASO MÓDULO 1"],
+    description: [],
   },
   {
     title: "ESTILOS DECORATIVOS, OBJETOS DE DECORACIÓN",
-    description: ["ESTILOS DECORATIVOS, OBJETOS DE DECORACIÓN"],
+    description: [],
   },
   {
     title: "ILUMINACIÓN",
@@ -160,11 +160,11 @@ export const interiorModuleTwo: modules[] = [
   },
   {
     title: "TENDENCIAS ACTUALES EN EL DISEÑO",
-    description: ["TENDENCIAS ACTUALES EN EL DISEÑO"],
+    description: [],
   },
   {
     title: "LAS TEXTURAS Y EL COLOR",
-    description: ["LAS TEXTURAS Y EL COLOR"],
+    description: [],
   },
 ];
 
