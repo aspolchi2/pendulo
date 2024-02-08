@@ -41,7 +41,7 @@ export default function Home() {
       <AchievedFrame />
       <Offering />
       <Participate />
-      <Quotes bg="bg-[#F0EBEB]">
+      <Quotes bg="bg-black">
         <Text />
       </Quotes>
       <Testimonials />

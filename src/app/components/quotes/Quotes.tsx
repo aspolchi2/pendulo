@@ -4,7 +4,7 @@ import leftCoute from "@/../public/images/leftcoutes.png";
 import rightCoute from "@/../public/images/rightcuotes.png";
 export const Quotes = ({ bg, children }: { bg: string; children?: any }) => {
   return (
-    <div className={`${bg}`}>
+    <section className={`${bg}`}>
       <div className="py-72 w-10/12 m-auto">
         <div className="w-full relative flex ">
           <Image
@@ -21,6 +21,6 @@ export const Quotes = ({ bg, children }: { bg: string; children?: any }) => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
