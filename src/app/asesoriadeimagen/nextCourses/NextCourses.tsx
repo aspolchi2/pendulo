@@ -2,14 +2,25 @@
 import useBooleanStore from "@/app/zustand/useBooleanStore";
 import React from "react";
 
-export const NextCourses = ({ data }: { data: any }) => {
+export const NextCourses = ({
+  data,
+  oferta,
+}: {
+  data: any;
+  oferta?: boolean;
+}) => {
   const { toggle, booleanValue } = useBooleanStore();
 
   const scrollToTarget = () => {
     toggle();
-    const element = document.getElementById("prices");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+
+    if (!oferta) {
+      setTimeout(() => {
+        const element = document.getElementById("prices");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
     }
   };
 
@@ -39,6 +50,19 @@ export const NextCourses = ({ data }: { data: any }) => {
           </div>
         </div>
       </div>
+      {booleanValue && oferta && (
+        <div className="bg-black lexend text-4xl text-white p-20 text-center flex flex-col gap-10">
+          <p className="w-8/12 m-auto">
+            Accedé a un 30% de descuento y precio congelado por inscripción
+            anticipada con horario y fecha abierta.
+          </p>
+          <p className="w-8/12 m-auto">
+            ¡Si no podés en el horario las clases quedan grabadas! <br />{" "}
+            ¡También podés guardar el cupo para otro horario por una validez de
+            5 años!
+          </p>
+        </div>
+      )}
     </section>
   );
 };

@@ -65,7 +65,7 @@ export default function Home() {
       <Teacher teacher={melinaQuevedo} name={"Melina Quevedo"} li={li} />
       <Offering />
       <JoinUs />
-      <NextCoursesData />
+      <NextCoursesData oferta />
       {booleanValue && (
         <>
           <PriceArg />

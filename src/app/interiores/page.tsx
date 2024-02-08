@@ -88,7 +88,7 @@ export default function Interiores() {
       <Offering />
       <Stadistics />
       <JoinUs />
-      <NextCoursesData />
+      <NextCoursesData oferta />
       {booleanValue && (
         <>
           {" "}
