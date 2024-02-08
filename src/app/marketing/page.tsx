@@ -17,16 +17,29 @@ import marketing1 from "/public/images/marketing1.png";
 import marketing2 from "/public/images/marketing2.png";
 import marketing3 from "/public/images/marketing3.png";
 import marketingSep from "/public/images/marketingSep.png";
+import melinaQuevedo from "/public/images/melinaQuevedo.png";
 import Modality from "../asesoriadeimagen/components/modality/Modality";
 import { dataGrafico } from "../asesoriadeimagen/components/modality/data";
 import ModulesGrafico from "../grafico/ModulesGrafico";
 import ModulesMarketing from "./ModulesMarketing";
+import Teacher from "../asesoriadeimagen/components/teacher/Teacher";
 
 const marketingArray = [
   { image: marketing1 },
   { image: marketing2 },
   { image: marketing3 },
 ];
+
+const li = (
+  <>
+    <li>· Social Media Manager. </li>
+    <li>· Creadora de contenido creativo y estrategia. </li>
+    <li>· Directora creativa de Raster agencia. </li>
+    <li>
+      · Diseñadora en Comunicación Visual de la Facultad de Artes de la UNLP.
+    </li>
+  </>
+);
 
 export default function Home() {
   const formacion = (
@@ -47,13 +60,9 @@ export default function Home() {
       <Modalidad images={marketingArray} formacion={formacion} />
       <Description />
       <ModulesMarketing />
-        <Image
-          src={marketingSep}
-          alt="marketing"
-          width={1920}
-          height={800}
-        />
+      <Image src={marketingSep} alt="marketing" width={1920} height={800} />
       <Modality text={dataGrafico} />
+      <Teacher teacher={melinaQuevedo} name={"Melina Quevedo"} li={li} />
       <Offering />
       <JoinUs />
       <NextCoursesData />

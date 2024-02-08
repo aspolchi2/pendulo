@@ -19,7 +19,7 @@ const TeacherGrafico = () => {
           <p className={`hepta_slab text-white text-6xl`}>
             Tania <br /> Paez
           </p>
-          <span className="float-right absolute left-48 -top-10 ">
+          <span className="float-right absolute left-80 -top-10 ">
             <TrianguloRosa fill="white" />
           </span>
           <p className="lexend text-2xl font-medium ">
