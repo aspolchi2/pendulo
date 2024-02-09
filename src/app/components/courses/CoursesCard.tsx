@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { hepta_slab } from "@/app/layout";
 import { cardsProps } from "./CoursesCardList";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export const CoursesCard = ({
   id,
@@ -14,7 +16,16 @@ export const CoursesCard = ({
   isFilter,
 }: cardsProps) => {
   return (
-    <article className="bg-white shadow-md flex flex-col  flex-shrink-0 justify-center p-9 ">
+    <motion.article
+      initial={{
+        opacity: 0,
+        y: 100,
+      }}
+      transition={{ duration: id * 0.3 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      className="bg-white shadow-md flex flex-col  flex-shrink-0 justify-center p-9 "
+    >
       <header>
         {!isFilter && (
           <p
@@ -49,6 +60,6 @@ export const CoursesCard = ({
           +INFORMACIÓN
         </Link>
       </footer>
-    </article>
+    </motion.article>
   );
 };

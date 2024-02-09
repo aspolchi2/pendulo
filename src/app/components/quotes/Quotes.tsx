@@ -1,7 +1,10 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import leftCoute from "@/../public/images/leftcoutes.png";
 import rightCoute from "@/../public/images/rightcuotes.png";
+import { motion } from "framer-motion";
+
 export const Quotes = ({ bg, children }: { bg: string; children?: any }) => {
   return (
     <section className={`${bg}`}>
@@ -12,7 +15,15 @@ export const Quotes = ({ bg, children }: { bg: string; children?: any }) => {
             alt="leftCoute "
             className="absolute -left-10 -top-10"
           />
-          {children}
+          <motion.span
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="z-10"
+          >
+            {children}
+          </motion.span>
 
           <Image
             src={rightCoute}
