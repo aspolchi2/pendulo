@@ -14,15 +14,12 @@ export const AchievedCard: React.FC<Propuesta> = ({
   reappear,
 }: Propuesta) => {
   const isEven = id % 2 === 0;
-  //@ts-ignore
-  const [containerRef, isVisible] = useElementOnScreen({
-    reappear: reappear,
-    threshold: 0.5,
-  });
+
+  // Use optional chaining to handle potential undefined image
+  const validImage = image || "/default-image.jpg";
 
   return (
     <motion.article
-      ref={containerRef}
       className="w-[1115px] m-auto flex justify-center - gap-10 h-[350px] "
       initial={isEven ? { opacity: 0, x: 100 } : { opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0 }}
@@ -51,7 +48,7 @@ export const AchievedCard: React.FC<Propuesta> = ({
         <main className={`flex gap-3 ${isEven && "flex-row-reverse "}`}>
           <p className={`pt-3`}>{id}</p>
           <Image
-            src={image}
+            src={validImage}
             alt=""
             width={455}
             height={312}

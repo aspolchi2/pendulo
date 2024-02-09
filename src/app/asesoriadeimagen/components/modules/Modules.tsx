@@ -30,7 +30,7 @@ const Modules = ({
           console.log(description);
           return (
             <div
-              className="relative bg-primary flex justify-center items-center text-white h-60"
+              className="relative bg-primary flex justify-center items-center text-white h-72"
               key={title}
             >
               <div
@@ -40,15 +40,15 @@ const Modules = ({
                     : "z-10"
                 }`}
               >
-                <p className="w-[25ch] text-center">{title}</p>
+                <p className="w-[25ch] text-center text-xl">{title}</p>
               </div>
               {description.length === 0 ? (
                 <div></div>
               ) : (
                 <div
-                  className={`opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col`}
+                  className={`opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-base text-white font-semibold bg-primary flex-col`}
                 >
-                  <ul className="bg-primary text-lg w-[450px]">
+                  <ul className="bg-primary  w-[450px] flex flex-col gap-1">
                     {description.map((desc, i) => (
                       <span key={i} className="flex gap-1">
                         <span>·</span>
@@ -83,14 +83,14 @@ const Modules = ({
                   : "z-10"
               }`}
             >
-              <p className="w-[25ch] text-center">{title}</p>
+              <p className="w-[25ch] text-center text-xl">{title}</p>
             </div>
             <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col w-full">
-              <ul className="bg-primary text-lg w-[450px] flex flex-col  ">
+              <ul className="bg-primary text-base w-[450px] flex flex-col  gap-1 ">
                 {description.map((desc, i) => (
                   <span key={i} className="flex gap-1">
                     <span>·</span>
-                    <li className="leading-6">{desc}</li>
+                    <li className="leading-6 ">{desc}</li>
                   </span>
                 ))}
               </ul>
