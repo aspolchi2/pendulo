@@ -17,7 +17,7 @@ const links: linksProp[] = [
   {
     id: crypto.randomUUID(),
     label: "propuesta",
-    href: "/propuesta",
+    href: "/",
   },
   {
     id: crypto.randomUUID(),
