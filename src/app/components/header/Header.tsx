@@ -13,28 +13,7 @@ type linksProp = {
   href: string;
 };
 
-const links: linksProp[] = [
-  {
-    id: crypto.randomUUID(),
-    label: "propuesta",
-    href: "/",
-  },
-  {
-    id: crypto.randomUUID(),
-    label: "historia",
-    href: "/historia",
-  },
-  {
-    id: crypto.randomUUID(),
-    label: "testimonios",
-    href: "#testimonios",
-  },
-  {
-    id: crypto.randomUUID(),
-    label: "cursos",
-    href: "#cursos",
-  },
-];
+
 
 const icons = [
   {
@@ -72,7 +51,7 @@ export const Header = ({ bg, position }: { bg: string; position: string }) => {
         </Link>
         <ul className="flex gap-10 items-end text-[1.125rem] uppercase text-accent">
           <li className="">
-            <Link href={"/propuesta"}>propuesta</Link>
+            <Link href={"/"}>propuesta</Link>
           </li>
           <li className="">
             <Link href={"/historia"}>historia</Link>
