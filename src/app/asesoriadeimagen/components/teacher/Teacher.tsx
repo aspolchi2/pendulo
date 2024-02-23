@@ -32,7 +32,9 @@ const Teacher = ({
         </div>
       </div>
       <div className="flex justify-center pt-8 text-white">
-        <p className={`${lexend.className} w-8/12 text-2xl `}>{extraText}</p>
+        <p className={`${lexend.className} 2xl:w-8/12 xl:text-2xl text-md `}>
+          {extraText}
+        </p>
       </div>
     </section>
   );

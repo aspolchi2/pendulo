@@ -19,7 +19,10 @@ import marketing3 from "/public/images/marketing3.png";
 import marketingSep from "/public/images/marketingSep.png";
 import melinaQuevedo from "/public/images/melinaQuevedo.png";
 import Modality from "../asesoriadeimagen/components/modality/Modality";
-import { dataGrafico } from "../asesoriadeimagen/components/modality/data";
+import {
+  dataGrafico,
+  dataMarketing,
+} from "../asesoriadeimagen/components/modality/data";
 import ModulesGrafico from "../grafico/ModulesGrafico";
 import ModulesMarketing from "./ModulesMarketing";
 import Teacher from "../asesoriadeimagen/components/teacher/Teacher";
@@ -60,8 +63,14 @@ export default function Home() {
       <Modalidad images={marketingArray} formacion={formacion} />
       <Description />
       <ModulesMarketing />
-      <Image src={marketingSep} alt="marketing" width={1920} height={800} />
-      <Modality text={dataGrafico} />
+      <Image
+        src={marketingSep}
+        alt="marketing"
+        width={1920}
+        height={800}
+        className="w-screen"
+      />
+      <Modality text={dataMarketing} />
       <Teacher teacher={melinaQuevedo} name={"Melina Quevedo"} li={li} />
       <Offering />
       <JoinUs />

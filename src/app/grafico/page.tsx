@@ -56,7 +56,13 @@ export default function Home() {
       <Description />
       <ModulesGrafico />
       <div className="w-screen">
-        <Image src={graficoSep.src} alt="grafico" width={2000} height={1100} />
+        <Image
+          src={graficoSep.src}
+          alt="grafico"
+          width={2000}
+          height={1100}
+          className="w-screen"
+        />
       </div>
       <Modality text={dataGrafico} extra />
       <TeacherGrafico />

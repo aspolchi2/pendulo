@@ -61,7 +61,13 @@ export const CoursesCardList = ({
     ? cards.filter((card) => card.id !== filter)
     : cards;
   return (
-    <div className="grid grid-cols-2 2xl:grid-cols-4 gap-4">
+    <div
+      className={`grid gap-4 ${
+        filter
+          ? "md:grid-cols-2 xl:grid-cols-3 "
+          : "grid-cols-2 2xl:grid-cols-4"
+      }`}
+    >
       {filteredCards.map((card) => (
         <CoursesCard
           key={card.id}

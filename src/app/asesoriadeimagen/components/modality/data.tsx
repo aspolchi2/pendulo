@@ -1,6 +1,6 @@
 const textAsesoria1 = (
-  <p className="w-[65ch] text-2xl">
-    <span className="text-primary font-extrabold text-2xl">
+  <p className="w-[65ch] 2xl:text-2xl xl:text-xl">
+    <span className="text-primary font-extrabold ">
       Profesionales de disciplinas afines que busquen adquirir mayores
       herramientas para el ejercicio de su Profesión:{" "}
     </span>
@@ -10,8 +10,8 @@ const textAsesoria1 = (
 );
 
 const textAsesoria2 = (
-  <p className="w-[65ch] text-2xl">
-    <span className="text-primary font-extrabold text-2xl">
+  <p className="w-[65ch] 2xl:text-2xl xl:text-xl">
+    <span className="text-primary font-extrabold ">
       {" "}
       Personas que busquen iniciarse en el Asesoramiento de Imagen{" "}
     </span>{" "}
@@ -20,8 +20,8 @@ const textAsesoria2 = (
 );
 
 const textAsesoria3 = (
-  <p className="w-[65ch] text-2xl">
-    <span className="text-primary font-extrabold text-2xl">
+  <p className="w-[65ch] 2xl:text-2xl xl:text-xl">
+    <span className="text-primary font-extrabold ">
       Personas interesadas en adquirir las principales herramientas{" "}
     </span>{" "}
     del asesoramiento de imagen para aplicarlas a su propia imagen.
@@ -31,18 +31,18 @@ const textAsesoria3 = (
 export const dataAsesoria = [textAsesoria1, textAsesoria2, textAsesoria3];
 
 const textInterior1 = (
-  <p className="w-[65ch] text-2xl">
+  <p className="w-[65ch] 2xl:text-2xl xl:text-xl">
     Personas que busquen{" "}
-    <span className="text-primary font-extrabold text-2xl">
+    <span className="text-primary font-extrabold ">
       iniciarse por primera vez en el Diseño de Interiores para la práctica
       profesional.
     </span>
   </p>
 );
 const textInterior2 = (
-  <p className="w-[65ch] text-2xl">
+  <p className="w-[65ch] 2xl:text-2xl xl:text-xl">
     Estudiantes y profesionales de carreras afines que{" "}
-    <span className="text-primary font-extrabold text-2xl">
+    <span className="text-primary font-extrabold ">
       quieran complementar su formación para poder ofrecer un servicio integral
       a sus clientes
     </span>{" "}
@@ -51,15 +51,15 @@ const textInterior2 = (
 );
 
 const textInterior3 = (
-  <p className="w-[65ch] text-2xl">
+  <p className="w-[65ch] 2xl:text-2xl xl:text-xl ">
     Emprendedores y comerciantes del rubro de interiorismo y decoración.
   </p>
 );
 
 const textInterior4 = (
-  <p className="w-[65ch] text-2xl">
+  <p className="w-[65ch] 2xl:text-2xl xl:text-xl">
     Personas ajenas a la profesión que quieran{" "}
-    <span className="text-primary font-extrabold text-2xl">
+    <span className="text-primary font-extrabold ">
       explorar y descubrir el apasionante mundo del diseño de interiores.
     </span>
   </p>
@@ -73,7 +73,7 @@ export const dataInterior = [
 ];
 
 const grafico1 = (
-  <p className="w-[57ch] text-2xl text-primary  font-extrabold">
+  <p className="w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold">
     Estudiantes y profesionales{" "}
     <span className=" font-medium text-2xl text-black">
       de diseño, arquitectura, informática, artes audiovisuales, periodismo,
@@ -82,7 +82,7 @@ const grafico1 = (
   </p>
 );
 const grafico2 = (
-  <p className="w-[57ch] text-2xl text-primary  font-extrabold">
+  <p className="w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold">
     Emprendedores o personas que tengan su propio negocio{" "}
     <span className="font-medium text-2xl text-black">
       y quieran desarrollar de manera autónoma las piezas gráficas de su propio
@@ -92,10 +92,10 @@ const grafico2 = (
 );
 
 const grafico3 = (
-  <p className="w-[57ch] text-2xl text-primary  font-extrabold">
+  <p className="w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold">
     Cualquier persona interesada en desarrollar sus propias piezas de diseño
     gráfico{" "}
-    <span className="text-black font-medium">
+    <span className="text-black  text-2xl font-medium">
       (tarjetas, logos, etiquetas, etc)
     </span>
   </p>
@@ -104,7 +104,7 @@ const grafico3 = (
 export const dataGrafico = [grafico1, grafico2, grafico3];
 
 const marketing1 = (
-  <p className="w-[57ch] text-2xl font-extrabold">
+  <p className="w-[65ch] 2xl:text-2xl xl:text-xl">
     Personas que busquen iniciarse por primera vez en el{" "}
     <span className="text-primary">
       Marketing Digital para la práctica profesional.
@@ -113,7 +113,7 @@ const marketing1 = (
 );
 
 const marketing2 = (
-  <p className="w-[57ch] text-2xl font-extrabold">
+  <p className="w-[65ch] 2xl:text-2xl xl:text-xl">
     Estudiantes y profesionales de carreras afines que
     <span className="text-primary">
       quieran complementar su formación para poder ofrecer un servicio integral
@@ -124,10 +124,10 @@ const marketing2 = (
 );
 
 const marketing3 = (
-  <p className="w-[57ch] text-2xl font-extrabold">
+  <p className="w-[65ch] 2xl:text-2xl xl:text-xl">
     Emprendedores, figuras públicas y comerciantes que necesiten obtener
     herramientas para llevar adelante su proyecto.
   </p>
 );
 
-export const marketingArray = [marketing1, marketing2, marketing3];
+export const dataMarketing = [marketing1, marketing2, marketing3];

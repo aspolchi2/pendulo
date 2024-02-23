@@ -1,13 +1,14 @@
+import { lexend } from "@/app/layout";
 import React from "react";
 
 const JoinUs = () => {
   return (
-    <section className="bg-primary flex justify-center">
-      <div className="text-white py-36">
-        <p className="text-7xl text-center font-bold">
-          Sumate a nuestra escuela
-        </p>
-        <p className="text-6xl text-center font-light">
+    <section
+      className={`${lexend.className} bg-primary flex justify-center lexend`}
+    >
+      <div className="text-white py-36 2xl:text-7xl xl:text-5xl text-3xl text-center ">
+        <p className="font-bold">Sumate a nuestra escuela</p>
+        <p className=" font-light">
           y amplia tu horizonte de posibilidades <br /> personales &
           profesionales
         </p>

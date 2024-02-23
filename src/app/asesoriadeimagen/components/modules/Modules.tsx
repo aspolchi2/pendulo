@@ -48,7 +48,7 @@ const Modules = ({
                 <div
                   className={`opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-base text-white font-semibold bg-primary flex-col`}
                 >
-                  <ul className="bg-primary  w-[450px] flex flex-col gap-1">
+                  <ul className="bg-primary  flex flex-col gap-1 w-1/2">
                     {description.map((desc, i) => (
                       <span key={i} className="flex gap-1">
                         <span>·</span>
@@ -86,11 +86,11 @@ const Modules = ({
               <p className="w-[25ch] text-center text-xl">{title}</p>
             </div>
             <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col w-full">
-              <ul className="bg-primary text-base w-[450px] flex flex-col  gap-1 ">
+              <ul className="bg-primary text-base  flex flex-col  gap-1 w-1/2">
                 {description.map((desc, i) => (
                   <span key={i} className="flex gap-1">
-                    <span>·</span>
-                    <li className="leading-6 ">{desc}</li>
+                    <span className="">·</span>
+                    <li className="leading-6">{desc}</li>
                   </span>
                 ))}
               </ul>
@@ -126,7 +126,7 @@ const Modules = ({
       )}
       <div className="h-px bg-white"></div>
       <div className=" flex justify-center items-center h-96">
-        <p className="text-center w-[55ch] text-yellow hover:text-white text-2xl font-bold">
+        <p className="text-center w-[55ch] text-yellow text-2xl font-bold">
           {text}
         </p>
       </div>

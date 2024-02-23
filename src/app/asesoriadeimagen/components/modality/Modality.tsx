@@ -32,13 +32,13 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
       <Divider title={"PROPUESTA EDUCATIVA"} />
       <div className=" flex justify-center align-top gap-6 py-16">
         <Ligth />
-        <div className="w-[97ch]">
-          <p className="text-2xl text-pretty">
+        <div className=" 2xl:text-2xl text-2xl w-[67ch]">
+          <p className=" text-pretty">
             Nuestros planes de estudio son desarrollados por educadores de
             amplia trayectoria y se actualizan de forma constante con el
             objetivo de ofrecer una formación sólida e integral.
           </p>
-          <p className="text-2xl text-primary font-extrabold ">
+          <p className=" text-primary font-extrabold ">
             La duración de este curso contempla los tiempos de aprendizaje
             promedio para la apropiación e implementación del contenido de una
             forma progresiva.
@@ -46,30 +46,30 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
         </div>
       </div>
       <Divider title={"DESTINATARIOS"} />
-      <div className="flex flex-col py-16 gap-12">
+      <div className="flex flex-col py-16 gap-12 justify-center items-center ">
         {text.map((item: any, index: number) => (
-          <div key={index} className=" flex justify-center align-top gap-6 ">
+          <div key={index} className=" flex  align-top gap-6">
             <CheckBox />
             <div className="">{item}</div>
           </div>
         ))}
       </div>
-      <div className="">
-        <Divider title="REQUISITOS" />
-        <div className="flex  justify-center align-top gap-6 pt-20">
+      <Divider title="REQUISITOS" />
+      <div className="2xl:text-2xl xl:text-xl text-md flex flex-col items-center">
+        <div className="flex  justify-center align-top gap-6 pt-20 w-[71ch]">
           <PcSmall />
-          <p className="w-[65ch] text-2xl">
-            <span className="text-primary font-extrabold text-2xl">
+          <p className="w-11/12">
+            <span className="text-primary font-extrabold ">
               Tener computadora o celular/dispositivo que cuente con conexión a
               Internet
             </span>
-            , en lo posible con cámara y micrófono activados.
+            , en lo posible con cámara y micrófono activados.{" "}
           </p>
         </div>
-        <div className="flex  justify-center align-top gap-6 pt-20">
+        <div className="flex  justify-center align-top gap-6 pt-20 w-[71ch]">
           <SobreSmall />
-          <p className="w-[65ch] text-2xl">
-            <span className="text-primary font-extrabold text-2xl">
+          <p className="w-11/12">
+            <span className="text-primary font-extrabold ">
               Dirección de correo electrónico (E-mail)
             </span>{" "}
             donde se recibirán los datos de acceso al curso y comunicados
@@ -78,11 +78,11 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
         </div>
       </div>
       {extra && (
-        <div className="mt-12">
+        <div className="mt-12 2xl:text-2xl text-xl">
           <Divider title="REQUISITOS PARA TOMAR LA CAPACITACIÓN" />
           <div className="flex  justify-center align-top gap-6 pt-20">
             <PcSmall />
-            <p className="w-[65ch] text-2xl">
+            <p className=" w-11/12">
               <span className="text-primary font-extrabold">Computadora </span>
               portátil o de escritorio{" "}
               <span className="text-primary font-extrabold ">
@@ -95,7 +95,7 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
           </div>
           <div className="flex  justify-center align-top gap-6 pt-20">
             <Ligth />
-            <p className="w-[65ch] text-2xl">
+            <p className="w-11/12 ">
               <span className="text-primary font-extrabold ">
                 Contar con conocimientos básicos a intermedios de informática.
               </span>{" "}

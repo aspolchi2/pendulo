@@ -254,7 +254,7 @@ const ModulesGrafico = () => {
         </div>
 
         <div className=" flex justify-center items-center h-96 bg-primary col-span-2">
-          <p className="text-center w-10/12 text-yellow hover:text-white text-2xl font-bold">
+          <p className="text-center w-10/12 text-yellow 2xl:text-2xl text-xl font-bold">
             Al finalizar el curso cada participante habrá desarrollado el diseño
             completo de una marca o emprendimiento a elección desde la
             construcción de la identidad hasta el desarrollo de las piezas

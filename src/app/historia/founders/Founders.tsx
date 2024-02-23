@@ -6,21 +6,19 @@ import Cam from "@/app/components/svg/Cam";
 import Educadora from "@/app/components/svg/Educadora";
 import Artist from "@/app/components/svg/Artist";
 import { lexend } from "@/app/layout";
-import { Laptop } from "@/app/components/svg/Laptop";
-import PcSmall from "@/app/components/svg/PcSmall";
 import LaptopXs from "@/app/components/svg/LaptopXs";
 
 const Founders = () => {
   return (
     <section
-      className={`${lexend.className} py-24 px-32 bg-primary text-white flex flex-col gap-32`}
+      className={`${lexend.className} py-24 px-32 bg-primary text-white flex flex-col gap-32 lexend`}
     >
       <div className=" flex flex-col gap-8 ">
         <p className="text-2xl font-medium">NUESTRA HISTORIA</p>
         <div className="w-full h-[2px] bg-white"></div>
       </div>
       <div className="grid grid-flow-col grid-cols-8 gap-20">
-        <div className="col-span-2 flex flex-col justify-end  items-start gap-14 ">
+        <div className="col-span-5  2xl:col-span-2  flex flex-col justify-start  items-start gap-14 ">
           <Image
             src={marciaFilz}
             alt="foto de marcia filz"
@@ -42,8 +40,8 @@ const Founders = () => {
             <div className="w-full h-px bg-white"></div>
           </div>
         </div>
-        <div className="col-span-6 w-8/12 flex flex-col gap-6 mx-auto">
-          <p className="text-xl font-light">
+        <div className="col-span-6 2xl:w-8/12 flex flex-col gap-6 mx-auto">
+          <p className="text-md xl:text-xl  font-light">
             <span className="font-bold">
               Soy diseñadora gráfica, fotógrafa y educadora.
             </span>{" "}
@@ -52,7 +50,7 @@ const Founders = () => {
             Pienso que la comunicación y la estética es lo que conecta todo lo
             que hago.
           </p>
-          <p className="text-xl font-light">
+          <p className="text-md xl:text-xl font-light">
             Empecé a formarme como fotógrafa desde temprana edad realizando el
             primer taller cuando aún estaba en la secundaria. Al finalizar la
             escuela, me inscribí en la carrera de artes plásticas. Durante los
@@ -86,7 +84,7 @@ const Founders = () => {
       </div>
       <div className="w-full h-[2px] bg-white"></div>
       <div className="grid grid-flow-col grid-cols-8 gap-20">
-        <div className="col-span-2 flex flex-col justify-end  items-start gap-14 ">
+        <div className="col-span-5 2xl:col-span-2  flex flex-col justify-start  items-start gap-14 ">
           <Image
             src={lorenaSamponi}
             alt="foto de marcia filz"
@@ -110,15 +108,15 @@ const Founders = () => {
             <div className="w-full h-px bg-white "></div>
           </div>
         </div>
-        <div className="col-span-6 w-8/12 flex flex-col gap-6 mx-auto">
-          <p className="text-xl font-light">
+        <div className="col-span-6  2xl:w-8/12 flex flex-col gap-6 mx-auto">
+          <p className="text-md xl:text-xl  font-light">
             <span className="font-bold">
               Soy fotógrafa, artista visual y educadora.{" "}
             </span>{" "}
             Mi desarrollo profesional está atravesado por otras disciplinas como
             la escritura, el cine y la música.
           </p>
-          <p className="text-xl font-light">
+          <p className="text-md xl:text-xl  font-light">
             Desde los inicios de mi carrera de diseño en la UNLP trabajé como
             diseñadora de forma independiente. <br /> A mitad de la carrera
             realicé un viaje transformador que despertó un gran interés por la
