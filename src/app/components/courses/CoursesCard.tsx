@@ -24,12 +24,12 @@ export const CoursesCard = ({
       transition={{ duration: id * 0.3 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="bg-white shadow-md flex flex-col  flex-shrink-0 justify-center p-9 "
+      className="bg-white shadow-md flex flex-col w-80 flex-shrink-0 justify-center p-9 "
     >
       <header>
         {!isFilter && (
           <p
-            className={`${hepta_slab.className} font-semibold text-[90px] text-gray leading-none`}
+            className={`${hepta_slab.className} font-semibold sm:text-[5vw] xl:text-[3vw] text-gray leading-none`}
           >
             0{id}.
           </p>

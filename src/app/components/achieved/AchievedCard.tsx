@@ -39,7 +39,7 @@ export const AchievedCard: React.FC<Propuesta> = ({
             {title}
           </h2>
           <p
-            className={` xl:text-base  font-normal xl:w-5/12  lg:text-sm ${
+            className={` xl:text-base  font-normal w-8/12  lg:text-sm ${
               isEven && "text-right self-end"
             } `}
           >

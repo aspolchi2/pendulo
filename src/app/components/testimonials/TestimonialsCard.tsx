@@ -9,8 +9,8 @@ export const TestimonialsCard = ({ pic, name, course, testimonial }: card) => {
   return (
     <motion.article
       className="bg-yellow flex flex-col py-6 px-9 rounded-[40px] justify-start items-center gap-7 h-[475px]"
-      initial={{ transform:'scale(0)' }}
-      animate={{ transform:'scale(1)' }}
+      initial={{ transform: "scale(0)" }}
+      animate={{ transform: "scale(1)" }}
       viewport={{ once: true }}
       exit={{}}
       transition={{ duration: 0.5 }}
@@ -33,7 +33,6 @@ export const TestimonialsCard = ({ pic, name, course, testimonial }: card) => {
       <div>
         <p className="w-80 text-center text-xl">{testimonial}</p>
       </div>
-      
     </motion.article>
   );
 };

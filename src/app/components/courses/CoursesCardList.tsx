@@ -61,7 +61,7 @@ export const CoursesCardList = ({
     ? cards.filter((card) => card.id !== filter)
     : cards;
   return (
-    <div className="flex flex-wrap justify-center items-center lg:w-11/12 xl:w-full m-auto gap-4">
+    <div className="grid grid-cols-2 2xl:grid-cols-4 gap-4">
       {filteredCards.map((card) => (
         <CoursesCard
           key={card.id}

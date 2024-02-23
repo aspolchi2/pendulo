@@ -8,10 +8,11 @@ export const CoursesFrame = () => {
       className="bg-gray flex-col flex gap-24  justify-center items-center pt-32 pb-40 scroll-m-11"
       id="cursos"
     >
-      <div>
-        <CoursesCardList isFilter={false} />
-      </div>
-      <p className={`${hepta_slab.className} xl:text-3xl lg:text-2xl text-center`}>
+      <CoursesCardList isFilter={false} />
+
+      <p
+        className={`${hepta_slab.className} xl:text-3xl lg:text-2xl text-center`}
+      >
         Descubrir una nueva disciplina te puede permitir{" "}
         <span className="font-extrabold">
           empezar <br /> un trabajo que ames, estimular tu creatividad,

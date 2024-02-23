@@ -16,7 +16,7 @@ export const Testimonials = () => {
   };
   return (
     <section
-      className="flex flex-col items-center gap-9 p-28 overflow-x-hidden"
+      className="flex flex-col items-center gap-9 p-28  scale-75 xl:scale-100 max-xl:scale-75"
       id="testimonios"
     >
       <h3 className="text-[55px]">¿QUIENES NOS ELIGEN?</h3>
