@@ -32,7 +32,7 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
       <Divider title={"PROPUESTA EDUCATIVA"} />
       <div className=" flex justify-center align-top gap-6 py-16">
         <Ligth />
-        <div className=" 2xl:text-2xl text-2xl w-[67ch]">
+        <div className=" 2xl:text-2xl text-2xl 2xl:w-[74ch] ">
           <p className=" text-pretty">
             Nuestros planes de estudio son desarrollados por educadores de
             amplia trayectoria y se actualizan de forma constante con el
@@ -55,56 +55,69 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
         ))}
       </div>
       <Divider title="REQUISITOS" />
-      <div className="2xl:text-2xl xl:text-xl text-md flex flex-col items-center">
-        <div className="flex  justify-center align-top gap-6 pt-20 w-[71ch]">
-          <PcSmall />
-          <p className="w-11/12">
-            <span className="text-primary font-extrabold ">
-              Tener computadora o celular/dispositivo que cuente con conexión a
-              Internet
-            </span>
-            , en lo posible con cámara y micrófono activados.{" "}
-          </p>
+      <div className="flex flex-col items-center 2xl:text-2xl text-2xl ">
+        <div className="flex flex-col py-10 gap-12 justify-center items-center">
+          <div className="flex  align-top gap-6 2xl:w-9/12">
+            <PcSmall />
+            <p className=" w-11/12">
+              <span className="text-primary font-extrabold ">
+                Tener computadora o celular/dispositivo que cuente con conexión
+                a Internet
+              </span>
+              , en lo posible con cámara y micrófono activados.{" "}
+            </p>
+          </div>
         </div>
-        <div className="flex  justify-center align-top gap-6 pt-20 w-[71ch]">
-          <SobreSmall />
-          <p className="w-11/12">
-            <span className="text-primary font-extrabold ">
-              Dirección de correo electrónico (E-mail)
-            </span>{" "}
-            donde se recibirán los datos de acceso al curso y comunicados
-            oficiales de la escuela.
-          </p>
+        <div className="flex flex-col py-10 gap-12 justify-center items-center">
+          <div className="flex  align-top gap-6 2xl:w-9/12 ">
+            <SobreSmall />
+            <p className="w-11/12">
+              <span className="text-primary font-extrabold ">
+                Dirección de correo electrónico (E-mail)
+              </span>{" "}
+              donde se recibirán los datos de acceso al curso y comunicados
+              oficiales de la escuela.
+            </p>
+          </div>
         </div>
       </div>
       {extra && (
-        <div className="mt-12 2xl:text-2xl text-xl">
+        <>
           <Divider title="REQUISITOS PARA TOMAR LA CAPACITACIÓN" />
-          <div className="flex  justify-center align-top gap-6 pt-20">
-            <PcSmall />
-            <p className=" w-11/12">
-              <span className="text-primary font-extrabold">Computadora </span>
-              portátil o de escritorio{" "}
-              <span className="text-primary font-extrabold ">
-                que cuente con los programas Adobe Illustrator y Adobe Photoshop
-                instalados.{" "}
-              </span>
-              Además se recomienda contar con un mouse para el uso de los
-              programas.
-            </p>
+          <div className="flex flex-col py-10 gap-12 justify-center items-center 2xl:text-2xl text-2xl">
+            <div className="flex  justify-center align-top gap-6 pt-20">
+              <div className="flex  align-top gap-6 2xl:w-9/12">
+                <PcSmall />
+                <p className="w-11/12">
+                  <span className="text-primary font-extrabold">
+                    Computadora{" "}
+                  </span>
+                  portátil o de escritorio{" "}
+                  <span className="text-primary font-extrabold ">
+                    que cuente con los programas Adobe Illustrator y Adobe
+                    Photoshop instalados.{" "}
+                  </span>
+                  Además se recomienda contar con un mouse para el uso de los
+                  programas.
+                </p>
+              </div>
+            </div>
+            <div className="flex  justify-center align-top gap-6 pt-20">
+              <div className="flex  align-top gap-6 2xl:w-9/12">
+                <Ligth />
+                <p className="w-11/12 ">
+                  <span className="text-primary font-extrabold ">
+                    Contar con conocimientos básicos a intermedios de
+                    informática.
+                  </span>{" "}
+                  Se recomienda saber crear carpetas en windows o mac, descargar
+                  archivos de internet, copiar y pegar documentos, descargar
+                  archivos desde un pen drive, etc.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="flex  justify-center align-top gap-6 pt-20">
-            <Ligth />
-            <p className="w-11/12 ">
-              <span className="text-primary font-extrabold ">
-                Contar con conocimientos básicos a intermedios de informática.
-              </span>{" "}
-              Se recomienda saber crear carpetas en windows o mac, descargar
-              archivos de internet, copiar y pegar documentos, descargar
-              archivos desde un pen drive, etc.
-            </p>
-          </div>
-        </div>
+        </>
       )}
     </section>
   );
