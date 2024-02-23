@@ -14,7 +14,7 @@ const hepta_slab = Hepta_Slab({
 const HistoriaHero = () => {
   return (
     <div
-      className={`${lexend.className} bg-historiaHero h-full w-full px-28 py-44 text-white`}
+      className={`${lexend.className} bg-historiaHero  w-full px-28 lg:h-[700px] xl:h-screen text-white bg-cover bg-no-repeat flex flex-col justify-center`}
     >
       <h1 className="font-bold text-[55px] w-[450px] leading-[50px] pb-3 ">
         Somos Péndulo una escuela
@@ -28,7 +28,7 @@ const HistoriaHero = () => {
         cursos decidimos crear nuestra propia academia con el propósito de{" "}
         <span className="font-bold"> humanizar la educación profesional. </span>
       </p>
-      <Button extraclassname="">CONOCENOS</Button>
+      <Button extraclassname="w-[250px]">CONOCENOS</Button>
     </div>
   );
 };

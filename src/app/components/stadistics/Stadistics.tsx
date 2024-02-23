@@ -6,7 +6,7 @@ import Counter from "./Counter";
 export const Stadistics = () => {
   return (
     <section className="bg-mundi bg-[#D9D9DD] h-[1078px] flex justify-center items-center bg-no-repeat bg-center">
-      <div className="container mx-auto flex flex-col gap-12 h-full justify-center  w-[1000px] ">
+      <div className="container mx-auto flex flex-col gap-12 h-full justify-center  w-10/12 ">
         <p className="flex items-center gap-5 text-2xl font-medium max-w-4xl ">
           <span
             className={`${hepta_slab.className} text-primary text-6xl font-semibold`}

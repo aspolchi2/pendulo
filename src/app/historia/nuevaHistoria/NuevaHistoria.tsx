@@ -133,12 +133,12 @@ const NuevaHistoria = () => {
               transition={{ duration: 0.5, ease: "easeInOut" }}
             ></motion.div>
             <div
-              className={`flex ${
+              className={`flex gap-2 ${
                 isEven(card.id) ? "text-primaryWash" : "text-primary"
               }  `}
             >
-              <p className="font-black text-6xl">{card.year}</p>
-              <p className="font-bold text-4xl ml-auto mr-auto w-[500px]">
+              <p className="font-black xl:text-6xl lg:text-5xl">{card.year}</p>
+              <p className="font-bold xl:text-4xl lg:text-2xl ml-auto mr-auto w-[500px]">
                 {card.title}
               </p>
             </div>

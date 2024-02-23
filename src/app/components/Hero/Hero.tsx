@@ -4,9 +4,9 @@ import { Button } from "../atoms/Button";
 
 export const Hero = () => {
   return (
-    <section className="bg-hero-bg w-full md:h-[54.75rem]">
+    <section className="bg-hero-bg w-full bg-cover">
       <div className="backdrop-brightness-50 h-full w-full flex items-center">
-        <div className="md:pl-44 relative">
+        <div className=" relative p-36">
           <p className="  text-white text-5xl font-bold  l  drop-shadow-md opacity-100">
             Ampliá tu horizonte
           </p>
@@ -26,9 +26,11 @@ export const Hero = () => {
             entorno agradable.{" "}
             <span className="font-extrabold">Nosotras te acompañamos.</span>
           </p>
-          <Button extraclassname="mt-14 relative">INSCRIBITE EN NUESTROS CURSOS</Button>
+          <Button extraclassname="mt-14 relative">
+            INSCRIBITE EN NUESTROS CURSOS
+          </Button>
         </div>
-      <div className="w-full h-32 bg-violet opacity-80 brightness-[.35]  absolute bottom-0"></div>
+        <div className="w-full h-32 lg:h-24 bg-violet opacity-80 brightness-[.35]  absolute bottom-0"></div>
       </div>
     </section>
   );

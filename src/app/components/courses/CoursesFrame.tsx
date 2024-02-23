@@ -5,13 +5,13 @@ import { hepta_slab } from "@/app/layout";
 export const CoursesFrame = () => {
   return (
     <section
-      className="bg-gray flex-col flex gap-24 w-full justify-center items-center pt-32 pb-40 scroll-m-11"
+      className="bg-gray flex-col flex gap-24  justify-center items-center pt-32 pb-40 scroll-m-11"
       id="cursos"
     >
       <div>
         <CoursesCardList isFilter={false} />
       </div>
-      <p className={`${hepta_slab.className} text-3xl text-center`}>
+      <p className={`${hepta_slab.className} xl:text-3xl lg:text-2xl text-center`}>
         Descubrir una nueva disciplina te puede permitir{" "}
         <span className="font-extrabold">
           empezar <br /> un trabajo que ames, estimular tu creatividad,

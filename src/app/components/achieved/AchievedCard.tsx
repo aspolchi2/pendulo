@@ -15,12 +15,11 @@ export const AchievedCard: React.FC<Propuesta> = ({
 }: Propuesta) => {
   const isEven = id % 2 === 0;
 
-  // Use optional chaining to handle potential undefined image
   const validImage = image || "/default-image.jpg";
 
   return (
     <motion.article
-      className="w-[1115px] m-auto flex justify-center - gap-10 h-[350px] "
+      className=" m-auto flex justify-center gap-10 xl:h-[350px] lg:h-64 "
       initial={isEven ? { opacity: 0, x: 100 } : { opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
@@ -33,12 +32,14 @@ export const AchievedCard: React.FC<Propuesta> = ({
       >
         <div
           className={`bg-black w-0.5  h-full ${id == 10 && "hidden"}
-        ${isEven ? "mr-20" : "ml-20"} `}
+        ${isEven ? "xl:mr-20 lg:mr-10" : "xl:ml-20 lg:mr-10"} `}
         ></div>
-        <div className={`flex flex-col gap-20 `}>
-          <h2 className={` text-primary text-6xl font-black `}>{title}</h2>
+        <div className={`flex flex-col gap-20  lg:w-3/6 xl:w-3/6`}>
+          <h2 className={` text-primary xl:text-6xl  lg:text-4xl font-black `}>
+            {title}
+          </h2>
           <p
-            className={`w-96 text-base font-normal ${
+            className={` xl:text-base  font-normal xl:w-5/12  lg:text-sm ${
               isEven && "text-right self-end"
             } `}
           >
@@ -52,7 +53,7 @@ export const AchievedCard: React.FC<Propuesta> = ({
             alt=""
             width={455}
             height={312}
-            className="h-80 min-w-[455px]"
+            className="xl:h-80 xl:w-auto lg:h-64 "
           ></Image>
         </main>
       </header>

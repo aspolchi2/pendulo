@@ -13,8 +13,6 @@ type linksProp = {
   href: string;
 };
 
-
-
 const icons = [
   {
     id: crypto.randomUUID(),
@@ -34,7 +32,15 @@ const icons = [
   },
 ];
 
-export const Header = ({ bg, position }: { bg: string; position: string }) => {
+export const Header = ({
+  bg,
+  position,
+  isFooter,
+}: {
+  bg: string;
+  position: string;
+  isFooter?: boolean;
+}) => {
   const router = useRouter();
   return (
     <header className={`w-full  h-28 flex items-end ${position} ${bg} z-50 `}>
@@ -63,7 +69,7 @@ export const Header = ({ bg, position }: { bg: string; position: string }) => {
             <Link href="#cursos" className="">
               cursos
             </Link>
-            <div className="absolute hidden  space-y-2 bg-white border group-hover:block rounded-md w-40">
+           {!isFooter && <div className="absolute hidden  space-y-2 bg-white border group-hover:block rounded-md w-40">
               <Link
                 href="/interiores"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-pink hover:text-white"
@@ -88,7 +94,7 @@ export const Header = ({ bg, position }: { bg: string; position: string }) => {
               >
                 Asesoría de Imagen
               </Link>
-            </div>
+            </div>}
           </li>
         </ul>
         <ul className="flex gap-6 items-end">

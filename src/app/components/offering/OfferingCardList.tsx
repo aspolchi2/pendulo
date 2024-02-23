@@ -61,7 +61,7 @@ const data: MyData[] = [
 
 export const OfferingCardList = () => {
   return (
-    <div className="flex flex-row w-[1212px] m-auto flex-wrap gap-[38px]">
+    <div className="flex flex-wrap gap-[38px] md:justify-center">
       {data.map(({ id, svg, title, description }) => (
         <OfferingCard
           key={id}
