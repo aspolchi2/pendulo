@@ -42,7 +42,7 @@ export default function Page() {
       <Founders />
       <Stadistics />
       <Testimonials />
-      <Interesed filter={6} isFilter />
+      <Interesed isFilter />
       <Footer />
     </main>
   );
