@@ -1,8 +1,9 @@
 import React from "react";
+import { lexend } from "../layout";
 
 const ModulesGrafico = () => {
   return (
-    <section className="bg-primary p-32 font-medium lexend">
+    <section className={`${lexend.className} bg-primary p-32 font-medium`}>
       <p className="text-right text-xl text-white pb-2">CONTENIDOS</p>
       <div className="h-px bg-white"></div>
       <div

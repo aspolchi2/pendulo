@@ -1,4 +1,5 @@
 "use client";
+import { lexend } from "@/app/layout";
 import useBooleanStore from "@/app/zustand/useBooleanStore";
 import React from "react";
 
@@ -25,7 +26,7 @@ export const NextCourses = ({
   };
 
   return (
-    <section className="bg-black p-28 text-white">
+    <section className="bg-black p-28 text-white" id="prices">
       <div className="flex flex-col gap-6">
         <h3 className="text-5xl font-bold">Próximos inicios</h3>
         <div className="border rounded-lg flex p-14 justify-around ">
@@ -51,7 +52,9 @@ export const NextCourses = ({
         </div>
       </div>
       {booleanValue && oferta && (
-        <div className="bg-black lexend text-4xl text-white p-20 text-center flex flex-col gap-10">
+        <div
+          className={`${lexend.className} bg-black text-4xl text-white p-20 text-center flex flex-col gap-10`}
+        >
           <p className="w-8/12 m-auto">
             Accedé a un 30% de descuento y precio congelado por inscripción
             anticipada con horario y fecha abierta.

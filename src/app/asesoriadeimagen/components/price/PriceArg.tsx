@@ -84,10 +84,7 @@ export const PriceArg = () => {
   );
 
   return (
-    <section
-      id="prices"
-      className="max-h-full  opacity-100 p-28 transition-opacity  duration-500 "
-    >
+    <section className="max-h-full  opacity-100 p-28 transition-opacity  duration-500 ">
       <div className="flex flex-col gap-12">
         <PriceInfo
           color="text-primary"

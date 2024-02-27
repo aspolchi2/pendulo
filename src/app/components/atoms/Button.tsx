@@ -8,13 +8,14 @@ export interface ButtonProps
   extraclassname?: string;
 }
 
-export const Button = (props: ButtonProps) => {
+export const Button = (props: any) => {
   return (
-    <button
+    <a
+      href={props.goto ? props.goto : "#cursos"}
       className={`${props.extraclassname} bg-accent px-8 py-5 text-2xl rounded-2xl text-white font-semibold`}
       {...props}
     >
       {props.children}
-    </button>
+    </a>
   );
 };

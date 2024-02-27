@@ -28,7 +28,12 @@ const HistoriaHero = () => {
         cursos decidimos crear nuestra propia academia con el propósito de{" "}
         <span className="font-bold"> humanizar la educación profesional. </span>
       </p>
-      <Button extraclassname="w-[250px]">CONOCENOS</Button>
+      <Button
+        extraclassname="w-[250px] flex justify-center"
+        goto={"#conocenos"}
+      >
+        CONOCENOS
+      </Button>
     </div>
   );
 };

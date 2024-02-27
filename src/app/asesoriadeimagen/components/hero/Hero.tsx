@@ -1,4 +1,5 @@
 import { Lexend } from "next/font/google";
+import Link from "next/link";
 import React from "react";
 
 type props = {
@@ -25,9 +26,12 @@ export const Hero = ({ bg, span, text, title, extra }: props) => {
           </h1>
           <p className="text-white text-3xl leading-3 max-w-xl">{text}</p>
           <p className="text-white text-2xl">{extra}</p>
-          <button className="text-white  bg-primary rounded-xl font-bold text-[28px] w-[269.749px] h-[60px] flex-shrink: 0; ">
+          <Link
+            href={"#prices"}
+            className="text-white  bg-primary rounded-xl font-bold text-[28px] w-[269.749px] h-[60px] flex-shrink: 0; flex justify-center items-center"
+          >
             INSCRIBIRME
-          </button>
+          </Link>
         </div>
       </div>
     </section>

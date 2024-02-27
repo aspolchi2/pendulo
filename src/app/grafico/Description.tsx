@@ -1,16 +1,21 @@
 import React from "react";
+import { hepta_slab, lexend } from "../layout";
 
 const Description = () => {
   return (
     <section className="px-32 py-28 flex flex-col gap-16">
       <div className="grid grid-flow-col grid-cols-2">
         <div className="col-span-1">
-          <p className="font-bold text-primary text-[28px] lexend w-[512px] m-auto">
+          <p
+            className={`${lexend.className} font-bold text-primary text-[28px] w-[512px] m-auto`}
+          >
             Esta capacitación se caracteriza por ofrecer una formación integral
             en Diseño Gráfico abordando los dos grandes módulos:
           </p>
         </div>
-        <div className="col-span-2 flex flex-col hepta_slab text-xl gap-20">
+        <div
+          className={`${hepta_slab.className} col-span-2 flex flex-col text-xl gap-20`}
+        >
           <div className="flex flex-col gap-3 w-[577px] m-auto">
             <p className="">MÓDULO 1:</p>
             <div className="w-full h-px bg-black"></div>
@@ -45,11 +50,15 @@ const Description = () => {
       <div className="w-full h-px bg-primary"></div>
       <div className="grid grid-flow-col grid-cols-2">
         <div className="col-span-1">
-          <p className="font-bold text-primary text-[28px] lexend w-[512px] m-auto">
+          <p
+            className={`${lexend.className} font-bold text-primary text-[28px] w-[512px] m-auto`}
+          >
             ¿El curso sirve para trabajar en esta profesión?
           </p>
         </div>
-        <div className="col-span-2 flex flex-col hepta_slab text-xl gap-20">
+        <div
+          className={`${hepta_slab.className} col-span-2 flex flex-col text-xl gap-20`}
+        >
           <div className="flex flex-col gap-3 w-[577px] m-auto">
             <p className="">
               Para ejercer esta profesión lo más importante es poder demostrar a

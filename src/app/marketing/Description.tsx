@@ -1,5 +1,6 @@
 import React from "react";
-import '../globals.css'
+import "../globals.css";
+import { hepta_slab, lexend } from "../layout";
 
 const Description = () => {
   return (
@@ -10,7 +11,9 @@ const Description = () => {
             ¿Por qué aprender Marketing Digital en Péndulo?
           </p>
         </div>
-        <div className="col-span-2 flex flex-col  hepta_slab text-xl gap-10">
+        <div
+          className={`${hepta_slab.className} col-span-2 flex flex-col   text-xl gap-10`}
+        >
           <p className="w-9/12 m-auto">
             En esta capacitación, el participante va a adquirir{" "}
             <span className="text-primary font-bold">
@@ -47,11 +50,15 @@ const Description = () => {
       <div className="w-full h-px bg-primary"></div>
       <div className="grid grid-flow-col grid-cols-2">
         <div className="col-span-1">
-          <p className="font-bold text-primary text-[28px] lexend w-[512px] m-auto">
+          <p
+            className={`${lexend.className} font-bold text-primary text-[28px] w-[512px] m-auto`}
+          >
             ¿Cómo se va a trabajar en clase?
           </p>
         </div>
-        <div className="col-span-2 flex flex-col hepta_slab text-xl gap-10">
+        <div
+          className={`${hepta_slab.className} col-span-2 flex flex-col text-xl gap-10`}
+        >
           <div className="flex flex-col gap-10">
             <p className="w-9/12 m-auto">
               Durante el primer módulo se irá analizando la marca poco a poco,
@@ -94,11 +101,15 @@ const Description = () => {
       <div className="w-full h-px bg-primary"></div>
       <div className="grid grid-flow-col grid-cols-2">
         <div className="col-span-1">
-          <p className="font-bold text-primary text-[28px] lexend w-[512px] m-auto">
+          <p
+            className={`${lexend.className} font-bold text-primary text-[28px] w-[512px] m-auto`}
+          >
             ¿El curso sirve para trabajar en esta profesión?
           </p>
         </div>
-        <div className="col-span-2 flex flex-col hepta_slab text-xl gap-0">
+        <div
+          className={`${hepta_slab.className} col-span-2 flex flex-col  text-xl gap-0`}
+        >
           <div className="flex flex-col gap-10 ">
             <p className="w-9/12 m-auto">
               Para ejercer esta profesión lo más importante es poder demostrar a

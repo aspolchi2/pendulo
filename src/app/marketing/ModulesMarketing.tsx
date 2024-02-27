@@ -1,4 +1,5 @@
 import React from "react";
+import { lexend } from "../layout";
 
 const ModulesMarketing = () => {
   return (
@@ -20,61 +21,79 @@ const ModulesMarketing = () => {
       <div className="h-px bg-white"></div>
       <div className="grid grid-cols-2 grid-rows-2  w-full bg-white gap-[1px]">
         <div className="relative bg-primary flex justify-center items-center text-white h-80">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">
               Marketing Digital | Community Manager vs Social media Manager
             </p>
           </div>
         </div>
         <div className="relative bg-primary flex justify-center items-center text-white h-80">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">Briefing Creativo</p>
           </div>
         </div>
         <div className=" relative bg-primary flex justify-center items-center text-white h-80 ">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">
               Público | Público objetivo o Cliente ideal
             </p>
           </div>
         </div>
         <div className=" relative bg-primary flex justify-center items-center text-white h-80 ">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">
               Branding & Redes Sociales
             </p>
           </div>
         </div>
         <div className=" relative bg-primary flex justify-center items-center text-white h-80 ">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">
               Estilo | Temas & Mood Board{" "}
             </p>
           </div>
         </div>
         <div className=" relative bg-primary flex justify-center items-center text-white h-80 ">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">
               Instagram | Instagram TV. Vivos. Storytelling
             </p>
           </div>
         </div>
         <div className=" relative bg-primary flex justify-center items-center text-white h-80 ">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">
               Facebook e INSTAGRAM Ads{" "}
             </p>
           </div>
         </div>
         <div className=" relative bg-primary flex justify-center items-center text-white h-80 ">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">
               Ideas + Estrategia = Campaña{" "}
             </p>
           </div>
         </div>
         <div className="col-span-2 relative bg-primary flex justify-center items-center text-white h-80 ">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">
               Neuromarketing | Storytelling
             </p>
@@ -95,66 +114,86 @@ const ModulesMarketing = () => {
       <div className="h-px bg-white"></div>
       <div className="grid grid-cols-2 grid-rows-2  w-full bg-white gap-[1px]">
         <div className="relative bg-primary flex justify-center items-center text-white h-80">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">
               ¿Qué es ser community manager?
             </p>
           </div>
         </div>
         <div className="relative bg-primary flex justify-center items-center text-white h-80">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">
               Trazado de Objetivos / Social Media Plan
             </p>
           </div>
         </div>
         <div className=" relative bg-primary flex justify-center items-center text-white h-80 ">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">Público Objetivo</p>
           </div>
         </div>
         <div className=" relative bg-primary flex justify-center items-center text-white h-80 ">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">
               Planificación y creación de contenido
             </p>
           </div>
         </div>
         <div className=" relative bg-primary flex justify-center items-center text-white h-80 ">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">
               Redacción creativa para redes sociales / Storytelling
             </p>
           </div>
         </div>
         <div className=" relative bg-primary flex justify-center items-center text-white h-80 ">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">
               Instagram y sus recursos
             </p>
           </div>
         </div>
         <div className=" relative bg-primary flex justify-center items-center text-white h-80 ">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">
               Mood-boards y curaduría de contenido
             </p>
           </div>
         </div>
         <div className=" relative bg-primary flex justify-center items-center text-white h-80 ">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">Publicidad</p>
           </div>
         </div>
         <div className=" relative bg-primary flex justify-center items-center text-white h-80 ">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">
               Facebook, Instagram, Google Ads
             </p>
           </div>
         </div>
         <div className=" relative bg-primary flex justify-center items-center text-white h-80 ">
-          <div className="inset-0 bg-cover bg-center text-2xl lexend z-0">
+          <div
+            className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
+          >
             <p className="w-[25ch] text-center font-bold">
               Informes, indicadores de gestión y estadísticas en redes sociales
             </p>

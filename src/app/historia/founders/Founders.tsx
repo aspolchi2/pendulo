@@ -12,6 +12,7 @@ const Founders = () => {
   return (
     <section
       className={`${lexend.className} py-24 px-32 bg-primary text-white flex flex-col gap-32 lexend`}
+      id="conocenos"
     >
       <div className=" flex flex-col gap-8 ">
         <p className="text-2xl font-medium">NUESTRA HISTORIA</p>

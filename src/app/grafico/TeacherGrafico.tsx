@@ -3,6 +3,7 @@ import { Divider } from "../asesoriadeimagen/components/modality/Modality";
 import Image from "next/image";
 import { TrianguloRosa } from "../components/svg/TrianguloRosa";
 import taniaPaez from "/public/images/taniaPaez.png";
+import { lexend } from "../layout";
 
 const TeacherGrafico = () => {
   return (
@@ -22,7 +23,7 @@ const TeacherGrafico = () => {
           <span className="float-right absolute left-80 -top-10 ">
             <TrianguloRosa fill="white" />
           </span>
-          <p className="lexend text-2xl font-medium ">
+          <p className={`${lexend.className} text-2xl font-medium `}>
             · Diseñadora y profesora de Diseño en Comunicación Visual, graduada
             en la Facultad de Artes, Universidad Nacional de La Plata,
             Argentina.

@@ -14,7 +14,7 @@ export const Stadistics = () => {
             + <Counter value={7} /> AÑOS
           </span>
           {"    "}
-          en actividad
+          EN ACTIVIDAD
         </p>
         <p className="flex items-center gap-5 text-2xl font-medium max-w-4xl">
           <span
