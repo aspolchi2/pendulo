@@ -1,5 +1,6 @@
 import React from "react";
 import { lexend } from "../layout";
+import ArrowDown from "../components/testimonials/ArrowDown";
 
 const ModulesGrafico = () => {
   return (
@@ -18,10 +19,11 @@ const ModulesGrafico = () => {
       <div className="h-px bg-white"></div>
       <div className="grid grid-cols-2   w-full bg-white gap-[1px]">
         <div className="relative bg-primary flex justify-center items-center text-white h-96">
-          <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0">
+          <div className="inset-0 bg-cover bg-center hover:opacity-0 flex items-center gap-2 z-0">
             <p className="w-[25ch] text-center font-bold">
               ADOBE ILLUSTRATOR <br />| Manejo de software
             </p>
+            <ArrowDown />
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
             <ul className="bg-primary text-lg w-[450px] flex flex-col gap-8">
@@ -61,8 +63,9 @@ const ModulesGrafico = () => {
         </div>
         <div className="relative bg-primary flex justify-center items-center text-white h-96">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0">
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-bold flex items-center gap-3">
               ADOBE PHOTOSHOP <br />| Manejo de software
+              <ArrowDown />
             </p>
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
@@ -102,8 +105,9 @@ const ModulesGrafico = () => {
         </div>
         <div className="col-span-2 relative bg-primary flex justify-center items-center text-white h-64 ">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0">
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-bold flex items-center gap-3">
               INTRODUCCIÓN A LA IMAGEN DIGITAL
+              <ArrowDown />
             </p>
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
@@ -144,8 +148,9 @@ const ModulesGrafico = () => {
       <div className="grid grid-cols-2   w-full bg-white gap-[1px]">
         <div className="relative bg-primary flex justify-center items-center text-white h-96">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0">
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-bold flex items-center gap-3">
               INTRODUCCIÓN AL DISEÑO Y LA COMUNICACIÓN VISUAL
+              <ArrowDown />
             </p>
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
@@ -173,8 +178,9 @@ const ModulesGrafico = () => {
         </div>
         <div className="relative bg-primary flex justify-center items-center text-white h-96">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0">
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-bold flex items-center gap-3">
               COMPOSICIÓN Y LENGUAJE VISUAL
+              <ArrowDown />
             </p>
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
@@ -221,8 +227,9 @@ const ModulesGrafico = () => {
         </div>
         <div className="col-span-2 relative bg-primary flex justify-center items-center text-white h-64 ">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0">
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-bold flex items-center gap-3">
               IDENTIDAD / BRANDING
+              <ArrowDown />
             </p>
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
@@ -255,7 +262,7 @@ const ModulesGrafico = () => {
         </div>
 
         <div className=" flex justify-center items-center h-96 bg-primary col-span-2">
-          <p className="text-center w-10/12 text-yellow 2xl:text-2xl text-xl font-bold">
+          <p className="text-center w-10/12 text-white 2xl:text-2xl text-xl font-bold">
             Al finalizar el curso cada participante habrá desarrollado el diseño
             completo de una marca o emprendimiento a elección desde la
             construcción de la identidad hasta el desarrollo de las piezas

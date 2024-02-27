@@ -202,7 +202,7 @@ const ModulesMarketing = () => {
 
         <div className="h-px bg-white"></div>
         <div className=" col-span-2 flex justify-center items-center h-96 bg-primary">
-          <p className="text-center w-[55ch] text-yellow hover:text-white text-2xl font-bold">
+          <p className="text-center w-[55ch] text-white text-2xl font-bold">
             Al finalizar el curso cada participante presentará su proyecto de
             organización de un esquema de un espacio interior implementando todo
             el contenido trabajado en el curso y se llevará las herramientas

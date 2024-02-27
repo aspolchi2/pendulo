@@ -2,6 +2,7 @@ import { hepta_slab } from "@/app/layout";
 import React from "react";
 import fotis from "@/../public/images/fotis.png";
 import Image from "next/image";
+import ArrowDown from "@/app/components/testimonials/ArrowDown";
 
 const Modules = ({
   moduleOne,
@@ -27,20 +28,25 @@ const Modules = ({
       <div className="h-px bg-white"></div>
       <div className="grid grid-cols-2 grid-rows-2  w-full bg-white gap-[1px]">
         {moduleOne.map(({ title, description }) => {
-          console.log(description);
           return (
             <div
               className="relative bg-primary flex justify-center items-center text-white h-72"
               key={title}
             >
               <div
-                className={` bg-cover bg-center  ${
+                className={` bg-cover bg-center  flex items-center gap-3 ${
                   description.length !== 0
                     ? "hover:opacity-0 inset-0 z-0"
                     : "z-10"
                 }`}
               >
                 <p className="w-[25ch] text-center text-xl">{title}</p>
+
+                {description.length !== 0 && (
+                  <span className="flex justify-end">
+                    <ArrowDown />
+                  </span>
+                )}
               </div>
               {description.length === 0 ? (
                 <div></div>
@@ -77,13 +83,18 @@ const Modules = ({
             key={title}
           >
             <div
-              className={` bg-cover bg-center  ${
+              className={` bg-cover bg-center  flex items-center gap-3 ${
                 description.length !== 0
                   ? "hover:opacity-0 inset-0 z-0"
                   : "z-10"
               }`}
             >
               <p className="w-[25ch] text-center text-xl">{title}</p>
+              {description.length !== 0 && (
+                <span className="flex justify-end">
+                  <ArrowDown />
+                </span>
+              )}
             </div>
             <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col w-full">
               <ul className="bg-primary text-base  flex flex-col  gap-1 w-1/2">
@@ -126,7 +137,7 @@ const Modules = ({
       )}
       <div className="h-px bg-white"></div>
       <div className=" flex justify-center items-center h-96">
-        <p className="text-center w-[55ch] text-yellow text-2xl font-bold">
+        <p className="text-center w-[55ch] text-white text-2xl font-bold">
           {text}
         </p>
       </div>
