@@ -24,7 +24,7 @@ const ModulesMarketing = () => {
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-semibold">
               Marketing Digital | Community Manager vs Social media Manager
             </p>
           </div>
@@ -33,14 +33,16 @@ const ModulesMarketing = () => {
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">Briefing Creativo</p>
+            <p className="w-[25ch] text-center font-semibold">
+              Briefing Creativo
+            </p>
           </div>
         </div>
         <div className=" relative bg-primary flex justify-center items-center text-white h-80 ">
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-semibold">
               Público | Público objetivo o Cliente ideal
             </p>
           </div>
@@ -49,7 +51,7 @@ const ModulesMarketing = () => {
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-semibold">
               Branding & Redes Sociales
             </p>
           </div>
@@ -58,7 +60,7 @@ const ModulesMarketing = () => {
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-semibold">
               Estilo | Temas & Mood Board{" "}
             </p>
           </div>
@@ -67,7 +69,7 @@ const ModulesMarketing = () => {
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-semibold">
               Instagram | Instagram TV. Vivos. Storytelling
             </p>
           </div>
@@ -76,7 +78,7 @@ const ModulesMarketing = () => {
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-semibold">
               Facebook e INSTAGRAM Ads{" "}
             </p>
           </div>
@@ -85,7 +87,7 @@ const ModulesMarketing = () => {
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-semibold">
               Ideas + Estrategia = Campaña{" "}
             </p>
           </div>
@@ -94,7 +96,7 @@ const ModulesMarketing = () => {
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-semibold">
               Neuromarketing | Storytelling
             </p>
           </div>
@@ -117,7 +119,7 @@ const ModulesMarketing = () => {
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-semibold">
               ¿Qué es ser community manager?
             </p>
           </div>
@@ -126,7 +128,7 @@ const ModulesMarketing = () => {
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-semibold">
               Trazado de Objetivos / Social Media Plan
             </p>
           </div>
@@ -135,14 +137,16 @@ const ModulesMarketing = () => {
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">Público Objetivo</p>
+            <p className="w-[25ch] text-center font-semibold">
+              Público Objetivo
+            </p>
           </div>
         </div>
         <div className=" relative bg-primary flex justify-center items-center text-white h-80 ">
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-semibold">
               Planificación y creación de contenido
             </p>
           </div>
@@ -151,7 +155,7 @@ const ModulesMarketing = () => {
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-semibold">
               Redacción creativa para redes sociales / Storytelling
             </p>
           </div>
@@ -160,7 +164,7 @@ const ModulesMarketing = () => {
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-semibold">
               Instagram y sus recursos
             </p>
           </div>
@@ -169,7 +173,7 @@ const ModulesMarketing = () => {
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-semibold">
               Mood-boards y curaduría de contenido
             </p>
           </div>
@@ -178,14 +182,14 @@ const ModulesMarketing = () => {
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">Publicidad</p>
+            <p className="w-[25ch] text-center font-semibold">Publicidad</p>
           </div>
         </div>
         <div className=" relative bg-primary flex justify-center items-center text-white h-80 ">
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-semibold">
               Facebook, Instagram, Google Ads
             </p>
           </div>
@@ -194,7 +198,7 @@ const ModulesMarketing = () => {
           <div
             className={`${lexend.className} inset-0 bg-cover bg-center text-2xl  z-0`}
           >
-            <p className="w-[25ch] text-center font-bold">
+            <p className="w-[25ch] text-center font-semibold">
               Informes, indicadores de gestión y estadísticas en redes sociales
             </p>
           </div>
