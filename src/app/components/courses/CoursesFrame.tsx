@@ -1,6 +1,6 @@
 import React from "react";
 import { CoursesCardList } from "./CoursesCardList";
-import { hepta_slab } from "@/app/layout";
+import { hepta_slab } from "@/app/asesoriadeimagen/components/price/PriceOutside";
 
 export const CoursesFrame = () => {
   return (

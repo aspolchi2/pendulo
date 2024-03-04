@@ -1,9 +1,17 @@
 import React from "react";
 import { PriceInfo } from "./PriceInfo";
 import { CardProp, PriceCard } from "./PriceCard";
-import { hepta_slab } from "@/app/layout";
 import useBooleanStore from "@/app/zustand/useBooleanStore";
-
+import { Hepta_Slab } from "next/font/google";
+export const hepta_slab = Hepta_Slab({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-hepta-slab",
+  fallback: ["Helvetica", "Arial", "sans-serif"],
+  adjustFontFallback: true,
+  style: "normal",
+});
 const descOne = (
   <p className={`${hepta_slab.className} text-lg leading-6 font-medium`}>
     {" "}

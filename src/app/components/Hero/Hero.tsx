@@ -1,6 +1,6 @@
-import { hepta_slab } from "@/app/layout";
 import React from "react";
 import { Button } from "../atoms/Button";
+import { hepta_slab } from "@/app/asesoriadeimagen/components/price/PriceOutside";
 
 export const Hero = () => {
   return (

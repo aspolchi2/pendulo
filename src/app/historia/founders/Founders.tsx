@@ -5,8 +5,8 @@ import Image from "next/image";
 import Cam from "@/app/components/svg/Cam";
 import Educadora from "@/app/components/svg/Educadora";
 import Artist from "@/app/components/svg/Artist";
-import { lexend } from "@/app/layout";
 import LaptopXs from "@/app/components/svg/LaptopXs";
+import { lexend } from "@/app/asesoriadeimagen/components/joinUs/JoinUs";
 
 const Founders = () => {
   return (

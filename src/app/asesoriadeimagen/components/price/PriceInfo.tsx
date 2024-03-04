@@ -10,7 +10,7 @@ export const PriceInfo = ({
   color: string;
 }) => {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 ">
       <h3 className={`${color} font-semibold text-center text-4xl`}>{title}</h3>
       {description}
     </div>

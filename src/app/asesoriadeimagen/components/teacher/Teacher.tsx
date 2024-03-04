@@ -3,7 +3,8 @@ import { Divider } from "../modality/Modality";
 import claudia from "@/../public/images/asesoramiento2.png";
 import Image from "next/image";
 import { TrianguloRosa } from "@/app/components/svg/TrianguloRosa";
-import { hepta_slab, lexend } from "@/app/layout";
+import { hepta_slab } from "../price/PriceOutside";
+import { lexend } from "../joinUs/JoinUs";
 
 const Teacher = ({
   li,

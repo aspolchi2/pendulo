@@ -5,7 +5,7 @@ export const Red = ({ fill }: { fill: string }) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="83"
-      height="83"
+      height="70"
       viewBox="0 0 83 83"
       fill="none"
     >

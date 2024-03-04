@@ -1,4 +1,4 @@
-import { hepta_slab } from "@/app/layout";
+import { hepta_slab } from "@/app/asesoriadeimagen/components/price/PriceOutside";
 import React from "react";
 
 const Questions = () => {

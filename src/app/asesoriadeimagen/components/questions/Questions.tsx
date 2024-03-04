@@ -1,5 +1,5 @@
-import { hepta_slab } from "@/app/layout";
 import React from "react";
+import { hepta_slab } from "../price/PriceOutside";
 
 const Questions = () => {
   return (

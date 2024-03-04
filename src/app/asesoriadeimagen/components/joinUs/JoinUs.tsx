@@ -1,5 +1,14 @@
-import { lexend } from "@/app/layout";
+import { Lexend } from "next/font/google";
 import React from "react";
+
+export const lexend = Lexend({
+  subsets: ["latin"],
+  variable: "--font-lexend",
+  display: "swap",
+  weight: ["400", "700", "300", "500", "600", "800", "900"],
+  preload: true,
+  fallback: ["Helvetica", "Arial", "sans-serif"],
+});
 
 const JoinUs = () => {
   return (

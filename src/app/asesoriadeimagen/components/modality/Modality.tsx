@@ -31,14 +31,16 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
     <section className={`${lexend.className} ${lexend.style} p-32`}>
       <Divider title={"PROPUESTA EDUCATIVA"} />
       <div className=" flex justify-center align-top gap-6 py-16">
-        <Ligth />
-        <div className=" 2xl:text-2xl text-2xl 2xl:w-[74ch] ">
+        <div className="">
+          <Ligth />
+        </div>
+        <div className=" 2xl:text-2xl text-xl  max-w-prose">
           <p className=" text-pretty">
             Nuestros planes de estudio son desarrollados por educadores de
             amplia trayectoria y se actualizan de forma constante con el
             objetivo de ofrecer una formación sólida e integral.
           </p>
-          <p className=" text-primary font-extrabold ">
+          <p className=" text-primary font-extrabold  max-w-prose">
             La duración de este curso contempla los tiempos de aprendizaje
             promedio para la apropiación e implementación del contenido de una
             forma progresiva.
@@ -55,12 +57,14 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
         ))}
       </div>
       <Divider title="REQUISITOS" />
-      <div className="flex flex-col items-center 2xl:text-2xl text-2xl ">
-        <div className="flex flex-col py-10 gap-12 justify-center items-center">
-          <div className="flex  align-top gap-6 2xl:w-9/12">
-            <PcSmall />
-            <p className=" w-11/12">
-              <span className="text-primary font-extrabold ">
+      <div className="flex flex-col items-center 2xl:text-2xl text-xl ">
+        <div className="flex justify-center align-top gap-6 pt-10">
+          <div className="flex  align-top gap-6  ">
+            <div className="">
+              <PcSmall />
+            </div>
+            <p className="w-[53ch] max-w-prose">
+              <span className="text-primary font-extrabold  ">
                 Tener computadora o celular/dispositivo que cuente con conexión
                 a Internet
               </span>
@@ -68,10 +72,12 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col py-10 gap-12 justify-center items-center">
-          <div className="flex  align-top gap-6 2xl:w-9/12 ">
-            <SobreSmall />
-            <p className="w-11/12">
+        <div className="flex justify-center align-top gap-6 pt-10  ">
+          <div className="flex  align-top gap-6  ">
+            <div className="">
+              <SobreSmall />
+            </div>
+            <p className=" w-[53ch] max-w-prose">
               <span className="text-primary font-extrabold ">
                 Dirección de correo electrónico (E-mail)
               </span>{" "}

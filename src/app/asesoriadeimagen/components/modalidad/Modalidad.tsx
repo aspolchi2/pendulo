@@ -15,7 +15,7 @@ const Modalidad = ({
 }) => {
   return (
     <section className="flex flex-col  bg-primary ">
-      <div className="bg-primary flex w-10/12 m-auto justify-around items-center h-[350px] font-medium">
+      <div className="bg-primary flex w-11/12 m-auto justify-around items-center h-[350px] font-medium">
         <Codito fill="black" />
         <div className="flex flex-col justify-center items-center gap-6 ">
           <Thunder />

@@ -1,18 +1,19 @@
 import React from "react";
 import "../globals.css";
-import { hepta_slab, lexend } from "../layout";
+import { hepta_slab } from "../asesoriadeimagen/components/price/PriceOutside";
+import { lexend } from "../asesoriadeimagen/components/joinUs/JoinUs";
 
 const Description = () => {
   return (
     <section className="px-32 py-28 flex flex-col gap-16 ">
       <div className="grid grid-flow-col grid-cols-2">
-        <div className="col-span-1">
-          <p className="font-bold text-primary text-[28px]  w-[512px] m-auto">
+        <div className="col-span-1 ">
+          <p className="font-bold text-primary xl:text-3xl  xl:w-[512px] md:text-2xl m-auto">
             ¿Por qué aprender Marketing Digital en Péndulo?
           </p>
         </div>
         <div
-          className={`${hepta_slab.className} col-span-2 flex flex-col   text-xl gap-10`}
+          className={`${hepta_slab.className} col-span-2 flex flex-col   xl:text-xl text-base gap-10`}
         >
           <p className="w-9/12 m-auto">
             En esta capacitación, el participante va a adquirir{" "}
@@ -51,13 +52,13 @@ const Description = () => {
       <div className="grid grid-flow-col grid-cols-2">
         <div className="col-span-1">
           <p
-            className={`${lexend.className} font-bold text-primary text-[28px] w-[512px] m-auto`}
+            className={`${lexend.className} font-bold text-primary xl:text-3xl md:text-2xl w-[512px] m-auto`}
           >
             ¿Cómo se va a trabajar en clase?
           </p>
         </div>
         <div
-          className={`${hepta_slab.className} col-span-2 flex flex-col text-xl gap-10`}
+          className={`${hepta_slab.className} col-span-2 flex flex-col xl:text-xl md:text-base gap-10`}
         >
           <div className="flex flex-col gap-10">
             <p className="w-9/12 m-auto">
@@ -102,13 +103,13 @@ const Description = () => {
       <div className="grid grid-flow-col grid-cols-2">
         <div className="col-span-1">
           <p
-            className={`${lexend.className} font-bold text-primary text-[28px] w-[512px] m-auto`}
+            className={`${lexend.className} font-bold text-primary xl:text-3xl md:text-2xl xl:w-[512px] m-auto`}
           >
             ¿El curso sirve para trabajar en esta profesión?
           </p>
         </div>
         <div
-          className={`${hepta_slab.className} col-span-2 flex flex-col  text-xl gap-0`}
+          className={`${hepta_slab.className} col-span-2 flex flex-col  xl:text-xl md:text-base gap-0`}
         >
           <div className="flex flex-col gap-10 ">
             <p className="w-9/12 m-auto">

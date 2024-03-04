@@ -1,9 +1,9 @@
 import React from "react";
 import { Codito } from "../svg/Codito";
 import { TrianguloAzul } from "../svg/TrianguloAzul";
-import { hepta_slab } from "@/app/layout";
 import { CoditoInvertido } from "../svg/CoditoInvertido";
 import { TrianguloRosa } from "../svg/TrianguloRosa";
+import { hepta_slab } from "@/app/asesoriadeimagen/components/price/PriceOutside";
 
 export const WhyPendulo = () => {
   return (
@@ -14,7 +14,7 @@ export const WhyPendulo = () => {
         <div className="flex flex-col justify-end items-center max-w-full">
           <div className="flex items-center gap-10">
             <span className="animate-wiggle animate-infinite animate-duration-[10000ms] animate-ease-in">
-              <Codito fill="#E05FE0"/>
+              <Codito fill="#E05FE0" />
             </span>
             <div className="text text-2xl">
               <p className={`${hepta_slab.className} font-black text-5xl`}>

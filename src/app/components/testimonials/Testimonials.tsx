@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import { TestimonialsCardList } from "./TestimonialsCardList";
-import { hepta_slab } from "@/app/layout";
 import Link from "next/link";
 import { Arrow } from "../svg/Arrow";
+import { hepta_slab } from "@/app/asesoriadeimagen/components/price/PriceOutside";
 
 export const Testimonials = () => {
   const [filter, setFilter] = useState(3);

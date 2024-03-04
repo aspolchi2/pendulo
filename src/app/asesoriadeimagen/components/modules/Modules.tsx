@@ -1,8 +1,9 @@
-import { hepta_slab } from "@/app/layout";
 import React from "react";
 import fotis from "@/../public/images/fotis.png";
 import Image from "next/image";
 import ArrowDown from "@/app/components/testimonials/ArrowDown";
+import { hepta_slab } from "../price/PriceOutside";
+import { lexend } from "../joinUs/JoinUs";
 
 const Modules = ({
   moduleOne,
@@ -30,11 +31,13 @@ const Modules = ({
         {moduleOne.map(({ title, description }) => {
           return (
             <div
-              className="relative bg-primary flex justify-center items-center text-white h-72"
+              className="relative bg-primary flex justify-center items-center text-white h-72 "
               key={title}
             >
               <div
-                className={` bg-cover bg-center  flex items-center gap-3 ${
+                className={`${
+                  lexend.className
+                }  bg-cover bg-center  flex items-center gap-3  ${
                   description.length !== 0
                     ? "hover:opacity-0 inset-0 z-0"
                     : "z-10"
@@ -58,7 +61,11 @@ const Modules = ({
                     {description.map((desc, i) => (
                       <span key={i} className="flex gap-1">
                         <span>·</span>
-                        <li className="leading-6">{desc}</li>
+                        <li
+                          className={`${lexend.className} leading-6 text-base`}
+                        >
+                          {desc}
+                        </li>
                       </span>
                     ))}
                   </ul>
@@ -83,13 +90,17 @@ const Modules = ({
             key={title}
           >
             <div
-              className={` bg-cover bg-center  flex items-center gap-3 ${
+              className={`${
+                lexend.className
+              } bg-cover bg-center  flex items-center gap-3 ${
                 description.length !== 0
                   ? "hover:opacity-0 inset-0 z-0"
                   : "z-10"
               }`}
             >
-              <p className="w-[25ch] text-center text-xl">{title}</p>
+              <p className="w-[25ch] text-center xl:text-xl text-base">
+                {title}
+              </p>
               {description.length !== 0 && (
                 <span className="flex justify-end">
                   <ArrowDown />

@@ -1,7 +1,7 @@
 "use client";
-import { hepta_slab } from "@/app/layout";
 import React from "react";
 import Counter from "./Counter";
+import { hepta_slab } from "@/app/asesoriadeimagen/components/price/PriceOutside";
 
 export const Stadistics = () => {
   return (

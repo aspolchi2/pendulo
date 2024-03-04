@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { hepta_slab } from "@/app/layout";
 import { cardsProps } from "./CoursesCardList";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { hepta_slab } from "@/app/asesoriadeimagen/components/price/PriceOutside";
 
 export const CoursesCard = ({
   id,

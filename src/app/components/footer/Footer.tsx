@@ -1,6 +1,7 @@
-import { hepta_slab, lexend } from "@/app/layout";
 import React from "react";
 import { Header } from "../header/Header";
+import { hepta_slab } from "@/app/asesoriadeimagen/components/price/PriceOutside";
+import { lexend } from "@/app/asesoriadeimagen/components/joinUs/JoinUs";
 
 export const Footer = () => {
   return (
