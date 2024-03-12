@@ -7,7 +7,7 @@ const Description = () => {
       <div className="grid grid-flow-col grid-cols-2">
         <div className="col-span-1">
           <p
-            className={`${lexend.className} font-bold text-primary text-[28px] w-[512px] m-auto`}
+            className={`${lexend.className} font-bold text-primary text-2xl 2xl:text-3xl w-[512px] m-auto`}
           >
             Esta capacitación se caracteriza por ofrecer una formación integral
             en Diseño Gráfico abordando los dos grandes módulos:
