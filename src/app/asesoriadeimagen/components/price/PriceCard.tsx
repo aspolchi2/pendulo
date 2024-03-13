@@ -19,16 +19,14 @@ export const PriceCard = ({
   textColor,
 }: CardProp) => {
   return (
-    <article className="shadow-[6px_6px_15px_0px_#00000015]   2xl:p-14 p-6 aspect-[0,75/1] flex flex-col gap-7 justify-center items-center ">
+    <article className="shadow-[6px_6px_15px_0px_#00000015]   2xl:p-14 xl:p-6 p-6  aspect-[0,75/1] flex flex-col gap-7 justify-center items-center ">
       <header className={`${textColor} self-start`}>
         <p className="text-2xl">OPCIÓN {id}</p>
-        <h3 className="text-4xl font-extrabold leading-10 w-64 self-start">
+        <h3 className="lg:text-4xl text-2xl font-extrabold lg:leading-10 lg:w-64 self-start">
           {fee}
         </h3>
       </header>
-      <main className="w-[28ch] h-40 self-start text-black">
-        <p className="">{desc}</p>
-      </main>
+      <main className=" h-40 self-start text-black">{desc}</main>
       <footer className="">
         <Link
           href={goTo || "#"}

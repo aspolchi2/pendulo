@@ -17,7 +17,7 @@ const hepta_slab = Hepta_Slab({
 
 const descOne = (
   <p
-    className={`${hepta_slab.className} text-lg leading-6 font-medium  text-black`}
+    className={`${hepta_slab.className} lg:text-lg leading-6 font-medium  text-black`}
   >
     {" "}
     Se podrá abonar con tarjeta de débito, tarjeta de crédito hasta{" "}
@@ -28,7 +28,7 @@ const descOne = (
 
 const descTwo = (
   <p
-    className={`${hepta_slab.className} text-lg leading-6 font-medium text-black`}
+    className={`${hepta_slab.className} lg:text-lg leading-6 font-medium text-black`}
   >
     La cuota{" "}
     <span className="font-extrabold">
@@ -39,7 +39,7 @@ const descTwo = (
 );
 const descThree = (
   <p
-    className={`${hepta_slab.className} text-lg leading-6 font-medium text-black`}
+    className={`${hepta_slab.className} lg:text-lg leading-6 font-medium text-black`}
   >
     En caso de elegir pagar en cuotas las mismas{" "}
     <span className="font-extrabold">
@@ -76,7 +76,6 @@ const cardData: CardProp[] = [
 ];
 
 export const PriceArg = () => {
-  const { booleanValue } = useBooleanStore();
   const desc = (
     <p className="text-2xl text-center w-11/12 m-auto">
       Para mayor facilidad, ofrecemos las siguientes opciones y planes de pago:

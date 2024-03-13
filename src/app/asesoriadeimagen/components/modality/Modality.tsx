@@ -65,10 +65,10 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
             <PcSmall />
           </div>
           <div className="max-w-p">
-            {" "}
             <p className="xl:w-[65ch] w-full 2xl:text-2xl xl:text-xl text-primary font-extrabold text-p">
               Tener computadora o celular/dispositivo que cuente con conexión a
               Internet
+            {" "}
               <span className=" font-medium text-black">
                 en lo posible con cámara y micrófono activados.
               </span>
@@ -80,9 +80,8 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
             <SobreSmall />
           </div>
           <div className="max-w-p">
-            {" "}
             <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold">
-              Dirección de correo electrónico (E-mail)
+              Dirección de correo electrónico (E-mail){" "}
               <span className=" font-medium  text-black">
                 donde se recibirán los datos de acceso al curso y comunicados
                 oficiales de la escuela.
@@ -94,11 +93,13 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
       {extra && (
         <>
           <Divider title="REQUISITOS PARA TOMAR LA CAPACITACIÓN" />
-          <div className="flex flex-col py-10 gap-12 justify-center items-center 2xl:text-2xl text-xl">
+          <div className="flex flex-col py-16 gap-12 justify-start items-start 2xl:items-center">
             <div className=" flex  align-top gap-6">
-              <PcSmall />
+              <div className="">
+                <PcSmall />
+              </div>
 
-              <p className="xl:w-[65ch] w-full 2xl:text-2xl xl:text-xl text-primary font-extrabold">
+              <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold">
                 Computadora portátil o de escritorio que cuente con los
                 programas Adobe Illustrator y Adobe Photoshop instalados.
                 <span className=" font-medium text-black">
@@ -108,8 +109,10 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
               </p>
             </div>
             <div className=" flex  align-top gap-6 ">
-              <Ligth />
-              <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl w-full  text-primary font-extrabold">
+              <div className="">
+                <Ligth />
+              </div>
+              <p className="xl:w-[71ch] 2xl:text-2xl xl:text-xl w-full  text-primary font-extrabold">
                 Contar con conocimientos básicos a intermedios de informática. 
                 <span className=" font-medium text-black">
                   Se recomienda saber crear carpetas en windows o mac, descargar

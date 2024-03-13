@@ -9,10 +9,9 @@ const hepta_slab = Hepta_Slab({
 
 export const Interesed = ({
   filter,
-  isFilter,
+
 }: {
   filter?: number;
-  isFilter?: boolean;
 }) => {
   return (
     <section

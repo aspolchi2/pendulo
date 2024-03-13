@@ -12,7 +12,6 @@ export const CoursesCard = ({
   description,
   image,
   href,
-  filter,
   isFilter,
 }: cardsProps) => {
   return (

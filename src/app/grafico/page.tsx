@@ -79,7 +79,7 @@ export default function Home() {
       )}
       <Stadistics />
       <Testimonials />
-      <Interesed isFilter filter={2} />
+      <Interesed filter={2} />
       <Footer />
     </main>
   );

@@ -97,7 +97,7 @@ export default function Interiores() {
         </>
       )}{" "}
       <Testimonials />
-      <Interesed filter={4} isFilter />
+      <Interesed filter={4}  />
       <Footer />
     </div>
   );

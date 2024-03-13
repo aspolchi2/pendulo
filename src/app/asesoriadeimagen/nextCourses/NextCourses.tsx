@@ -26,7 +26,10 @@ export const NextCourses = ({
   };
 
   return (
-    <section className="bg-black xl:p-28 p-10 text-white" id="prices">
+    <section
+      className="bg-black xl:p-28 lg:p-10 p-4 py-10 lg:py-0 text-white"
+      id="prices"
+    >
       <div className="flex flex-col gap-6">
         <h3 className="text-5xl font-bold">Próximos inicios</h3>
         <div className="border rounded-lg flex p-14 justify-around ">
@@ -35,7 +38,7 @@ export const NextCourses = ({
               <div className="" key={i}>
                 <p>{key[0]}</p>
                 <p
-                  className="first-line:font-bold text-xl"
+                  className="first-line:font-bold lg:text-xl"
                   dangerouslySetInnerHTML={{ __html: key[1] }}
                 ></p>
               </div>
