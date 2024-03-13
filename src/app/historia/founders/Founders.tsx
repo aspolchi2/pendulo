@@ -19,23 +19,25 @@ const Founders = () => {
         <div className="w-full h-[2px] bg-white"></div>
       </div>
       <div className="grid grid-flow-col grid-cols-8 gap-20">
-        <div className="col-span-5  2xl:col-span-2  flex flex-col justify-start  items-start gap-14 ">
+        <div className="col-span-4  2xl:col-span-2  flex flex-col justify-start  items-start gap-14 ">
           <Image
             src={marciaFilz}
             alt="foto de marcia filz"
-            className="w-80 aspect-square self-center"
+            className="xl:w-80 w-80 aspect-square self-start"
           ></Image>
-          <div className="flex flex-col items-center gap-4 ">
-            <p className="text-yellow font-black text-5xl pb-6">MARCIA FILZ</p>
-            <div className=" flex justify-start gap-5 items-start w-96 px-4">
+          <div className="flex flex-col items-start gap-4 ">
+            <p className="text-yellow font-black xl:text-5xl text-3xl pb-6">
+              MARCIA FILZ
+            </p>
+            <div className=" flex justify-start gap-5 items-start xl:w-96 w-72 px-4">
               <Cam /> <p className="text-2xl">Fotógrafa.</p>
             </div>
             <div className="w-full h-px bg-white"></div>
-            <div className=" flex justify-start gap-5 items-start w-96 px-4">
+            <div className=" flex justify-start gap-5 items-start xl:w-96 w-72 px-4">
               <Educadora /> <p className="text-2xl">Educadora.</p>
             </div>
             <div className="w-full h-px bg-white"></div>
-            <div className=" flex justify-start gap-5 items-start w-96 px-4">
+            <div className=" flex justify-start gap-5 items-start xl:w-96 w-72 px-4">
               <Artist /> <p className="text-2xl">Artista visual.</p>
             </div>
             <div className="w-full h-px bg-white"></div>
@@ -85,25 +87,25 @@ const Founders = () => {
       </div>
       <div className="w-full h-[2px] bg-white"></div>
       <div className="grid grid-flow-col grid-cols-8 gap-20">
-        <div className="col-span-5 2xl:col-span-2  flex flex-col justify-start  items-start gap-14 ">
+        <div className="col-span-4 2xl:col-span-2  flex flex-col justify-start  items-start gap-14 ">
           <Image
             src={lorenaSamponi}
             alt="foto de marcia filz"
-            className="w-80 aspect-square self-center"
+            className="xl:w-80 w- aspect-square self-start"
           ></Image>
-          <div className="flex flex-col items-center gap-4  pb-32">
-            <p className="text-yellow font-black text-5xl pb-6">
+          <div className="flex flex-col items-start gap-4  pb-32">
+            <p className="text-yellow font-black xl:text-5xl text-3xl pb-6">
               LORENA SAMPONI
             </p>
-            <div className=" flex justify-start gap-5 items-start w-96 px-4">
+            <div className=" flex justify-start gap-5 items-start xl:w-96 px-4 w-72 text-base">
               <LaptopXs /> <p className="text-2xl">Diseñadora gráfica.</p>
             </div>
             <div className="w-full h-px bg-white"></div>
-            <div className=" flex justify-start gap-5 items-start w-96 px-4">
+            <div className=" flex justify-start gap-5 items-start xl:w-96 px-4 w-72 text-base">
               <Cam /> <p className="text-2xl">Fotógrafa.</p>
             </div>
             <div className="w-full h-px bg-white"></div>
-            <div className=" flex justify-start gap-5 items-start w-96 px-4">
+            <div className=" flex justify-start gap-5 items-start xl:w-96 px-4 w-72 text-base">
               <Educadora /> <p className="text-2xl">Educadora.</p>
             </div>
             <div className="w-full h-px bg-white "></div>

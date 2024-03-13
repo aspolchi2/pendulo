@@ -31,7 +31,7 @@ const Text = () => {
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="max-w-[1920px] m-auto">
       <Hero />
       <CoursesFrame />
       <Accomplish />

@@ -73,18 +73,18 @@ export const dataInterior = [
 ];
 
 const grafico1 = (
-  <p className="w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold">
+  <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl  text-xl text-primary font-extrabold">
     Estudiantes y profesionales{" "}
-    <span className=" font-medium text-2xl text-black">
+    <span className=" font-medium xl:text-2xl text-black">
       de diseño, arquitectura, informática, artes audiovisuales, periodismo,
       trabajadores de imprentas y afines.
     </span>
   </p>
 );
 const grafico2 = (
-  <p className="w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold">
+  <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl text-xl text-primary font-extrabold">
     Emprendedores o personas que tengan su propio negocio{" "}
-    <span className="font-medium text-2xl text-black">
+    <span className="font-medium xl:text-2xl text-black">
       y quieran desarrollar de manera autónoma las piezas gráficas de su propio
       emprendimiento.
     </span>{" "}
@@ -92,10 +92,10 @@ const grafico2 = (
 );
 
 const grafico3 = (
-  <p className="w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold">
+  <p className="xl:w-[65ch] w-full 2xl:text-2xl xl:text-xl text-xl text-primary font-extrabold">
     Cualquier persona interesada en desarrollar sus propias piezas de diseño
     gráfico{" "}
-    <span className="text-black  text-2xl font-medium">
+    <span className="text-black  xl:text-2xl font-medium">
       (tarjetas, logos, etiquetas, etc)
     </span>
   </p>

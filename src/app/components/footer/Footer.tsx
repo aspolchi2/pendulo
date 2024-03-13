@@ -6,7 +6,7 @@ import { lexend } from "@/app/asesoriadeimagen/components/joinUs/JoinUs";
 export const Footer = () => {
   return (
     <section className="bg-black text-white">
-      <div className="grid grid-cols-2 h-[500px] place-content-center w-10/12 m-auto">
+      <div className="grid lg:grid-cols-2 md:grid-cols-3 h-[500px] place-content-center w-10/12 m-auto">
         <div className=""></div>
         <div className={`flex flex-col gap-16`}>
           <div className="flex flex-col gap-5">

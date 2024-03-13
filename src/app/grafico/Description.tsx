@@ -7,7 +7,7 @@ const Description = () => {
       <div className="grid grid-flow-col grid-cols-2">
         <div className="col-span-1">
           <p
-            className={`${lexend.className} font-bold text-primary text-2xl 2xl:text-3xl w-[512px] m-auto`}
+            className={`${lexend.className} font-bold text-primary lg:text-2xl 2xl:text-3xl text-xl xl:w-[512px] m-auto`}
           >
             Esta capacitación se caracteriza por ofrecer una formación integral
             en Diseño Gráfico abordando los dos grandes módulos:
@@ -16,7 +16,7 @@ const Description = () => {
         <div
           className={`${hepta_slab.className} col-span-2 flex flex-col text-xl gap-20`}
         >
-          <div className="flex flex-col gap-3 w-[577px] m-auto">
+          <div className="flex flex-col gap-3 lg:w-[577px] m-auto">
             <p className="">MÓDULO 1:</p>
             <div className="w-full h-px bg-black"></div>
             <p className="">
@@ -36,7 +36,7 @@ const Description = () => {
               modificar fondos, entre otros.
             </p>
           </div>
-          <div className="flex flex-col gap-3 w-[577px] m-auto">
+          <div className="flex flex-col gap-3 lg:w-[577px] m-auto">
             <p className="">MÓDULO 2:</p>
             <div className="w-full h-px bg-black"></div>
             <p className="">
@@ -51,7 +51,7 @@ const Description = () => {
       <div className="grid grid-flow-col grid-cols-2">
         <div className="col-span-1">
           <p
-            className={`${lexend.className} font-bold text-primary text-[28px] w-[512px] m-auto`}
+            className={`${lexend.className} font-bold text-primary text-2xl lg:w-[512px] m-auto`}
           >
             ¿El curso sirve para trabajar en esta profesión?
           </p>
@@ -59,7 +59,7 @@ const Description = () => {
         <div
           className={`${hepta_slab.className} col-span-2 flex flex-col text-xl gap-20`}
         >
-          <div className="flex flex-col gap-3 w-[577px] m-auto">
+          <div className="flex flex-col gap-3 lg:w-[577px] m-auto">
             <p className="">
               Para ejercer esta profesión lo más importante es poder demostrar a
               un potencial cliente o empresa el tipo de trabajo que puedas ser

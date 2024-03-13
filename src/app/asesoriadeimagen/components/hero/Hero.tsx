@@ -17,7 +17,7 @@ const lexend = Lexend({
 export const Hero = ({ bg, span, text, title, extra }: props) => {
   return (
     <section
-      className={`${bg} ${lexend.className} h-[842px] bg-no-repeat bg-cover bg-blend-multiply bg-center h-screen `}
+      className={`${bg} ${lexend.className} max-h-[842px] bg-no-repeat bg-cover bg-blend-multiply bg-center h-screen `}
     >
       <div className="w-full h-full flex items-center ">
         <div className="ml-40 flex flex-col gap-6 ">

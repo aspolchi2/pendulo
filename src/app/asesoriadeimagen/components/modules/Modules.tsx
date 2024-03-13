@@ -37,13 +37,13 @@ const Modules = ({
               <div
                 className={`${
                   lexend.className
-                }  bg-cover bg-center  flex items-center gap-3  ${
+                }  bg-cover bg-center  flex items-center xl:gap-3 gap-1 ${
                   description.length !== 0
                     ? "hover:opacity-0 inset-0 z-0"
                     : "z-10"
                 }`}
               >
-                <p className="w-[25ch] text-center text-xl">{title}</p>
+                <p className="w-[25ch] text-center xl:text-xl">{title}</p>
 
                 {description.length !== 0 && (
                   <span className="flex justify-end">

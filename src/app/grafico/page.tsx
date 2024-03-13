@@ -43,7 +43,7 @@ export default function Home() {
   );
 
   return (
-    <main className="overflow-x-hidden">
+    <main className="overflow-x-hidden max-w-[1920px] m-auto">
       <Hero
         bg="bg-diseno"
         title="Diseño"

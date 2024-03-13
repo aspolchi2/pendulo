@@ -20,13 +20,13 @@ const ModulesGrafico = () => {
       <div className="grid grid-cols-2   w-full bg-white gap-[1px]">
         <div className="relative bg-primary flex justify-center items-center text-white h-96">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 flex items-center gap-2 z-0">
-            <p className="w-[25ch] text-center font-bold">
+            <p className="lg:w-[25ch] text-center font-bold">
               ADOBE ILLUSTRATOR <br />| Manejo de software
             </p>
             <ArrowDown />
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
-            <ul className="bg-primary text-lg w-[450px] flex flex-col gap-8">
+            <ul className="bg-primary xl:text-lg xl:w-[450px] flex flex-col gap-8 text-sm ">
               <span className="flex gap-1">
                 <span>·</span>
                 <li className="leading-6">
@@ -63,13 +63,13 @@ const ModulesGrafico = () => {
         </div>
         <div className="relative bg-primary flex justify-center items-center text-white h-96">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 flex items-center gap-3">
-            <p className="w-[25ch] text-center font-bold ">
+            <p className="xl:w-[25ch] text-center font-bold ">
               ADOBE PHOTOSHOP <br />| Manejo de software
             </p>
             <ArrowDown />
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
-            <ul className="bg-primary text-lg w-[450px] flex flex-col gap-8">
+            <ul className="bg-primary xl:text-lg text-lg xl:w-[450px] flex flex-col gap-8">
               <span className="flex gap-1">
                 <span>·</span>
                 <li className="leading-6">
@@ -148,13 +148,13 @@ const ModulesGrafico = () => {
       <div className="grid grid-cols-2   w-full bg-white gap-[1px]">
         <div className="relative bg-primary flex justify-center items-center text-white h-96">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 flex items-center gap-3">
-            <p className="w-[25ch] text-center font-bold ">
+            <p className="xl:w-[25ch] text-center font-bold ">
               INTRODUCCIÓN AL DISEÑO Y LA COMUNICACIÓN VISUAL
             </p>
             <ArrowDown />
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
-            <ul className="bg-primary text-lg w-[450px] flex flex-col gap-8">
+            <ul className="bg-primary text-lg xl:w-[450px] flex flex-col gap-8">
               <span className="flex gap-1">
                 <span>·</span>
                 <li className="leading-6">
@@ -177,14 +177,14 @@ const ModulesGrafico = () => {
           </div>
         </div>
         <div className="relative bg-primary flex justify-center items-center text-white h-96">
-          <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 flex items-center gap-3">
+          <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 flex items-center lg:gap-3">
             <p className="w-[25ch] text-center font-bold flex items-center gap-3">
               COMPOSICIÓN Y LENGUAJE VISUAL
             </p>
             <ArrowDown />
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
-            <ul className="bg-primary text-lg w-[450px] flex flex-col gap-8">
+            <ul className="bg-primary xl:text-lg lg:w-[450px] flex flex-col xl:gap-8 gap-4 text-base p-1">
               <span className="flex gap-1">
                 <span>·</span>
                 <li className="leading-6">
@@ -248,21 +248,20 @@ const ModulesGrafico = () => {
                 <span>·</span>
                 <li className="leading-6">
                   Creación de un manual de identidad para una marca a elección:{" "}
-                </li>
-              </span>
-              <span className="flex gap-1">
-                <li className="leading-6 font-medium -mt-2">
                   Los/as estudiantes podrán trabajar con un emprendimiento
                   propio o que elijan para desarrollar su propio manual de
                   marca.
                 </li>
+              </span>
+              <span className="flex gap-1">
+                <li className="leading-6 font-medium -mt-2"></li>
               </span>
             </ul>
           </div>
         </div>
 
         <div className=" flex justify-center items-center h-96 bg-primary col-span-2">
-          <p className="text-center w-10/12 text-white 2xl:text-2xl text-xl font-bold">
+          <p className="text-center w-10/12 text-white 2xl:text-2xl text-xl  font-bold">
             Al finalizar el curso cada participante habrá desarrollado el diseño
             completo de una marca o emprendimiento a elección desde la
             construcción de la identidad hasta el desarrollo de las piezas

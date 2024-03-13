@@ -30,7 +30,7 @@ export default function Page() {
   };
 
   return (
-    <main className="overflow-x-hidden">
+    <main className="overflow-x-hidden max-w-[1920px] m-auto">
       <HistoriaHero />
       <NuevaHistoria />
       <HistoriaSep />

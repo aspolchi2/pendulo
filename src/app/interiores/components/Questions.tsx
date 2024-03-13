@@ -6,7 +6,7 @@ const Questions = () => {
     <section>
       <div className="w-10/12 m-auto my-28">
         <div className="grid grid-cols-2 grid-flow-col items-star justify-center">
-          <p className="font-bold text-3xl text-primary">
+          <p className="font-bold xl:text-3xl text-2xl text-primary">
             ¿Por qué es importante <br /> el interiorismo?
           </p>
           <p
@@ -23,7 +23,7 @@ const Questions = () => {
         </div>
         <div className="h-px bg-primary my-16"></div>
         <div className="grid grid-cols-2 grid-flow-col  items-star justify-center">
-          <p className="font-bold text-3xl text-primary">
+          <p className="font-bold xl:text-3xl text-2xl text-primary">
             ¿Qué vas a aprender en el curso?
           </p>
           <p className={`${hepta_slab.className} xl:w-[563px]`}>
@@ -38,7 +38,7 @@ const Questions = () => {
         </div>
         <div className="h-px bg-primary my-16"></div>
         <div className="grid grid-cols-2 grid-flow-col  items-star justify-center">
-          <p className="font-bold text-3xl text-primary">
+          <p className="font-bold xl:text-3xl text-2xl text-primary">
             ¿Cómo se va a trabajar en clase?
           </p>
           <p className={`${hepta_slab.className} xl:w-[563px]`}>
@@ -70,7 +70,7 @@ const Questions = () => {
         </div>
         <div className="h-px bg-primary my-16"></div>
         <div className="grid grid-cols-2 grid-flow-col  items-star justify-center">
-          <p className="font-bold text-3xl text-primary">
+          <p className="font-bold xl:text-3xl text-2xl text-primary">
             ¿El curso sirve para trabajar en <br /> esta profesión?
           </p>
           <p className={`${hepta_slab.className} xl:w-[563px]`}>

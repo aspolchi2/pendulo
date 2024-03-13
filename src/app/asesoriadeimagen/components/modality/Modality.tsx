@@ -35,7 +35,7 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
           <Ligth />
         </div>
         <div className=" 2xl:text-2xl text-xl 2xl:w-8/12">
-          <p className=" text-pretty">
+          <p className="">
             Nuestros planes de estudio son desarrollados por educadores de
             amplia trayectoria y se actualizan de forma constante con el
             objetivo de ofrecer una formación sólida e integral.
@@ -62,7 +62,7 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
           <PcSmall />
           <div className="max-w-p">
             {" "}
-            <p className="w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold">
+            <p className="xl:w-[65ch] w-full 2xl:text-2xl xl:text-xl text-primary font-extrabold text-p">
               Tener computadora o celular/dispositivo que cuente con conexión a
               Internet
               <span className=" font-medium text-black">
@@ -75,7 +75,7 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
           <SobreSmall />
           <div className="max-w-p">
             {" "}
-            <p className="w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold">
+            <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold">
               Dirección de correo electrónico (E-mail)
               <span className=" font-medium  text-black">
                 donde se recibirán los datos de acceso al curso y comunicados
@@ -88,35 +88,29 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
       {extra && (
         <>
           <Divider title="REQUISITOS PARA TOMAR LA CAPACITACIÓN" />
-          <div className="flex flex-col py-10 gap-12 justify-center items-center 2xl:text-2xl text-2xl">
+          <div className="flex flex-col py-10 gap-12 justify-center items-center 2xl:text-2xl text-xl">
             <div className=" flex  align-top gap-6">
               <PcSmall />
-              <div className="max-w-p">
-                {" "}
-                <p className="w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold">
-                  Computadora portátil o de escritorio que cuente con los
-                  programas Adobe Illustrator y Adobe Photoshop instalados.
-                  <span className=" font-medium text-black">
-                    Además se recomienda contar con un mouse para el uso de los
-                    programas.
-                  </span>
-                </p>
-              </div>
+
+              <p className="xl:w-[65ch] w-full 2xl:text-2xl xl:text-xl text-primary font-extrabold">
+                Computadora portátil o de escritorio que cuente con los
+                programas Adobe Illustrator y Adobe Photoshop instalados.
+                <span className=" font-medium text-black">
+                  Además se recomienda contar con un mouse para el uso de los
+                  programas.
+                </span>
+              </p>
             </div>
-            <div className=" flex  align-top gap-6">
+            <div className=" flex  align-top gap-6 ">
               <Ligth />
-              <div className="max-w-p">
-                {" "}
-                <p className="w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold">
-                  Contar con conocimientos básicos a intermedios de
-                  informática. 
-                  <span className=" font-medium text-black">
-                    Se recomienda saber crear carpetas en windows o mac,
-                    descargar archivos de internet, copiar y pegar documentos,
-                    descargar archivos desde un pen drive, etc.
-                  </span>
-                </p>
-              </div>
+              <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl w-full  text-primary font-extrabold">
+                Contar con conocimientos básicos a intermedios de informática. 
+                <span className=" font-medium text-black">
+                  Se recomienda saber crear carpetas en windows o mac, descargar
+                  archivos de internet, copiar y pegar documentos, descargar
+                  archivos desde un pen drive, etc.
+                </span>
+              </p>
             </div>
           </div>
         </>

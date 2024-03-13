@@ -34,12 +34,12 @@ export const AchievedCard: React.FC<Propuesta> = ({
           className={`bg-black w-0.5  h-full ${id == 10 && "hidden"}
         ${isEven ? "xl:mr-20 lg:mr-10" : "xl:ml-20 lg:mr-10"} `}
         ></div>
-        <div className={`flex flex-col gap-20  lg:w-3/6 xl:w-3/6`}>
+        <div className={`flex flex-col gap-20  lg:w-3/6 xl:w-3/6 md:w-5/6`}>
           <h2 className={` text-primary xl:text-6xl  lg:text-4xl font-black `}>
             {title}
           </h2>
           <p
-            className={` xl:text-base  font-normal w-8/12  lg:text-sm ${
+            className={` xl:text-base  font-normal xl:w-8/12  lg:text-sm ${
               isEven && "text-right self-end"
             } `}
           >
@@ -53,7 +53,7 @@ export const AchievedCard: React.FC<Propuesta> = ({
             alt=""
             width={455}
             height={312}
-            className="xl:h-80 xl:w-auto lg:h-64 "
+            className="xl:h-80 xl:w-auto lg:h-64 lg:w-auto w-auto"
           ></Image>
         </main>
       </header>

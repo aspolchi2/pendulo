@@ -57,7 +57,7 @@ export default function Interiores() {
     </p>
   );
   return (
-    <div className={lexend.className}>
+    <div className={`${lexend.className} max-w-[1920px] m-auto`}>
       <Hero
         bg="bg-interioresBg"
         span="Interior"

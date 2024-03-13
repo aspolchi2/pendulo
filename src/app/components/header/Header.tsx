@@ -47,7 +47,9 @@ export const Header = ({
 }) => {
   const router = useRouter();
   return (
-    <header className={`w-full  h-28 flex items-end ${position} ${bg} z-50 `}>
+    <header
+      className={`w-full max-w-[1920px] m-auto h-28 flex items-end ${position} ${bg} z-50 `}
+    >
       <nav className="flex justify-between w-11/12 m-auto h-full pb-6 z-20">
         <Link href={"/"} className="flex items-end  gap-2 cursor-pointer">
           <Image
@@ -59,7 +61,7 @@ export const Header = ({
           />
           <p className="text-3xl font-[600]">Péndulo</p>
         </Link>
-        <ul className="flex gap-10 items-end text-[1.125rem] uppercase text-accent">
+        <ul className="flex gap-10 items-end sm:text-base uppercase text-accent">
           <li className="">
             <Link href={"/"}>propuesta</Link>
           </li>
@@ -103,7 +105,7 @@ export const Header = ({
             )}
           </li>
         </ul>
-        <ul className="flex gap-6 items-end">
+        <ul className="flex xl:gap-6 gap-2 items-end">
           {icons.map(({ id, src, link }) => (
             <li className="" key={id}>
               <a href={link} target="_blank" rel="norefferer">

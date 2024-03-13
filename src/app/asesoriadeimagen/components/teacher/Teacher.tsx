@@ -1,6 +1,5 @@
 import React from "react";
 import { Divider } from "../modality/Modality";
-import claudia from "@/../public/images/asesoramiento2.png";
 import Image from "next/image";
 import { TrianguloRosa } from "@/app/components/svg/TrianguloRosa";
 import { hepta_slab } from "../price/PriceOutside";
@@ -18,7 +17,7 @@ const Teacher = ({
   extraText?: any;
 }) => {
   return (
-    <section className="p-32 bg-primary">
+    <section className="xl:p-32 p-20 bg-primary">
       <Divider title="PROFESORA" color="text-white" bgcolor="bg-white" />
       <div className="flex pt-16 justify-center items-start">
         <Image src={teacher} alt={`Foto de ${name}`} width={265} height={265} />

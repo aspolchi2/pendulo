@@ -8,7 +8,6 @@ import { hepta_slab } from "@/app/asesoriadeimagen/components/price/PriceOutside
 export const Testimonials = () => {
   const [filter, setFilter] = useState(3);
   const handleAdd = () => {
-    console.log(filter);
     setFilter(filter + 3);
     if (filter >= 8) {
       setFilter(3);
@@ -16,21 +15,21 @@ export const Testimonials = () => {
   };
   return (
     <section
-      className="flex flex-col items-center gap-9 p-28  scale-75 xl:scale-100 max-xl:scale-75"
+      className="flex flex-col items-center gap-9 lg:p-28   xl:scale-100 max-xl:scale-75"
       id="testimonios"
     >
-      <h3 className="text-[55px]">¿QUIENES NOS ELIGEN?</h3>
+      <h3 className="lg:text-[55px] text-5xl">¿QUIENES NOS ELIGEN?</h3>
       <p className="text-3xl font-medium">
         Conocé la experiencia de nuestros estudiantes:
       </p>
       <div className={`${hepta_slab.className} flex gap-9 text-base `}>
-        <p className="w-[601px] ">
+        <p className="lg:w-[601px] ">
           Durante los últimos 7 años que contamos con esta capacitación han
           ampliado sus herramientas personales y laborales estudiantes y
           profesionales del área del estilismo, producción de moda, diseño de
           indumentaria, maquillaje profesional, emprendedores
         </p>
-        <p className="w-[601px] ">
+        <p className="lg:w-[601px] ">
           y comerciantes del rubro de la moda y belleza y amantes de la moda y
           la imagen personal que han querido incursionar en esta disciplina
           tanto para trabajar su propia imagen como para incursionar en una
