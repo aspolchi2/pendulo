@@ -20,7 +20,11 @@ const Teacher = ({
     <section className="xl:p-32 p-20 bg-primary">
       <Divider title="PROFESORA" color="text-white" bgcolor="bg-white" />
       <div className="flex pt-16 justify-center items-start">
-        <Image src={teacher} alt={`Foto de ${name}`} width={265} height={265} />
+        <Image
+          src={teacher}
+          alt={`Foto de ${name}`}
+          className="xl:w-64 w-40 aspect-square"
+        />
         <div className="w-[769px] h-[360px] ml-10 flex flex-col gap-14 relative justify-around ">
           <p className={`${hepta_slab.className} text-white text-6xl w-8/12`}>
             {name}

@@ -52,7 +52,7 @@ const Description = () => {
       <div className="grid grid-flow-col grid-cols-2">
         <div className="col-span-1">
           <p
-            className={`${lexend.className} font-bold text-primary xl:text-3xl md:text-2xl w-[512px] m-auto`}
+            className={`${lexend.className} font-bold text-primary xl:text-3xl md:text-2xl xl:w-8/12  2xl:m-auto `}
           >
             ¿Cómo se va a trabajar en clase?
           </p>

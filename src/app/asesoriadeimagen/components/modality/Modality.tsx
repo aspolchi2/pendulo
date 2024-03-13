@@ -51,7 +51,9 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
       <div className="flex flex-col py-16 gap-12 justify-start items-start 2xl:items-center ">
         {text.map((item: any, index: number) => (
           <div key={index} className=" flex  align-top gap-6">
-            <CheckBox />
+            <div className="w-8">
+              <CheckBox />
+            </div>
             <div className="max-w-p">{item}</div>
           </div>
         ))}
@@ -59,7 +61,9 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
       <Divider title="REQUISITOS" />
       <div className="flex flex-col py-16 gap-12 justify-start items-start 2xl:items-center ">
         <div className=" flex  align-top gap-6">
-          <PcSmall />
+          <div className="">
+            <PcSmall />
+          </div>
           <div className="max-w-p">
             {" "}
             <p className="xl:w-[65ch] w-full 2xl:text-2xl xl:text-xl text-primary font-extrabold text-p">
@@ -72,7 +76,9 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
           </div>
         </div>
         <div className=" flex  align-top gap-6">
-          <SobreSmall />
+          <div className="">
+            <SobreSmall />
+          </div>
           <div className="max-w-p">
             {" "}
             <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold">
