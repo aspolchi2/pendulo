@@ -1,10 +1,10 @@
 import React from "react";
-import { lexend } from "../layout";
 import { hepta_slab } from "../asesoriadeimagen/components/price/PriceOutside";
+import { lexend } from "../asesoriadeimagen/components/joinUs/JoinUs";
 
 const ModulesMarketing = () => {
   return (
-    <section className="bg-primary p-32 font-medium">
+    <section className={`${lexend.className} bg-primary p-32 font-medium`}>
       <p className="text-right text-xl text-white pb-2">CONTENIDOS</p>
       <div className="h-px bg-white"></div>
       <div
@@ -105,14 +105,12 @@ const ModulesMarketing = () => {
 
         <div className="h-px bg-white"></div>
       </div>
-      <div
-        className={`hepta_slab text-yellow  px-10 pt-[98px] text-6xl font-bold pb-16`}
-      >
-        <div className="flex justify-between w-full">
+      <div className={` text-yellow  px-10 pt-[98px] text-6xl font-bold pb-16`}>
+        <div className={`${hepta_slab.className} flex justify-between w-full`}>
           <p>Módulo</p>
           <p>.02</p>
         </div>
-        <p className="text-white text-3xl ">EL ROL DEL COMMUNITY MANAGER</p>
+        <p className="text-white text-3xl">EL ROL DEL COMMUNITY MANAGER</p>
       </div>
       <div className="h-px bg-white"></div>
       <div className="grid grid-cols-2 grid-rows-2  w-full bg-white gap-[1px]">

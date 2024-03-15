@@ -67,8 +67,7 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
           <div className="max-w-p">
             <p className="xl:w-[65ch] w-full 2xl:text-2xl xl:text-xl text-primary font-extrabold text-p">
               Tener computadora o celular/dispositivo que cuente con conexión a
-              Internet
-            {" "}
+              Internet{" "}
               <span className=" font-medium text-black">
                 en lo posible con cámara y micrófono activados.
               </span>
@@ -112,7 +111,7 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
               <div className="">
                 <Ligth />
               </div>
-              <p className="xl:w-[71ch] 2xl:text-2xl xl:text-xl w-full  text-primary font-extrabold">
+              <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl w-full  text-primary font-extrabold">
                 Contar con conocimientos básicos a intermedios de informática. 
                 <span className=" font-medium text-black">
                   Se recomienda saber crear carpetas en windows o mac, descargar

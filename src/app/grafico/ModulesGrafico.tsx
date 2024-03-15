@@ -1,6 +1,7 @@
 import React from "react";
 import { lexend } from "../layout";
 import ArrowDown from "../components/testimonials/ArrowDown";
+import { hepta_slab } from "../asesoriadeimagen/components/price/PriceOutside";
 
 const ModulesGrafico = () => {
   return (
@@ -10,11 +11,13 @@ const ModulesGrafico = () => {
       <div
         className={`hepta_slab text-yellow  px-10 pt-[98px] text-6xl font-bold pb-16`}
       >
-        <div className="flex justify-between w-full">
+        <div className={`${hepta_slab.className} flex justify-between w-full`}>
           <p>Módulo</p>
           <p>.01</p>
         </div>
-        <p className="text-white text-3xl ">HERRAMIENTAS DEL DISEÑO</p>
+        <p className={`${lexend.className} text-white text-3xl font-medium`}>
+          HERRAMIENTAS DEL DISEÑO
+        </p>
       </div>
       <div className="h-px bg-white"></div>
       <div className="grid grid-cols-2   w-full bg-white gap-[1px]">
@@ -138,11 +141,13 @@ const ModulesGrafico = () => {
       <div
         className={`hepta_slab text-yellow  px-10 pt-[98px] text-6xl font-bold pb-16`}
       >
-        <div className="flex justify-between w-full">
+        <div className={`${hepta_slab.className} flex justify-between w-full`}>
           <p>Módulo</p>
           <p>.02</p>
         </div>
-        <p className="text-white text-3xl ">HERRAMIENTAS DEL DISEÑO</p>
+        <p className={`${lexend.className} text-white text-3xl  font-medium`}>
+          HERRAMIENTAS DEL DISEÑO
+        </p>
       </div>
       <div className="h-px bg-white"></div>
       <div className="grid grid-cols-2   w-full bg-white gap-[1px]">

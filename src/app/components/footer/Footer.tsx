@@ -30,6 +30,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
+      <Header bg="bg-black" isFooter position="" />
       <div
         className={`${hepta_slab.className} flex bg-primary h-24 justify-around items-center font-medium`}
       >
