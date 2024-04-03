@@ -22,6 +22,7 @@ const config: Config = {
         historiaSep: "url('./images/historiaSep.png')",
         diseno: "url('./images/diseno.png')",
         marketingBg: "url('./images/marketingBg.png')",
+        homeHeroMobile: "url('./images/homeHeroMobile.png')",
       },
       colors: {
         accent: "#E05FE0",
@@ -31,6 +32,7 @@ const config: Config = {
         gray: "#D9D9DD",
         pink: "#E05FE0",
         yellow: "#F4E962",
+        grayMenu: "#7E7676",
       },
     },
   },

@@ -1,11 +1,12 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import icon from "../../favicon.ico";
 import Image from "next/image";
 import Facebook from "../svg/Facebook";
 import { Instagram, LinkedIn, Whatsapp } from "../svg";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { Squash as Hamburger } from "hamburger-react";
 
 type linksProp = {
   id: string;
@@ -45,23 +46,23 @@ export const Header = ({
   position: string;
   isFooter?: boolean;
 }) => {
-  const router = useRouter();
+  const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <header
       className={`w-full max-w-[1920px] m-auto h-28 flex items-end ${position} ${bg} z-50 `}
     >
       <nav className="flex justify-between w-11/12 m-auto h-full pb-6 z-20">
-        <Link href={"/"} className="flex items-end  gap-2 cursor-pointer">
+        <Link href={"/"} className="flex items-end  gap-2 cursor-pointer ">
           <Image
             src={icon.src}
             alt="icon of pendulo"
             width={40}
             height={40}
-            className="pb-1"
+            className="pb-1 w-8 sm:w-auto"
           />
-          <p className="text-3xl font-[600]">Péndulo</p>
+          <p className="sm:text-3xl font-[600] text-xl">Péndulo</p>
         </Link>
-        <ul className="flex gap-10 items-end sm:text-base uppercase text-accent">
+        <ul className="sm:flex gap-10 items-end sm:text-base uppercase text-accent hidden">
           <li className="">
             <Link href={"/"}>propuesta</Link>
           </li>
@@ -105,14 +106,39 @@ export const Header = ({
             )}
           </li>
         </ul>
-        <ul className="flex xl:gap-6 gap-2 items-end">
+        <ul className="flex xl:gap-6 gap-2 items-end relative">
           {icons.map(({ id, src, link }) => (
             <li className="" key={id}>
-              <a href={link} target="_blank" rel="norefferer">
+              <a href={link} target="_blank" rel="norefferer" className="">
                 {src}
               </a>
             </li>
           ))}
+          {!isFooter && (
+            <div className="sm:hidden h-9">
+              <Hamburger toggled={isNavOpen} size={20} toggle={setIsNavOpen} />
+            </div>
+          )}
+          {isNavOpen && (
+            <div className="absolute top-24 left-0 w-full bg-white z-10">
+              <ul className="flex flex-col gap-4 p-4">
+                <li className="">
+                  <Link href={"/"}>propuesta</Link>
+                </li>
+                <li className="">
+                  <Link href={"/historia"}>historia</Link>
+                </li>
+                <li className="">
+                  <Link href={"#testimonios"}>testimonios</Link>
+                </li>
+                <li className="">
+                  <Link href={"#cursos"}>cursos</Link>
+                </li>
+              </ul>
+
+              <div className="h-px bg-white"></div>
+            </div>
+          )}
         </ul>
       </nav>
     </header>

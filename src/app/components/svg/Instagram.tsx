@@ -8,6 +8,7 @@ export const Instagram = () => {
       height="25"
       viewBox="0 0 39 39"
       fill="none"
+      className=""
     >
       <g clipPath="url(#clip0_191_23)">
         <path

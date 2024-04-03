@@ -1,20 +1,23 @@
 import React from "react";
 import { Button } from "../atoms/Button";
 import { hepta_slab } from "@/app/asesoriadeimagen/components/price/PriceOutside";
+import { lexend } from "@/app/asesoriadeimagen/components/joinUs/JoinUs";
 
 export const Hero = () => {
   return (
-    <section className="bg-hero-bg w-full h-screen max-h-[920px] bg-cover md:max-h-[800px] xl:max-h-[920px] overflow-x-hidden">
+    <section
+      className={`${lexend.className} sm:bg-hero-bg bg-homeHeroMobile w-full h-screen sm:max-h-[920px] bg-cover md:max-h-[800px] xl:max-h-[920px] overflow-x-hidden`}
+    >
       <div className="backdrop-brightness-50 h-full w-full flex items-center">
-        <div className=" relative p-36 ">
-          <p className="  text-white sm:text-[3.5vw] 2xl:text-8xl font-bold  l  drop-shadow-md opacity-100">
+        <div className=" relative sm:p-36 p-6 pt-56 sm:pt-0">
+          <p className="  text-white sm:text-[3.5vw] 2xl:text-8xl font-bold  text-2xl drop-shadow-md opacity-100">
             Ampliá tu horizonte
           </p>
-          <p className="drop-shadow-md text-white sm:text-[2.5vw] 2xl:text-6xl leading-none font-thin w-[40.93rem]  ">
+          <p className="drop-shadow-md text-white sm:text-[2.5vw] 2xl:text-5xl leading-none font-thin sm:w-[40.93rem] text-xl ">
             de posibilidades personales <br /> & profesionales
           </p>
           <p
-            className={`${hepta_slab.className} text-white w-[41.5rem] max-w-prose sm:text-xl md:text-2xl pt-4 `}
+            className={`${hepta_slab.className} text-white sm:w-[41.5rem] max-w-prose sm:text-xl md:text-2xl pt-4 leading-4 text-sm`}
           >
             En nuestra{" "}
             <span className="font-extrabold">
@@ -31,7 +34,7 @@ export const Hero = () => {
             </Button>
           </div>
         </div>
-        <div className="w-full h-32 lg:h-24 bg-violet opacity-80 brightness-[.35]  absolute bottom-0"></div>
+        <div className="w-full h-32 lg:h-24 bg-violet opacity-80 brightness-[.35]  absolute bottom-0 hidden sm:block"></div>
       </div>
     </section>
   );
