@@ -23,6 +23,7 @@ const config: Config = {
         diseno: "url('./images/diseno.png')",
         marketingBg: "url('./images/marketingBg.png')",
         homeHeroMobile: "url('./images/homeHeroMobile.png')",
+        lograrMobile: "url('./images/lograrMobile.png')",
       },
       colors: {
         accent: "#E05FE0",

@@ -5,13 +5,13 @@ import { hepta_slab } from "@/app/asesoriadeimagen/components/price/PriceOutside
 export const CoursesFrame = () => {
   return (
     <section
-      className="bg-gray flex-col flex gap-24  justify-center items-center pt-32 pb-40 scroll-m-11"
+      className="bg-gray flex-col flex sm:gap-24  justify-center items-center sm:pt-32 sm:pb-40 scroll-m-11 pb-24"
       id="cursos"
     >
       <CoursesCardList isFilter={false} />
 
       <p
-        className={`${hepta_slab.className} xl:text-3xl lg:text-2xl text-center`}
+        className={`${hepta_slab.className} xl:text-3xl lg:text-2xl text-center w-10/12`}
       >
         Descubrir una nueva disciplina te puede permitir{" "}
         <span className="font-extrabold">

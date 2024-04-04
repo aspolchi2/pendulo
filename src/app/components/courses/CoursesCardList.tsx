@@ -4,6 +4,7 @@ import graphic from "@/app/../../public/images/graphic.png";
 import asesoria from "@/app/../../public/images/asesoria.png";
 import interiores from "@/app/../../public/images/interiores.png";
 import { CoursesCard } from "./CoursesCard";
+import Carousel from "../carousel/Carousel";
 
 export type cardsProps = {
   id: number;
@@ -15,7 +16,7 @@ export type cardsProps = {
   isFilter?: boolean;
 };
 
-const cards: cardsProps[] = [
+export const cards: cardsProps[] = [
   {
     id: 1,
     href: "marketing",
@@ -61,25 +62,47 @@ export const CoursesCardList = ({
     ? cards.filter((card) => card.id !== filter)
     : cards;
   return (
-    <div
-      className={`grid gap-4 ${
-        filter
-          ? "md:grid-cols-2 xl:grid-cols-3 "
-          : "grid-cols-2 2xl:grid-cols-4"
-      }`}
-    >
-      {filteredCards.map((card) => (
-        <CoursesCard
-          key={card.id}
-          id={card.id}
-          description={card.description}
-          image={card.image}
-          title={card.title}
-          href={card.href}
+    <>
+      <div
+        className={`sm:grid gap-4 hidden ${
           filter
-          isFilter={isFilter}
-        />
-      ))}
-    </div>
+            ? "md:grid-cols-2 xl:grid-cols-3 "
+            : "grid-cols-2 2xl:grid-cols-4"
+        }`}
+      >
+        {filteredCards.map((card) => (
+          <CoursesCard
+            key={card.id}
+            id={card.id}
+            description={card.description}
+            image={card.image}
+            title={card.title}
+            href={card.href}
+            filter
+            isFilter={isFilter}
+          />
+        ))}
+      </div>
+      <div className="flex justify-center items-center p-16 sm:hidden">
+        <div className="w-screen">
+          <Carousel autoSlide={false}>
+            {filteredCards.map((card) => (
+              <div className="px-8" key={card.id}>
+                <CoursesCard
+                  key={card.id}
+                  id={card.id}
+                  description={card.description}
+                  image={card.image}
+                  title={card.title}
+                  href={card.href}
+                  filter
+                  isFilter={isFilter}
+                />
+              </div>
+            ))}
+          </Carousel>
+        </div>
+      </div>
+    </>
   );
 };
