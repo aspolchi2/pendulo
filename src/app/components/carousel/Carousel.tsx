@@ -3,9 +3,11 @@ import React, { useState, useEffect } from "react";
 import ArrowSmall from "../svg/ArrowSmall";
 
 const Carousel = ({
+  //@ts-ignore
   children: slides,
   autoSlide = false,
   autoSlideInterval = 3000,
+  color = "text-black",
 }) => {
   const [curr, setCurr] = useState(0);
 
@@ -23,29 +25,12 @@ const Carousel = ({
 
   return (
     <div className="overflow-hidden relative flex flex-col gap-12">
-      <div
-        className="flex transition-transform ease-out duration-500"
-        style={{ transform: `translateX(-${curr * 99}%)` }}
-      >
-        {slides}
+      <div className="flex transition-transform ease-out duration-500">
+        {slides[curr]}
       </div>
-      {/* <div className="absolute inset-0 flex items-center justify-between p-4">
-        <button
-          onClick={prev}
-          className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
-        >
-          flecha
-        </button>
-        <button
-          onClick={next}
-          className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
-        >
-          flecha
-        </button>
-      </div> */}
       <button
         onClick={next}
-        className="w-screen m-auto flex justify-center items-center gap-4 "
+        className={`w-screen m-auto flex justify-center items-center gap-4 ${color}`}
       >
         Conoce más cursos <ArrowSmall />
       </button>

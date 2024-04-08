@@ -5,6 +5,7 @@ import { cardsProps } from "./CoursesCardList";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { hepta_slab } from "@/app/asesoriadeimagen/components/price/PriceOutside";
+import { lexend } from "@/app/asesoriadeimagen/components/joinUs/JoinUs";
 
 export const CoursesCard = ({
   id,
@@ -20,10 +21,10 @@ export const CoursesCard = ({
         opacity: 0,
         y: 100,
       }}
-      transition={{ duration: id * 0.3 }}
+      transition={{ duration: 0.275 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="bg-white shadow-md flex flex-col w-80 justify-center p-9 flex-grow space-x-6"
+      className="bg-white shadow-md flex flex-col justify-center  flex-grow p-7 sm:p-5 h-[550px] w-64 sm:h-[650px] sm:w-72 "
     >
       <header>
         {!isFilter && (
@@ -34,30 +35,29 @@ export const CoursesCard = ({
           </p>
         )}
       </header>
-      <main>
-        <h2 className="font-semibold text-primary md:text-4xl sm:text-2xl  w-60">
+      <main className="flex flex-col gap-1">
+        <h2 className="font-semibold text-primary md:text-4xl sm:text-2xl text-xl">
           {title}
         </h2>
         <p
-          className={`${hepta_slab.className} font-normal  text-[13px] w-[228px]  leading-4 h-36  pb-36  pt-[14px]`}
+          className={`${hepta_slab.className} font-normal  text-sm sm:h-40 leading-4 pt-3 `}
         >
           {description}
         </p>
         <Image
           src={image}
           alt="image"
-          width={230}
-          height={170}
-          className="pb-7"
+          width={224}
+          height={224}
+          className=" w-full sm:h-52"
         />
       </main>
-      <footer>
-        <Link
-          href={`/${href}`}
-          className="flex-shrink-0 bg-primary text-white font-bold text-xl w-full h-11 rounded-lg px-7 py-3   "
-        >
-          +INFORMACIÓN
-        </Link>
+      <footer className="min-h-max sm:h-full  w-full flex justify-center items-center pt-7">
+        <div className="flex-shrink-0 bg-primary text-white font-bold text-sm sm:text-xl w-full  rounded-lg h-11 flex justify-center items-center ">
+          <Link href={`/${href}`} className={`${lexend.className} `}>
+            +INFORMACIÓN
+          </Link>
+        </div>
       </footer>
     </motion.article>
   );

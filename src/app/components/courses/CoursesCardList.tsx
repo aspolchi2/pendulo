@@ -84,10 +84,10 @@ export const CoursesCardList = ({
         ))}
       </div>
       <div className="flex justify-center items-center p-16 sm:hidden">
-        <div className="w-screen">
+        <div className="w-screen flex justify-center">
           <Carousel autoSlide={false}>
             {filteredCards.map((card) => (
-              <div className="px-8" key={card.id}>
+              <div className="flex justify-center w-8/12 m-auto" key={card.id}>
                 <CoursesCard
                   key={card.id}
                   id={card.id}

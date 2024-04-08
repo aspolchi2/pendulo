@@ -6,6 +6,7 @@ import { WhatsappLigth } from "../svg/WhatsappLigth";
 import { Pdfsvg } from "../svg/Pdfsvg";
 import { Credit } from "../svg/Credit";
 import { Certificate } from "../svg/Certificate";
+import Carousel from "../carousel/Carousel";
 
 export interface MyData {
   id: string;
@@ -61,16 +62,31 @@ const data: MyData[] = [
 
 export const OfferingCardList = () => {
   return (
-    <div className="grid grid-cols-2 2xl:grid-cols-3 gap-5 place-content-center place-items-center xl:w-9/12 2xl:max-w-7xl m-auto ">
-      {data.map(({ id, svg, title, description }) => (
-        <OfferingCard
-          key={id}
-          svg={svg}
-          title={title}
-          description={description}
-          id={id}
-        />
-      ))}
-    </div>
+    <>
+      <div className="sm:grid grid-cols-2 2xl:grid-cols-3 gap-5 place-content-center place-items-center xl:w-9/12 2xl:max-w-7xl m-auto hidden">
+        {data.map(({ id, svg, title, description }) => (
+          <OfferingCard
+            key={id}
+            svg={svg}
+            title={title}
+            description={description}
+            id={id}
+          />
+        ))}
+      </div>
+      <div className="">
+        <Carousel color="text-white">
+          {data.map(({ id, svg, title, description }) => (
+            <OfferingCard
+              key={id}
+              svg={svg}
+              title={title}
+              description={description}
+              id={id}
+            />
+          ))}
+        </Carousel>
+      </div>
+    </>
   );
 };
