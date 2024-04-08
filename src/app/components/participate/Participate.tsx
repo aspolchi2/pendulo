@@ -27,7 +27,7 @@ export const Participate = () => {
             ¿QUÉ SE NECESITA PARA PARTICIPAR?
           </h3>
           <hr className="text-white mt-5" />
-          <div className="flex gap-9 w-full justify-center mt-20 pb-28">
+          <div className="flex gap-9 w-full justify-center mt-20 pb-28 flex-col sm:flex-row">
             {data.map((item) => (
               <ParticipateCard key={item.id} {...item} />
             ))}

@@ -14,7 +14,7 @@ export const OfferingCard = ({ svg, title, description }: MyData) => {
       <header className="text-pink flex flex-col gap-5 justify-center items-center mt-[56px]">
         {svg}
         <p
-          className="text-3xl font-black text-center"
+          className="sm:text-3xl text-2xl font-black text-center"
           dangerouslySetInnerHTML={{ __html: title }}
         ></p>
       </header>

@@ -74,8 +74,8 @@ export const OfferingCardList = () => {
           />
         ))}
       </div>
-      <div className="">
-        <Carousel color="text-white">
+      <div className=" w-10/12 m-auto sm:hidden ">
+        <Carousel color="text-white" fill="fill-white" text="Ver más">
           {data.map(({ id, svg, title, description }) => (
             <OfferingCard
               key={id}

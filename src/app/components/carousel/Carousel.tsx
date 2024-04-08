@@ -8,6 +8,8 @@ const Carousel = ({
   autoSlide = false,
   autoSlideInterval = 3000,
   color = "text-black",
+  fill = "fill-black",
+  text = "Conoce más cursos",
 }) => {
   const [curr, setCurr] = useState(0);
 
@@ -30,9 +32,9 @@ const Carousel = ({
       </div>
       <button
         onClick={next}
-        className={`w-screen m-auto flex justify-center items-center gap-4 ${color}`}
+        className={`w-full m-auto flex justify-center items-center gap-4 ${color}`}
       >
-        Conoce más cursos <ArrowSmall />
+        {text} <ArrowSmall fill={fill} />
       </button>
     </div>
   );

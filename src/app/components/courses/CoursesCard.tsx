@@ -24,7 +24,7 @@ export const CoursesCard = ({
       transition={{ duration: 0.275 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="bg-white shadow-md flex flex-col justify-center  flex-grow p-7 sm:p-5 h-[550px] w-64 sm:h-[650px] sm:w-72 "
+      className="bg-white shadow-md flex flex-col justify-center  flex-grow p-7 sm:p-5 h-[550px] sm:h-[650px] sm:w-72 "
     >
       <header>
         {!isFilter && (
