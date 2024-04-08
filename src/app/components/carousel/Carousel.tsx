@@ -30,6 +30,17 @@ const Carousel = ({
       <div className="flex transition-transform ease-out duration-500">
         {slides[curr]}
       </div>
+      <div className="flex items-center justify-center gap-2">
+        {slides.map((_: any, i: any) => (
+          <div
+            key={i}
+            className={`
+              transition-all w-3 h-3 bg-white rounded-full
+              ${curr === i ? "p-2" : "bg-opacity-50"}
+            `}
+          />
+        ))}
+      </div>
       <button
         onClick={next}
         className={`w-full m-auto flex justify-center items-center gap-4 ${color}`}
