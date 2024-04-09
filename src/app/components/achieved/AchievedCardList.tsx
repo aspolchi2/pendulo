@@ -10,6 +10,7 @@ import entorno from "@/../public/images/entorno.png";
 import enfasis from "@/../public/images/enfasis.png";
 import practicas from "@/../public/images/practicas.png";
 import educacion from "@/../public/images/educacion.png";
+import Carousel from "../carousel/Carousel";
 
 export type Propuesta = {
   id: any;
@@ -92,12 +93,42 @@ const data: Propuesta[] = [
   },
 ];
 
+const separated = [
+  [
+    { ...data[0] },
+    { ...data[1] },
+    { ...data[2] },
+    { ...data[3] },
+    { ...data[4] },
+  ],
+  [
+    { ...data[5] },
+    { ...data[6] },
+    { ...data[7] },
+    { ...data[8] },
+    { ...data[9] },
+  ],
+];
+
 export const AchievedCardList = () => {
   return (
-    <div className="flex flex-col gap-20">
-      {data.map((item) => (
-        <AchievedCard key={item.id} reappear={false} {...item} />
-      ))}
-    </div>
+    <>
+      <div className="sm:flex flex-col gap-20 hidden">
+        {data.map((item) => (
+          <AchievedCard key={item.id} reappear={false} {...item} />
+        ))}
+      </div>
+      <div className="sm:hidden">
+        <Carousel>
+          {separated.map((item, index) => (
+            <div key={index} className="flex flex-col gap-10">
+              {item.map((item, index) => (
+                <AchievedCard key={index} reappear={true} {...item} />
+              ))}
+            </div>
+          ))}
+        </Carousel>
+      </div>
+    </>
   );
 };
