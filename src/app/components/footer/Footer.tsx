@@ -9,7 +9,7 @@ export const Footer = () => {
       <div className="sm:grid lg:grid-cols-2 md:grid-cols-3 sm:h-[500px] place-content-center w-10/12 m-auto flex pt-20">
         <div className=""></div>
         <div className={`flex flex-col gap-16`}>
-          <div className="flex flex-col gap-5 ml-10 sm:ml-0">
+          <div className="flex flex-col gap-5 ml-6 sm:ml-0">
             <p className={`${lexend.className} sm:text-2xl text-xs font-bold`}>
               TRABAJA CON NOSOTRAS
             </p>
@@ -20,7 +20,7 @@ export const Footer = () => {
             </p>
           </div>
           <div
-            className={`${hepta_slab.className} flex flex-col gap-1 ml-10 sm:ml-0 text-xs w-full`}
+            className={`${hepta_slab.className} flex flex-col gap-1 ml-6 sm:ml-0 text-xs w-full`}
           >
             <p className="">CONSULTANOS</p>
             <div className="flex sm:gap-20 gap-2 items-center">
