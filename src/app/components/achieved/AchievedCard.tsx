@@ -20,8 +20,8 @@ export const AchievedCard: React.FC<Propuesta> = ({
   return (
     <motion.article
       className=" m-auto flex justify-center xl:h-[350px] lg:h-64 "
-      initial={isEven ? { opacity: 0, x: 100 } : { opacity: 0, x: -100 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial={isEven ? { x: 100 } : { x: -100 }}
+      whileInView={{ x: 0 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
     >
