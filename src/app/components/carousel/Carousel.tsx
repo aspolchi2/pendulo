@@ -10,14 +10,28 @@ const Carousel = ({
   color = "text-black",
   fill = "fill-black",
   text = "Conoce más cursos",
+  dotsColor = "bg-white",
+  goTo = "",
 }) => {
   const [curr, setCurr] = useState(0);
 
   const prev = () =>
     setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1));
 
-  const next = () =>
+  function irAId(id: string) {
+    const elemento = document.getElementById(id);
+    if (elemento) {
+      elemento.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }
+
+  const next = () => {
+    irAId(goTo);
     setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
+  };
 
   useEffect(() => {
     if (!autoSlide) return;
@@ -35,7 +49,7 @@ const Carousel = ({
           <div
             key={i}
             className={`
-              transition-all w-3 h-3 bg-white rounded-full
+              transition-all w-3 h-3 ${dotsColor} rounded-full
               ${curr === i ? "p-2" : "bg-opacity-50"}
             `}
           />

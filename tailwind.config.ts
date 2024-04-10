@@ -34,6 +34,7 @@ const config: Config = {
         pink: "#E05FE0",
         yellow: "#F4E962",
         grayMenu: "#7E7676",
+        camel: "#F0EBEB",
       },
     },
   },

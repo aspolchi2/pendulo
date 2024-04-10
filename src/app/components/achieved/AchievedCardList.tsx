@@ -119,7 +119,7 @@ export const AchievedCardList = () => {
         ))}
       </div>
       <div className="sm:hidden">
-        <Carousel>
+        <Carousel dotsColor="bg-black" goTo={"consiguiendo"}>
           {separated.map((item, index) => (
             <div key={index} className="flex flex-col gap-10">
               {item.map((item, index) => (
