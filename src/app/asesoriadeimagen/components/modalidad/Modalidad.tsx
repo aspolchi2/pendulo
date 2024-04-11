@@ -10,33 +10,43 @@ const Modalidad = ({
   images,
   formacion,
 }: {
-  images: { image: StaticImageData }[];
+  images: { image: any }[];
   formacion: any;
 }) => {
   return (
     <section className="flex flex-col  bg-primary ">
-      <div className="bg-primary flex w-11/12 m-auto justify-around items-center h-[350px] font-medium">
-        <Codito fill="black" />
-        <div className="flex flex-col justify-center items-center gap-6 ">
-          <Thunder />
+      <div className="bg-primary flex w-11/12 m-auto justify-around items-center sm:h-[350px] h-36 hy font-medium">
+        <div className="hidden sm:block ">
+          <Codito fill="black" />
+        </div>
+        <div className="flex flex-col justify-center items-center sm:gap-6   text-xs sm:text-base">
+          <div className="w-10 sm:w-auto">
+            <Thunder />
+          </div>
           <p className="text-white text-center">
             MODALIDAD <br /> REGULAR
           </p>
         </div>
-        <div className="flex flex-col justify-center items-center gap-6">
-          <Calendar />
+        <div className="flex flex-col justify-center items-center sm:gap-6   text-xs sm:text-base">
+          <div className="w-10 sm:w-auto">
+            <Calendar />
+          </div>
           {formacion}
         </div>
-        <div className="flex flex-col justify-center items-center gap-6">
-          <Red fill="white" />
+        <div className="flex flex-col justify-center items-center sm:gap-6   text-xs sm:text-base">
+          <div className="w-10 sm:w-auto">
+            <Red fill="white" />
+          </div>
           <p className="text-white text-center">
             100% ONLINE <br /> Y EN VIVO
           </p>
         </div>
 
-        <TrianguloRosa fill="black" />
+        <div className="hidden sm:block ">
+          <TrianguloRosa fill="black" />
+        </div>
       </div>
-      <div className="  flex justify-between  w-full ">
+      <div className="  sm:flex justify-between  w-full hidden ">
         {images.map((img: any, index: number) => (
           <Image
             key={index}
@@ -47,6 +57,17 @@ const Modalidad = ({
             className=" w-[32.5vw] object-cover    flex-shrink: 0; "
           />
         ))}
+      </div>
+      <div className="grid grid-cols-5 grid-rows-2 sm:hidden gap-1">
+        <div className="col-span-2">
+          <Image src={images[0].image.src} width={135} height={172} className="w-full h-full" alt="fotos de gente trabajando" />
+        </div>
+        <div className="col-span-2 col-start-1 row-start-2">
+          <Image src={images[1].image.src} width={135} height={172}  className="w-full h-full" alt="fotos de gente trabajando"/>
+        </div>
+        <div className="col-span-3 row-span-2 col-start-3 row-start-1">
+          <Image src={images[2].image.src} width={234} height={400} className="w-full h-full" alt="fotos de gente trabajando"/>
+        </div>
       </div>
     </section>
   );

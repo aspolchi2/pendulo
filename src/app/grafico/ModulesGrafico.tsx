@@ -5,34 +5,40 @@ import { hepta_slab } from "../asesoriadeimagen/components/price/PriceOutside";
 
 const ModulesGrafico = () => {
   return (
-    <section className={`${lexend.className} bg-primary p-32 font-medium`}>
-      <p className="text-right text-xl text-white pb-2">CONTENIDOS</p>
+    <section
+      className={`${lexend.className} bg-primary sm:p-32 p-11 font-medium`}
+    >
+      <p className="text-right sm:text-xl text-white pb-2 text-base">
+        CONTENIDOS
+      </p>
       <div className="h-px bg-white"></div>
       <div
-        className={`hepta_slab text-yellow  px-10 pt-[98px] text-6xl font-bold pb-16`}
+        className={`hepta_slab text-yellow  sm:px-10 pt-[98px] sm:text-6xl font-bold sm:pb-16 text-2xl mb-6`}
       >
-        <div className={`${hepta_slab.className} flex justify-between w-full`}>
+        <div className={`${hepta_slab.className} flex justify-between w-full `}>
           <p>Módulo</p>
           <p>.01</p>
         </div>
-        <p className={`${lexend.className} text-white text-3xl font-medium`}>
+        <p
+          className={`${lexend.className} text-white sm:text-3xl text-xs font-medium`}
+        >
           HERRAMIENTAS DEL DISEÑO
         </p>
       </div>
       <div className="h-px bg-white"></div>
-      <div className="grid grid-cols-2   w-full bg-white gap-[1px]">
-        <div className="relative bg-primary flex justify-center items-center text-white h-96">
+      <div className="sm:grid grid-cols-2   w-full bg-white gap-[1px] flex flex-col ">
+        <div className="relative bg-primary flex justify-center items-center text-white sm:h-96 h-52">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 flex items-center gap-2 z-0">
-            <p className="lg:w-[25ch] text-center font-bold">
+            <p className="lg:w-[25ch] text-center sm:font-bold">
               ADOBE ILLUSTRATOR <br />| Manejo de software
             </p>
             <ArrowDown />
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
-            <ul className="bg-primary xl:text-lg xl:w-[450px] flex flex-col gap-8 text-sm ">
+            <ul className="bg-primary xl:text-lg xl:w-[450px] flex flex-col sm:gap-8 sm:text-sm text-[10px] gap-4 text-center sm:text-left">
               <span className="flex gap-1">
                 <span>·</span>
-                <li className="leading-6">
+                <li className="sm:leading-6">
                   Introducción al programa:{" "}
                   <span className="font-medium">
                     Uso de interfaz y espacio de trabajo. Atajos del teclado.
@@ -41,7 +47,7 @@ const ModulesGrafico = () => {
               </span>
               <span className="flex gap-1">
                 <span>·</span>
-                <li className="leading-6">
+                <li className="sm:leading-6">
                   Herramientas:{" "}
                   <span className="font-medium">
                     Selección directa. Creación de formas. Rellenos de color y
@@ -54,7 +60,7 @@ const ModulesGrafico = () => {
               </span>
               <span className="flex gap-1">
                 <span>·</span>
-                <li className="leading-6">
+                <li className="sm:leading-6">
                   Preparación de archivo para impresión:{" "}
                   <span className="font-medium">
                     Ajustes de salida. Exportación de archivos.
@@ -64,18 +70,18 @@ const ModulesGrafico = () => {
             </ul>
           </div>
         </div>
-        <div className="relative bg-primary flex justify-center items-center text-white h-96">
-          <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 flex items-center gap-3">
-            <p className="xl:w-[25ch] text-center font-bold ">
+        <div className="relative bg-primary flex justify-center items-center text-white sm:h-96 h-52">
+          <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 flex items-center gap-3 justify-between">
+            <p className="xl:w-[25ch] text-center sm:font-bold  ">
               ADOBE PHOTOSHOP <br />| Manejo de software
             </p>
             <ArrowDown />
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
-            <ul className="bg-primary xl:text-lg text-lg xl:w-[450px] flex flex-col gap-8">
+            <ul className="bg-primary xl:text-lg xl:w-[450px] flex flex-col sm:gap-8 sm:text-sm text-[10px] gap-4 text-center sm:text-left">
               <span className="flex gap-1">
                 <span>·</span>
-                <li className="leading-6">
+                <li className="sm:leading-6">
                   Introducción al programa:{" "}
                   <span className="font-medium">
                     Uso de interfaz y espacio de trabajo.
@@ -84,7 +90,7 @@ const ModulesGrafico = () => {
               </span>
               <span className="flex gap-1">
                 <span>·</span>
-                <li className="leading-6">
+                <li className="sm:leading-6">
                   Herramientas:{" "}
                   <span className="font-medium">
                     Selección: lazos, varita mágica. Uso de capas. Modos de
@@ -96,7 +102,7 @@ const ModulesGrafico = () => {
               </span>
               <span className="flex gap-1">
                 <span>·</span>
-                <li className="leading-6">
+                <li className="sm:leading-6">
                   Preparación de archivo para impresión:{" "}
                   <span className="font-medium">
                     Ajustes de salida. Exportación de archivos.
@@ -106,7 +112,7 @@ const ModulesGrafico = () => {
             </ul>
           </div>
         </div>
-        <div className="col-span-2 relative bg-primary flex justify-center items-center text-white h-64 ">
+        <div className="col-span-2 relative bg-primary sm:flex justify-center items-center text-white sm:h-64 hidden ">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 flex items-center gap-3">
             <p className="w-[25ch] text-center font-bold ">
               INTRODUCCIÓN A LA IMAGEN DIGITAL
@@ -114,20 +120,20 @@ const ModulesGrafico = () => {
             <ArrowDown />
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
-            <ul className="bg-primary text-lg flex flex-col gap-1 justify-center items-center ">
+            <ul className="bg-primary xl:text-lg xl:w-[450px] flex flex-col sm:gap-8 sm:text-sm text-[10px] gap-4 text-center sm:text-left ">
               <span className="flex gap-1">
                 <span>·</span>
-                <li className="leading-6">
+                <li className="sm:leading-6">
                   Diferencia entre imágenes bitmap e imágenes vectoriales.
                 </li>
               </span>
               <span className="flex gap-1">
                 <span>·</span>
-                <li className="leading-6">Resolución de imágenes.</li>
+                <li className="sm:leading-6">Resolución de imágenes.</li>
               </span>
               <span className="flex gap-1">
                 <span>·</span>
-                <li className="leading-6">
+                <li className="sm:leading-6">
                   Preparación de archivos para impresión o uso en redes
                   sociales.
                 </li>
@@ -139,30 +145,32 @@ const ModulesGrafico = () => {
         <div className="h-px bg-white"></div>
       </div>
       <div
-        className={`hepta_slab text-yellow  px-10 pt-[98px] text-6xl font-bold pb-16`}
+        className={`hepta_slab text-yellow  sm:px-10 pt-[98px] sm:text-6xl font-bold sm:pb-16 text-2xl mb-6`}
       >
         <div className={`${hepta_slab.className} flex justify-between w-full`}>
           <p>Módulo</p>
           <p>.02</p>
         </div>
-        <p className={`${lexend.className} text-white text-3xl  font-medium`}>
+        <p
+          className={`${lexend.className} text-white sm:text-3xl text-xs  font-medium`}
+        >
           HERRAMIENTAS DEL DISEÑO
         </p>
       </div>
       <div className="h-px bg-white"></div>
-      <div className="grid grid-cols-2   w-full bg-white gap-[1px]">
-        <div className="relative bg-primary flex justify-center items-center text-white h-96">
+      <div className="sm:grid grid-cols-2   w-full bg-white gap-[1px]">
+        <div className="relative bg-primary flex justify-center items-center text-white sm:h-96 h-52">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 flex items-center gap-3">
-            <p className="xl:w-[25ch] text-center font-bold ">
+            <p className="xl:w-[25ch] text-center sm:font-bold w-8/12 m-auto text-sm">
               INTRODUCCIÓN AL DISEÑO Y LA COMUNICACIÓN VISUAL
             </p>
             <ArrowDown />
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
-            <ul className="bg-primary text-lg xl:w-[450px] flex flex-col gap-8">
+            <ul className="bg-primary xl:text-lg xl:w-[450px] flex flex-col sm:gap-8 sm:text-sm text-[10px] gap-4 text-center sm:text-left w-11/12 m-auto">
               <span className="flex gap-1">
                 <span>·</span>
-                <li className="leading-6">
+                <li className="sm:leading-6">
                   ¿Qué es el diseño?{" "}
                   <span className="font-medium">
                     Diferencia entre arte y diseño. Forma y función. 
@@ -171,7 +179,7 @@ const ModulesGrafico = () => {
               </span>
               <span className="flex gap-1">
                 <span>·</span>
-                <li className="leading-6">
+                <li className="sm:leading-6">
                   ¿Qué es la comunicación?{" "}
                   <span className="font-medium">
                     Concepto. Brief. Proceso de trabajo.
@@ -181,18 +189,18 @@ const ModulesGrafico = () => {
             </ul>
           </div>
         </div>
-        <div className="relative bg-primary flex justify-center items-center text-white h-96">
+        <div className="relative bg-primary flex justify-center items-center text-white sm:h-96 h-52">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 flex items-center lg:gap-3">
-            <p className="w-[25ch] text-center font-bold flex items-center gap-3">
+            <p className="xl:w-[25ch] text-center sm:font-bold w-8/12 m-auto text-sm">
               COMPOSICIÓN Y LENGUAJE VISUAL
             </p>
             <ArrowDown />
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
-            <ul className="bg-primary xl:text-lg lg:w-[450px] flex flex-col xl:gap-8 gap-4 text-base p-1">
+            <ul className="bg-primary xl:text-lg xl:w-[450px] flex flex-col sm:gap-8 sm:text-sm text-[10px] gap-4 text-center sm:text-left w-11/12 m-auto">
               <span className="flex gap-1">
                 <span>·</span>
-                <li className="leading-6">
+                <li className="sm:leading-6">
                   Teoría del color:{" "}
                   <span className="font-medium">
                     Círculo cromático. Armonías. Psicología del color. Modos de
@@ -202,7 +210,7 @@ const ModulesGrafico = () => {
               </span>
               <span className="flex gap-1">
                 <span>·</span>
-                <li className="leading-6">
+                <li className="sm:leading-6">
                   Composición:{" "}
                   <span className="font-medium">
                     Elementos visuales básicos: líneas, texturas, puntos. Leyes
@@ -212,7 +220,7 @@ const ModulesGrafico = () => {
               </span>
               <span className="flex gap-1">
                 <span>·</span>
-                <li className="leading-6">
+                <li className="sm:leading-6">
                   Tipografía:{" "}
                   <span className="font-medium">
                     Características de las tipografías. Clasificación. Elección
@@ -222,7 +230,7 @@ const ModulesGrafico = () => {
               </span>
               <span className="flex gap-1">
                 <span>·</span>
-                <li className="leading-6">
+                <li className="sm:leading-6">
                   Organización de la información:{" "}
                   <span className="font-medium">Jerarquías.</span>
                 </li>
@@ -230,28 +238,28 @@ const ModulesGrafico = () => {
             </ul>
           </div>
         </div>
-        <div className="col-span-2 relative bg-primary flex justify-center items-center text-white h-64 ">
+        <div className="col-span-2 relative bg-primary flex justify-center items-center text-white sm:h-96 h-52 ">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 flex items-center gap-3">
-            <p className="w-[25ch] text-center font-bold ">
+            <p className="xl:w-[25ch] text-center sm:font-bold w-8/12 m-auto text-sm ">
               IDENTIDAD / BRANDING
             </p>
             <ArrowDown />
           </div>
           <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
-            <ul className="bg-primary text-lg flex flex-col gap-1 justify-center items-center ">
+            <ul className="bg-primary xl:text-lg xl:w-[450px] flex flex-col sm:gap-8 sm:text-sm text-[10px] gap-4 text-center sm:text-left w-11/12 m-auto ">
               <span className="flex gap-1">
                 <span>·</span>
-                <li className="leading-6">
+                <li className="sm:leading-6">
                   Introducción a la identidad de marca.
                 </li>
               </span>
               <span className="flex gap-1">
                 <span>·</span>
-                <li className="leading-6">Construcción de logo. </li>
+                <li className="sm:leading-6">Construcción de logo. </li>
               </span>
               <span className="flex gap-1">
                 <span>·</span>
-                <li className="leading-6">
+                <li className="sm:leading-6">
                   Creación de un manual de identidad para una marca a elección:{" "}
                   Los/as estudiantes podrán trabajar con un emprendimiento
                   propio o que elijan para desarrollar su propio manual de
@@ -259,14 +267,14 @@ const ModulesGrafico = () => {
                 </li>
               </span>
               <span className="flex gap-1">
-                <li className="leading-6 font-medium -mt-2"></li>
+                <li className="sm:leading-6 font-medium -mt-2"></li>
               </span>
             </ul>
           </div>
         </div>
 
         <div className=" flex justify-center items-center h-96 bg-primary col-span-2">
-          <p className="text-center w-10/12 text-white 2xl:text-2xl text-xl  font-bold">
+          <p className="text-center w-10/12 text-white 2xl:text-2xl sm:text-xl  font-bold text-sm">
             Al finalizar el curso cada participante habrá desarrollado el diseño
             completo de una marca o emprendimiento a elección desde la
             construcción de la identidad hasta el desarrollo de las piezas

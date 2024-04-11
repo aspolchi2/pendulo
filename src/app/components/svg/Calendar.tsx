@@ -8,6 +8,7 @@ export const Calendar = () => {
       height="67"
       viewBox="0 0 86 67"
       fill="none"
+      className="w-full"
     >
       <g clipPath="url(#clip0_229_288)">
         <path

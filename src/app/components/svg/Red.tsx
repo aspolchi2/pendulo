@@ -8,6 +8,7 @@ export const Red = ({ fill }: { fill: string }) => {
       height="70"
       viewBox="0 0 83 83"
       fill="none"
+      className="w-full"
     >
       <g clipPath="url(#clip0_16_360)">
         <path

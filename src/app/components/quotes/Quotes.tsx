@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export const Quotes = ({ bg, children }: { bg: string; children?: any }) => {
   return (
     <section className={`${bg}`}>
-      <div className="sm:py-72 py-32 w-10/12 m-auto">
+      <div className="sm:py-72 py-32  w-10/12 m-auto">
         <div className="w-full relative flex sm:flex-row flex-col ">
           <Image
             src={leftCoute}

@@ -8,6 +8,7 @@ const PcSmall = () => {
       height="42"
       viewBox="0 0 63 44"
       fill="none"
+      className="w-8 sm:w-auto"
     >
       <g clipPath="url(#clip0_353_50)">
         <path

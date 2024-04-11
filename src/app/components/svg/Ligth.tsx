@@ -8,6 +8,7 @@ const Ligth = () => {
       height="42"
       viewBox="0 0 71 68"
       fill="none"
+      className="w-8 sm:w-auto"
     >
       <g clipPath="url(#clip0_353_34)">
         <path d="M61.7024 32.6006H71V35.8936H61.7024V32.6006Z" fill="black" />

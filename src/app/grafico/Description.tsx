@@ -3,20 +3,20 @@ import { hepta_slab, lexend } from "../layout";
 
 const Description = () => {
   return (
-    <section className="px-32 py-28 flex flex-col gap-16">
-      <div className="grid grid-flow-col grid-cols-2">
+    <section className="sm:px-32 sm:py-28 py-10 px-14 flex flex-col sm:gap-16 gap-5 ">
+      <div className="sm:grid grid-flow-col grid-cols-2 flex flex-col gap-4">
         <div className="col-span-1">
           <p
-            className={`${lexend.className} font-bold text-primary lg:text-2xl 2xl:text-3xl text-xl xl:w-[512px] m-auto`}
+            className={`${lexend.className} font-bold text-primary lg:text-2xl 2xl:text-3xl sm:text-xl text-xs xl:w-[512px] m-auto`}
           >
             Esta capacitación se caracteriza por ofrecer una formación integral
             en Diseño Gráfico abordando los dos grandes módulos:
           </p>
         </div>
         <div
-          className={`${hepta_slab.className} col-span-2 flex flex-col text-xl gap-20`}
+          className={`${hepta_slab.className} col-span-2 flex flex-col text-xl sm:gap-20 gap-4`}
         >
-          <div className="flex flex-col gap-3 lg:w-[577px] m-auto">
+          <div className="flex flex-col gap-3 lg:w-[577px] m-auto text-sm sm:text-xl">
             <p className="">MÓDULO 1:</p>
             <div className="w-full h-px bg-black"></div>
             <p className="">
@@ -36,7 +36,7 @@ const Description = () => {
               modificar fondos, entre otros.
             </p>
           </div>
-          <div className="flex flex-col gap-3 lg:w-[577px] m-auto">
+          <div className="flex flex-col gap-3 lg:w-[577px] m-auto text-sm sm:text-xl">
             <p className="">MÓDULO 2:</p>
             <div className="w-full h-px bg-black"></div>
             <p className="">
@@ -48,10 +48,10 @@ const Description = () => {
         </div>
       </div>
       <div className="w-full h-px bg-primary"></div>
-      <div className="grid grid-flow-col grid-cols-2">
+      <div className="sm:grid grid-flow-col grid-cols-2 flex flex-col gap-4">
         <div className="col-span-1">
           <p
-            className={`${lexend.className} font-bold text-primary text-2xl lg:w-[512px] m-auto`}
+            className={`${lexend.className} font-bold text-primary lg:text-2xl 2xl:text-3xl sm:text-xl text-xs xl:w-[512px] sm:m-auto w-8/12`}
           >
             ¿El curso sirve para trabajar en esta profesión?
           </p>
@@ -59,7 +59,7 @@ const Description = () => {
         <div
           className={`${hepta_slab.className} col-span-2 flex flex-col text-xl gap-20`}
         >
-          <div className="flex flex-col gap-3 lg:w-[577px] m-auto">
+          <div className="flex flex-col gap-3 lg:w-[577px] m-auto text-xs sm:text-xl">
             <p className="">
               Para ejercer esta profesión lo más importante es poder demostrar a
               un potencial cliente o empresa el tipo de trabajo que puedas ser

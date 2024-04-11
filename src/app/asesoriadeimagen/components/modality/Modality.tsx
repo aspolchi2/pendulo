@@ -28,13 +28,13 @@ const lexend = Lexend({ weight: ["800", "500"], subsets: ["latin"] });
 
 const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
   return (
-    <section className={`${lexend.className} ${lexend.style} p-32`}>
+    <section className={`${lexend.className} ${lexend.style} sm:p-32 p-10`}>
       <Divider title={"PROPUESTA EDUCATIVA"} />
       <div className=" flex justify-center align-top gap-6 py-16">
         <div className="">
           <Ligth />
         </div>
-        <div className=" 2xl:text-2xl text-xl 2xl:w-8/12">
+        <div className=" 2xl:text-2xl sm:text-xl 2xl:w-8/12 text-xs">
           <p className="">
             Nuestros planes de estudio son desarrollados por educadores de
             amplia trayectoria y se actualizan de forma constante con el
@@ -48,10 +48,10 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
         </div>
       </div>
       <Divider title={"DESTINATARIOS"} />
-      <div className="flex flex-col py-16 gap-12 justify-start items-start 2xl:items-center ">
+      <div className="flex flex-col py-16 gap-12 justify-start items-start 2xl:items-center  ">
         {text.map((item: any, index: number) => (
           <div key={index} className=" flex  align-top gap-6">
-            <div className="w-8">
+            <div className="sm:w-8 w-5">
               <CheckBox />
             </div>
             <div className="max-w-p">{item}</div>
@@ -61,11 +61,11 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
       <Divider title="REQUISITOS" />
       <div className="flex flex-col py-16 gap-12 justify-start items-start 2xl:items-center ">
         <div className=" flex  align-top gap-6">
-          <div className="">
+          <div className="sm:w-8 w-5">
             <PcSmall />
           </div>
           <div className="max-w-p">
-            <p className="xl:w-[65ch] w-full 2xl:text-2xl xl:text-xl text-primary font-extrabold text-p">
+            <p className="xl:w-[65ch] w-full 2xl:text-2xl xl:text-xl text-primary font-extrabold text-xs">
               Tener computadora o celular/dispositivo que cuente con conexión a
               Internet{" "}
               <span className=" font-medium text-black">
@@ -75,11 +75,11 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
           </div>
         </div>
         <div className=" flex  align-top gap-6">
-          <div className="">
+          <div className="sm:w-8 w-5">
             <SobreSmall />
           </div>
           <div className="max-w-p">
-            <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold">
+            <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold text-xs">
               Dirección de correo electrónico (E-mail){" "}
               <span className=" font-medium  text-black">
                 donde se recibirán los datos de acceso al curso y comunicados
@@ -94,11 +94,11 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
           <Divider title="REQUISITOS PARA TOMAR LA CAPACITACIÓN" />
           <div className="flex flex-col py-16 gap-12 justify-start items-start 2xl:items-center">
             <div className=" flex  align-top gap-6">
-              <div className="">
+              <div className="sm:w-8 w-5">
                 <PcSmall />
               </div>
 
-              <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold">
+              <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold text-xs">
                 Computadora portátil o de escritorio que cuente con los
                 programas Adobe Illustrator y Adobe Photoshop instalados.
                 <span className=" font-medium text-black">
@@ -108,10 +108,10 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
               </p>
             </div>
             <div className=" flex  align-top gap-6 ">
-              <div className="">
+              <div className="sm:w-8 w-5">
                 <Ligth />
               </div>
-              <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl w-full  text-primary font-extrabold">
+              <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl w-full  text-primary font-extrabold text-xs">
                 Contar con conocimientos básicos a intermedios de informática. 
                 <span className=" font-medium text-black">
                   Se recomienda saber crear carpetas en windows o mac, descargar

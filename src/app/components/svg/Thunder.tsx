@@ -8,6 +8,7 @@ export const Thunder = () => {
       height="67"
       viewBox="0 0 73 67"
       fill="none"
+      className="w-full"
     >
       <g clipPath="url(#clip0_229_285)">
         <path

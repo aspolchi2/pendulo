@@ -34,7 +34,7 @@ export const Footer = () => {
       </div>
       <Header bg="bg-black" isFooter position="" />
       <div
-        className={`${hepta_slab.className} flex bg-primary h-24 sm:justify-around sm:items-center font-medium sm:flex-row flex-col  justify-center p-4`}
+        className={`${hepta_slab.className} flex bg-primary h-24 sm:justify-around sm:items-center font-medium sm:flex-row flex-col  justify-center p-4 text-xs sm:text-base`}
       >
         <p className="">Péndulo Escuela Creativa marca registrada</p>
         <p className="">Todos los derechos reservados.</p>

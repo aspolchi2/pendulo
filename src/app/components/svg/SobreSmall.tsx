@@ -8,6 +8,7 @@ const SobreSmall = () => {
       height="42"
       viewBox="0 0 50 36"
       fill="none"
+      className="w-8 sm:w-auto"
     >
       <g clipPath="url(#clip0_353_54)">
         <path

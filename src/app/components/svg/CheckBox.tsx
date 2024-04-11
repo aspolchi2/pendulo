@@ -8,6 +8,7 @@ const CheckBox = () => {
       height="42"
       viewBox="0 0 47 42"
       fill="none"
+      className="w-8 sm:w-auto"
     >
       <g clipPath="url(#clip0_353_56)">
         <path

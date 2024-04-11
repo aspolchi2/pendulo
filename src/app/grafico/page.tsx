@@ -45,7 +45,7 @@ export default function Home() {
   return (
     <main className="overflow-x-hidden max-w-[1920px] m-auto">
       <Hero
-        bg="bg-diseno"
+        bg="sm:bg-diseno bg-graficoMobile"
         title="Diseño"
         text="HERRAMIENTAS + FUNDAMENTOS"
         span="Gráfico"

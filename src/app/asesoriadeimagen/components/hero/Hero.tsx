@@ -15,20 +15,31 @@ const lexend = Lexend({
 });
 
 export const Hero = ({ bg, span, text, title, extra }: props) => {
+  const splitedText = text.split(" + ");
   return (
     <section
-      className={`${bg} ${lexend.className} max-h-[842px] bg-no-repeat bg-cover bg-blend-multiply bg-center h-screen `}
+      className={`${bg} ${lexend.className} max-h-[842px] bg-no-repeat bg-cover bg-blend-multiply bg-center sm:h-screen h-[530px] `}
     >
-      <div className="w-full h-full flex items-center ">
-        <div className="ml-40 flex flex-col gap-6 ">
-          <h1 className="text-8xl font-black text-yellow leading-[95px]">
-            {title} <br /> <span className=""> {span}</span>{" "}
+      <div className="w-full sm:h-full h-4/6 flex items-center ">
+        <div className="sm:ml-40 ml-3 flex flex-col sm:gap-6 gap-3 ">
+          <h1 className="sm:text-8xl text-5xl font-black  text-yellow sm:leading-[95px]">
+            {title} <br /> <span className="">{span}</span>{" "}
           </h1>
-          <p className="text-white text-3xl leading-3 max-w-xl">{text}</p>
-          <p className="text-white text-2xl">{extra}</p>
+          <p className="text-white sm:text-3xl sm:leading-3 sm:max-w-xl text-2xl  leading-6 hidden sm:block">
+            {text}
+          </p>
+          <div className="sm:hidden">
+            <p className="text-white sm:text-3xl sm:leading-3 sm:max-w-xl text-2xl  leading-6">
+              {splitedText[0]}
+            </p>
+           { splitedText[1] && <p className="text-white sm:text-3xl sm:leading-3 sm:max-w-xl text-2xl  leading-6">
+              + {splitedText[1]}
+            </p>}
+          </div>
+          <p className="text-white sm:text-2xl">{extra}</p>
           <Link
             href={"#prices"}
-            className="text-white  bg-primary rounded-xl font-bold text-[28px] w-[269.749px] h-[60px] flex-shrink: 0; flex justify-center items-center"
+            className="text-white  bg-primary sm:rounded-xl rounded-lg font-bold sm:text-[28px] sm:w-[269.749px] w-32 h-8 text-xs sm:h-[60px]  flex justify-center items-center"
           >
             INSCRIBIRME
           </Link>
