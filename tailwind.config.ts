@@ -15,6 +15,7 @@ const config: Config = {
           "linear-gradient(90deg, rgba(0, 0, 0, 0.60) -0.21%, rgba(0, 0, 0, 0.00) 145.63%)",
         offering: "url('./images/offering.png')",
         mundi: "url('./images/mundi.png')",
+        mundiMobile: "url('./images/mundiMobile.png')",
         asesoriadeimagen: "url('./images/asesoriadeimagen.png')",
         fotis: "url('./images/fotis.png')",
         interioresBg: "url('./images/interioresbg.png')",

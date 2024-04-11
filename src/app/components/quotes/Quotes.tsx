@@ -8,12 +8,12 @@ import { motion } from "framer-motion";
 export const Quotes = ({ bg, children }: { bg: string; children?: any }) => {
   return (
     <section className={`${bg}`}>
-      <div className="py-72 w-10/12 m-auto">
+      <div className="sm:py-72 py-32 w-10/12 m-auto">
         <div className="w-full relative flex sm:flex-row flex-col ">
           <Image
             src={leftCoute}
             alt="leftCoute "
-            className="sm:absolute -left-10 -top-10 w-40 sm:w-auto"
+            className="sm:absolute -left-10 -top-10 w-28 sm:w-auto"
           />
           <motion.span
             initial={{ opacity: 0 }}
@@ -28,7 +28,7 @@ export const Quotes = ({ bg, children }: { bg: string; children?: any }) => {
           <Image
             src={rightCoute}
             alt="leftCoute "
-            className="sm:absolute -right-10 -top-10 self-end w-40 sm:w-auto"
+            className="sm:absolute -right-10 -top-10 self-end w-28 sm:w-auto"
           />
         </div>
       </div>
