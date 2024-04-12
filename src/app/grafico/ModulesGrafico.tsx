@@ -245,7 +245,7 @@ const ModulesGrafico = () => {
             </p>
             <ArrowDown />
           </div>
-          <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col">
+          <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center sm:text-6xl text-white font-semibold bg-primary flex-col">
             <ul className="bg-primary xl:text-lg xl:w-[450px] flex flex-col sm:gap-8 sm:text-sm text-[10px] gap-4 text-center sm:text-left w-11/12 m-auto ">
               <span className="flex gap-1">
                 <span>·</span>
@@ -274,7 +274,7 @@ const ModulesGrafico = () => {
         </div>
 
         <div className=" flex justify-center items-center h-96 bg-primary col-span-2">
-          <p className="text-center w-10/12 text-white 2xl:text-2xl sm:text-xl  font-bold text-sm">
+          <p className={`${hepta_slab.className} text-center sm:w-10/12 text-yellow 2xl:text-2xl sm:text-xl  sm:font-bold text-xs` }>
             Al finalizar el curso cada participante habrá desarrollado el diseño
             completo de una marca o emprendimiento a elección desde la
             construcción de la identidad hasta el desarrollo de las piezas
