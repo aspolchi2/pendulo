@@ -26,7 +26,7 @@ const ModulesGrafico = () => {
         </p>
       </div>
       <div className="h-px bg-white"></div>
-      <div className="sm:grid grid-cols-2   w-full bg-white gap-[1px] flex flex-col ">
+      <div className="sm:grid grid-cols-2   w-full sm:bg-white bg-primary gap-[1px] flex flex-col ">
         <div className="relative bg-primary flex justify-center items-center text-white sm:h-96 h-52">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 flex items-center gap-2 z-0">
             <p className="lg:w-[25ch] text-center sm:font-bold">
@@ -70,6 +70,8 @@ const ModulesGrafico = () => {
             </ul>
           </div>
         </div>
+        <div className="h-px bg-white sm:hidden"></div>
+
         <div className="relative bg-primary flex justify-center items-center text-white sm:h-96 h-52">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 flex items-center gap-3 justify-between">
             <p className="xl:w-[25ch] text-center sm:font-bold  ">
@@ -112,6 +114,8 @@ const ModulesGrafico = () => {
             </ul>
           </div>
         </div>
+        <div className="h-px bg-white sm:hidden"></div>
+
         <div className="col-span-2 relative bg-primary sm:flex justify-center items-center text-white sm:h-64 hidden ">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 flex items-center gap-3">
             <p className="w-[25ch] text-center font-bold ">
@@ -142,7 +146,7 @@ const ModulesGrafico = () => {
           </div>
         </div>
 
-        <div className="h-px bg-white"></div>
+        <div className="h-px bg-white "></div>
       </div>
       <div
         className={`hepta_slab text-yellow  sm:px-10 pt-[98px] sm:text-6xl font-bold sm:pb-16 text-2xl mb-6`}
@@ -157,8 +161,8 @@ const ModulesGrafico = () => {
           HERRAMIENTAS DEL DISEÑO
         </p>
       </div>
-      <div className="h-px bg-white"></div>
-      <div className="sm:grid grid-cols-2   w-full bg-white gap-[1px]">
+      <div className="h-px bg-white sm:hidden"></div>
+      <div className="sm:grid grid-cols-2   w-full sm:bg-white bg-primary gap-[1px] flex flex-col">
         <div className="relative bg-primary flex justify-center items-center text-white sm:h-96 h-52">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 flex items-center gap-3">
             <p className="xl:w-[25ch] text-center sm:font-bold w-8/12 m-auto text-sm">
@@ -189,6 +193,8 @@ const ModulesGrafico = () => {
             </ul>
           </div>
         </div>
+        <div className="h-px bg-white sm:hidden"></div>
+
         <div className="relative bg-primary flex justify-center items-center text-white sm:h-96 h-52">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 flex items-center lg:gap-3">
             <p className="xl:w-[25ch] text-center sm:font-bold w-8/12 m-auto text-sm">
@@ -238,6 +244,8 @@ const ModulesGrafico = () => {
             </ul>
           </div>
         </div>
+        <div className="h-px bg-white sm:hidden"></div>
+
         <div className="col-span-2 relative bg-primary flex justify-center items-center text-white sm:h-96 h-52 ">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 flex items-center gap-3">
             <p className="xl:w-[25ch] text-center sm:font-bold w-8/12 m-auto text-sm ">
@@ -272,9 +280,12 @@ const ModulesGrafico = () => {
             </ul>
           </div>
         </div>
+        <div className="h-px bg-white sm:hidden"></div>
 
         <div className=" flex justify-center items-center h-96 bg-primary col-span-2">
-          <p className={`${hepta_slab.className} text-center sm:w-10/12 text-yellow 2xl:text-2xl sm:text-xl  sm:font-bold text-xs` }>
+          <p
+            className={`${hepta_slab.className} text-center sm:w-10/12 text-yellow 2xl:text-2xl sm:text-xl  sm:font-bold text-xs`}
+          >
             Al finalizar el curso cada participante habrá desarrollado el diseño
             completo de una marca o emprendimiento a elección desde la
             construcción de la identidad hasta el desarrollo de las piezas
