@@ -15,11 +15,11 @@ const JoinUs = () => {
     <section
       className={`${lexend.className} bg-primary flex justify-center lexend`}
     >
-      <div className="text-white py-36 2xl:text-7xl xl:text-5xl text-3xl text-center ">
+      <div className="text-white sm:py-36 py-24 2xl:text-7xl xl:text-5xl sm:text-3xl text-2xl text-center ">
         <p className="font-bold">Sumate a nuestra escuela</p>
         <p className=" font-light">
-          y amplia tu horizonte de posibilidades <br /> personales &
-          profesionales
+          y amplia tu horizonte de posibilidades{" "}
+          <br className="hidden sm:block" /> personales & profesionales
         </p>
       </div>
     </section>

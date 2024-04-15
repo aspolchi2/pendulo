@@ -11,8 +11,10 @@ export const PriceInfo = ({
 }) => {
   return (
     <div className="flex flex-col gap-6 ">
-      <h3 className={`${color} font-semibold text-center text-4xl`}>{title}</h3>
-      {description}
+      <h3 className={`${color} font-semibold text-center sm:text-4xl`}>
+        {title}
+      </h3>
+      <p className="text-base">{description}</p>
     </div>
   );
 };

@@ -3,6 +3,7 @@ import { PriceInfo } from "./PriceInfo";
 import { CardProp, PriceCard } from "./PriceCard";
 import useBooleanStore from "@/app/zustand/useBooleanStore";
 import { Hepta_Slab } from "next/font/google";
+import Carousel from "@/app/components/carousel/Carousel";
 export const hepta_slab = Hepta_Slab({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
@@ -13,7 +14,9 @@ export const hepta_slab = Hepta_Slab({
   style: "normal",
 });
 const descOne = (
-  <p className={`${hepta_slab.className} text-lg leading-6 font-medium`}>
+  <p
+    className={`${hepta_slab.className} text-lg leading-6 font-medium  sm:text-black`}
+  >
     {" "}
     La cuota se{" "}
     <span className="font-extrabold">
@@ -25,14 +28,18 @@ const descOne = (
 );
 
 const descTwo = (
-  <p className={`${hepta_slab.className} text-lg leading-6 font-medium`}>
+  <p
+    className={`${hepta_slab.className} text-lg leading-6 font-medium  sm:text-black`}
+  >
     Se podrá abonar con tarjeta de crédito o dinero disponible en cuenta de
     Paypal.
   </p>
 );
 
 const descThree = (
-  <p className={`${hepta_slab.className} text-lg leading-6 font-medium`}>
+  <p
+    className={`${hepta_slab.className} text-lg leading-6 font-medium  sm:text-black`}
+  >
     {" "}
     En caso de elegir pagar en cuotas las mismas{" "}
     <span className="font-extrabold">
@@ -80,22 +87,45 @@ const PriceOutside = () => {
     </p>
   );
 
+  const descMobile = (
+    <p className="sm:text-2xl text-center sm:w-11/12 m-auto text-white">
+      Para mayor facilidad, ofrecemos las siguientes opciones y planes de pago:
+    </p>
+  );
+
   return (
     <section
       className={`
-          max-h-full  opacity-100 p-28 transition-opacity  duration-500 `}
+          max-h-full  opacity-100 sm:p-28 transition-opacity  duration-500 p-12 bg-black sm:bg-white`}
     >
-      <div className="flex flex-col gap-12">
+      <div className="sm:flex flex-col gap-12 hidden">
         <PriceInfo
           color="text-pink"
           title="PRECIOS PARA RESIDENTES FUERA DE ARGENTINA"
           description={desc}
         />
-        <div className="flex gap-6 justify-center">
+        <div className="sm:flex gap-6 justify-center hidden">
           {cardData.map((card) => (
             <PriceCard {...card} key={card.id} />
           ))}
         </div>
+      </div>
+      <div className="sm:hidden bg-black space-y-3">
+        <PriceInfo
+          color="text-pink"
+          title="PRECIOS PARA RESIDENTES FUERA DE ARGENTINA"
+          description={descMobile}
+        />
+        <Carousel
+          text="Ver más"
+          dotsColor="bg-white"
+          fill="fill-white"
+          color="text-white"
+        >
+          {cardData.map((card) => (
+            <PriceCard {...card} key={card.id} />
+          ))}
+        </Carousel>
       </div>
     </section>
   );

@@ -4,6 +4,7 @@ import { PriceInfo } from "./PriceInfo";
 import { CardProp, PriceCard } from "./PriceCard";
 import useBooleanStore from "@/app/zustand/useBooleanStore";
 import { Hepta_Slab } from "next/font/google";
+import Carousel from "@/app/components/carousel/Carousel";
 export type priceType = {
   title: string;
   description: string;
@@ -77,26 +78,32 @@ const cardData: CardProp[] = [
 
 export const PriceArg = () => {
   const desc = (
-    <p className="text-2xl text-center w-11/12 m-auto">
+    <p className="sm:text-2xl text-center sm:w-11/12 m-auto">
       Para mayor facilidad, ofrecemos las siguientes opciones y planes de pago:
     </p>
   );
 
   return (
-    <section className="max-h-full  opacity-100 p-28 transition-opacity  duration-500 ">
+    <section className="max-h-full  opacity-100 sm:p-28 transition-opacity  duration-500 p-12">
       <div className="flex flex-col gap-12">
         <PriceInfo
           color="text-primary"
           title="PRECIOS PARA RESIDENTES EN ARGENTINA"
           description={desc}
         />
-        <div className="flex gap-6 justify-center">
+        <div className="sm:flex gap-6 justify-center hidden">
           {cardData.map((card) => (
             <PriceCard {...card} key={card.id} />
           ))}
+        </div>
+        <div className="sm:hidden">
+          <Carousel text="Ver más" dotsColor="bg-black">
+            {cardData.map((card) => (
+              <PriceCard {...card} key={card.id} />
+            ))}
+          </Carousel>
         </div>
       </div>
     </section>
   );
 };
- 
