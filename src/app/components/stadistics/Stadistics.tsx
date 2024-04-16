@@ -7,7 +7,7 @@ import { hepta_slab } from "@/app/asesoriadeimagen/components/price/PriceOutside
 export const Stadistics = () => {
   return (
     <section
-      className={`${lexend.className} md:bg-mundi bg-mundiMobile w-full  border-red-400   sm:bg-[#D9D9DD]  flex justify-center items-center bg-no-repeat bg-center bg-cover py-20  `}
+      className={`${lexend.className} md:bg-mundi bg-mundiMobile w-full  border-red-400   sm:bg-[#D9D9DD]  flex justify-center items-center bg-no-repeat bg-center bg-cover py-20 h-svh  `}
     >
       <div className="container mx-auto flex flex-col gap-12 h-full justify-center  w-10/12 ">
         <p className="flex items-center sm:gap-5 gap-2 sm:text-2xl text-base font-medium max-w-4xl flex-col sm:flex-row text-center">
