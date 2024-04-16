@@ -23,9 +23,9 @@ export const Footer = () => {
             className={`${hepta_slab.className} flex flex-col gap-1 ml-6 sm:ml-0 text-xs w-full`}
           >
             <p className="">CONSULTANOS</p>
-            <div className="flex sm:gap-20 gap-2 items-center">
+            <div className="flex sm:gap-20 gap-1 items-center">
               <p className="">BASES Y CONDICIONES</p>
-              <p className="text-pink sm:text-xl font-extrabold text-xs">
+              <p className="text-pink sm:text-xl font-extrabold text-[9px]">
                 cursos@pendulo.com.ar
               </p>
             </div>

@@ -5,6 +5,7 @@ import React from "react";
 import { Propuesta } from "./AchievedCardList";
 import { useElementOnScreen } from "../hook/useElementOnScreen";
 import { motion } from "framer-motion";
+import { lexend } from "@/app/layout";
 
 export const AchievedCard: React.FC<Propuesta> = ({
   title,
@@ -19,7 +20,7 @@ export const AchievedCard: React.FC<Propuesta> = ({
 
   return (
     <motion.article
-      className=" m-auto flex justify-center xl:h-[350px] lg:h-64 "
+      className={` m-auto flex justify-center xl:h-[350px] lg:h-64 ${lexend.className} `}
       initial={isEven ? { x: 100 } : { x: -100 }}
       whileInView={{ x: 0 }}
       transition={{ duration: 0.5 }}
@@ -35,7 +36,7 @@ export const AchievedCard: React.FC<Propuesta> = ({
         ${isEven ? "xl:mr-20 lg:mr-10" : "xl:ml-20 lg:mr-10"} `}
         ></div>
         <div
-          className={`flex flex-col sm:gap-20 gap-2 lg:w-3/6 xl:w-3/6 md:w-5/6`}
+          className={`flex flex-col md:gap-20 sm:gap-12 gap-2 lg:w-3/6 xl:w-3/6 md:w-5/6`}
         >
           <div
             className={`flex items-center w-full gap-4  ${
@@ -45,14 +46,14 @@ export const AchievedCard: React.FC<Propuesta> = ({
             }`}
           >
             <h2
-              className={` text-primary xl:text-6xl  lg:text-4xl font-black  text-2xl `}
+              className={` text-primary xl:text-6xl  lg:text-4xl font-black  md:text-2xl `}
             >
               {title}
             </h2>
             <p className={` sm:hidden`}>{id}.</p>
           </div>
           <p
-            className={` xl:text-base  font-normal xl:w-8/12  lg:text-sm ${
+            className={` md:text-sm  lg:text-base  font-normal xl:w-8/12  sm:text-xs ${
               isEven && "text-right self-end"
             } `}
           >
@@ -66,7 +67,7 @@ export const AchievedCard: React.FC<Propuesta> = ({
             alt=""
             width={455}
             height={312}
-            className="xl:h-80 xl:w-auto lg:h-64 lg:w-auto w-auto"
+            className="xl:h-80 xl:w-auto sm:h-56 sm:min-w-64 w-auto"
           ></Image>
         </div>
       </div>

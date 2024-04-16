@@ -15,13 +15,13 @@ export const Testimonials = () => {
   };
   return (
     <section
-      className="flex flex-col items-center gap-9 lg:p-28   xl:scale-100 max-xl:scale-75"
+      className="flex flex-col items-center gap-9 lg:p-28   xl:scale-100 max-xl:scale-75 pb-12"
       id="testimonios"
     >
-      <h3 className="lg:text-[55px] sm:text-5xl text-3xl ">
+      <h3 className="lg:text-[55px] md:text-5xl sm:text-4xl text-3xl ">
         ¿QUIENES NOS ELIGEN?
       </h3>
-      <p className="sm:text-3xl font-medium text-xl text-center sm:text-left">
+      <p className="md:text-3xl font-medium sm:text-2xl text-xl text-center sm:text-left">
         Conocé la experiencia de nuestros estudiantes:
       </p>
       <div
@@ -42,7 +42,7 @@ export const Testimonials = () => {
       </div>
       <TestimonialsCardList filter={filter} />
       <button
-        className="sm:flex gap-2 text-3xl justify-center items-center mt-14 hidden"
+        className="lg:flex gap-2 text-3xl justify-center items-center mt-14 hidden"
         onClick={() => handleAdd()}
       >
         Conoce más experiencias <Arrow />

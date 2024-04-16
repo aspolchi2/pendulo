@@ -58,11 +58,11 @@ export const Header = ({
             alt="icon of pendulo"
             width={40}
             height={40}
-            className="pb-1 w-8 sm:w-auto"
+            className="pb-1 w-6 lg:w-10"
           />
-          <p className="sm:text-3xl font-[600] text-xl">Péndulo</p>
+          <p className="lg:text-3xl font-[600] text-xl">Péndulo</p>
         </Link>
-        <ul className="sm:flex gap-10 items-end sm:text-base uppercase text-accent hidden">
+        <ul className="sm:flex gap-10 sm:gap-3 items-end md:text-base uppercase text-accent hidden sm:text-xs ">
           <li className="">
             <Link href={"/"}>propuesta</Link>
           </li>
@@ -106,7 +106,7 @@ export const Header = ({
             )}
           </li>
         </ul>
-        <ul className="flex xl:gap-6 gap-2 items-end relative">
+        <ul className="flex xl:gap-6 gap-1 sm:gap-2 items-end relative">
           {icons.map(({ id, src, link }) => (
             <li className="" key={id}>
               <a href={link} target="_blank" rel="norefferer" className="">

@@ -63,7 +63,7 @@ const data: MyData[] = [
 export const OfferingCardList = () => {
   return (
     <>
-      <div className="sm:grid grid-cols-2 2xl:grid-cols-3 gap-5 place-content-center place-items-center xl:w-9/12 2xl:max-w-7xl m-auto hidden">
+      <div className="sm:grid grid-cols-2 2xl:grid-cols-3 gap-5 place-content-center place-items-center md:w-9/12 2xl:max-w-7xl m-auto hidden">
         {data.map(({ id, svg, title, description }) => (
           <OfferingCard
             key={id}

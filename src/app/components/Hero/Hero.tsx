@@ -6,10 +6,10 @@ import { lexend } from "@/app/asesoriadeimagen/components/joinUs/JoinUs";
 export const Hero = () => {
   return (
     <section
-      className={`${lexend.className} sm:bg-hero-bg bg-homeHeroMobile w-full h-screen sm:max-h-[920px] bg-cover md:max-h-[800px] xl:max-h-[920px] overflow-x-hidden`}
+      className={`${lexend.className} sm:bg-hero-bg bg-homeHeroMobile sm:bg-center  w-full h-screen sm:max-h-[920px] bg-cover md:max-h-[800px] xl:max-h-[920px] overflow-x-hidden`}
     >
       <div className="backdrop-brightness-50 h-full w-full flex items-center">
-        <div className=" relative sm:p-36 p-6 pt-56 sm:pt-0">
+        <div className=" relative sm:p-12 p-6 pt-56 sm:pt-0">
           <p className="  text-white sm:text-[3.5vw] 2xl:text-8xl font-bold  text-2xl drop-shadow-md opacity-100">
             Ampliá tu horizonte
           </p>
@@ -17,7 +17,7 @@ export const Hero = () => {
             de posibilidades personales <br /> & profesionales
           </p>
           <p
-            className={`${hepta_slab.className} text-white sm:w-[41.5rem] max-w-prose sm:text-xl md:text-2xl pt-4 leading-4 text-sm`}
+            className={`${hepta_slab.className} text-white lg:w-[41.5rem] max-w-prose sm:text-xl lg:text-2xl pt-4 leading-4 text-sm`}
           >
             En nuestra{" "}
             <span className="font-extrabold">
@@ -29,7 +29,7 @@ export const Hero = () => {
             <span className="font-extrabold">Nosotras te acompañamos.</span>
           </p>
           <div className="mt-14">
-            <Button extraclassname="mt-14 relative">
+            <Button extraclassname=" relative">
               INSCRIBITE EN NUESTROS CURSOS
             </Button>
           </div>

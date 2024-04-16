@@ -2,9 +2,9 @@ import React from "react";
 
 export const Accomplish = () => {
   return (
-    <section className=" sm:bg-lograr bg-lograrMobile sm:h-[80vh] h-svh h-screen text-white bg-cover bg-center bg-no-repeat sm:p-28 sm:max-h-[800px] p-7">
+    <section className=" lg:bg-lograr bg-lograrMobile sm:h-[80vh] h-svh  text-white xl:bg-cover bg-cover bg-center bg-no-repeat xl:p-28  sm:max-h-[800px] p-7 pt-14">
       <div className="w-full h-full">
-        <div className=" sm:w-10/12 flex flex-col justify-between h-full">
+        <div className="  flex flex-col justify-between h-full">
           <div className="">
             <h3 className=" sm:text-2xl text-lg ">¿QUÉ QUEREMOS LOGRAR?</h3>
             <hr className="mt-5" />
