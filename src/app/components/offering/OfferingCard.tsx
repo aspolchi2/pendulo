@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export const OfferingCard = ({ svg, title, description }: MyData) => {
   return (
     <motion.article
-      className="bg-white text-black lg:w-[400px] flex flex-col h-80 justify-center items-center gap-6 rounded-3xl sm:max-h-[350px] max-w-80 m-auto"
+      className="bg-white text-black  flex flex-col h-80 justify-center items-center gap-6 rounded-3xl max-w-96  m-auto"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.275 }}

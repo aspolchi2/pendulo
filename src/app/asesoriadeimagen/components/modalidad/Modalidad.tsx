@@ -16,7 +16,7 @@ const Modalidad = ({
   return (
     <section className="flex flex-col  bg-primary ">
       <div className="bg-primary flex w-11/12 m-auto justify-around items-center sm:h-[350px] h-36 hy font-medium">
-        <div className="hidden sm:block ">
+        <div className="hidden sm:block w-32 md:w-40 lg:w-52">
           <Codito fill="black" />
         </div>
         <div className="flex flex-col justify-center items-center sm:gap-6   text-xs sm:text-base">
@@ -42,7 +42,7 @@ const Modalidad = ({
           </p>
         </div>
 
-        <div className="hidden sm:block ">
+        <div className="hidden sm:block w-32 md:w-40 lg:w-52 ">
           <TrianguloRosa fill="black" />
         </div>
       </div>

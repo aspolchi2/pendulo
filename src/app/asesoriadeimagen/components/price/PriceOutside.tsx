@@ -88,7 +88,7 @@ const PriceOutside = () => {
   );
 
   const descMobile = (
-    <p className="sm:text-2xl text-center sm:w-11/12 m-auto text-white">
+    <p className="sm:text-2xl text-center sm:w-11/12 m-auto text-white sm:text-black">
       Para mayor facilidad, ofrecemos las siguientes opciones y planes de pago:
     </p>
   );
@@ -96,21 +96,21 @@ const PriceOutside = () => {
   return (
     <section
       className={`
-          max-h-full  opacity-100 sm:p-28 transition-opacity  duration-500 p-12 bg-black sm:bg-white`}
+          max-h-full  opacity-100 lg:p-28 transition-opacity  duration-500 p-12 bg-black sm:bg-white`}
     >
-      <div className="sm:flex flex-col gap-12 hidden">
+      <div className="lg:flex flex-col gap-12 hidden">
         <PriceInfo
           color="text-pink"
           title="PRECIOS PARA RESIDENTES FUERA DE ARGENTINA"
           description={desc}
         />
-        <div className="sm:flex gap-6 justify-center hidden">
+        <div className="lg:flex gap-6 justify-center hidden">
           {cardData.map((card) => (
             <PriceCard {...card} key={card.id} />
           ))}
         </div>
       </div>
-      <div className="sm:hidden bg-black space-y-3">
+      <div className="lg:hidden bg-black sm:bg-white space-y-5 w-full">
         <PriceInfo
           color="text-pink"
           title="PRECIOS PARA RESIDENTES FUERA DE ARGENTINA"
@@ -118,9 +118,9 @@ const PriceOutside = () => {
         />
         <Carousel
           text="Ver más"
-          dotsColor="bg-white"
-          fill="fill-white"
-          color="text-white"
+          dotsColor="bg-white sm:bg-black"
+          fill="fill-white sm:fill-black"
+          color="text-white sm:text-black"
         >
           {cardData.map((card) => (
             <PriceCard {...card} key={card.id} />

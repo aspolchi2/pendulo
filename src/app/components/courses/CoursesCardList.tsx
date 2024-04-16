@@ -64,9 +64,9 @@ export const CoursesCardList = ({
   return (
     <>
       <div
-        className={`sm:grid gap-4 hidden ${
+        className={`lg:grid gap-4 hidden ${
           filter
-            ? "md:grid-cols-2 xl:grid-cols-3 "
+            ? "lg:grid-cols-3 xl:grid-cols-3 "
             : "grid-cols-2 2xl:grid-cols-4"
         }`}
       >
@@ -83,9 +83,13 @@ export const CoursesCardList = ({
           />
         ))}
       </div>
-      <div className="flex justify-center items-center p-16 sm:hidden">
+      <div className="flex justify-center items-center p-8 lg:hidden">
         <div className="w-screen flex justify-center">
-          <Carousel autoSlide={false}>
+          <Carousel
+            autoSlide={false}
+            color={`${isFilter && "text-white"}`}
+            fill={`${isFilter ? "fill-white" : "fill-black"}`}
+          >
             {filteredCards.map((card) => (
               <div className="flex justify-center w-8/12 m-auto" key={card.id}>
                 <CoursesCard

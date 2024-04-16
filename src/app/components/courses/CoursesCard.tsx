@@ -24,7 +24,7 @@ export const CoursesCard = ({
       transition={{ duration: 0.275 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="bg-white shadow-md flex flex-col justify-center  flex-grow p-7 sm:p-5 h-[550px] sm:h-[650px] sm:w-72 "
+      className="bg-white shadow-md flex flex-col justify-center  p-7 sm:p-5    lg:w-72 max-w-[450px] "
     >
       <header>
         {!isFilter && (
@@ -36,7 +36,7 @@ export const CoursesCard = ({
         )}
       </header>
       <main className="flex flex-col gap-1">
-        <h2 className="font-semibold text-primary md:text-4xl sm:text-2xl text-xl">
+        <h2 className="font-semibold text-primary md:text-4xl sm:text-3xl text-2xl">
           {title}
         </h2>
         <p
@@ -47,12 +47,12 @@ export const CoursesCard = ({
         <Image
           src={image}
           alt="image"
-          width={224}
+          width={300}
           height={224}
-          className=" w-full sm:h-52"
+          className=" w-full sm:h-52 object-cover pt-4"
         />
       </main>
-      <footer className="min-h-max sm:h-full  w-full flex justify-center items-center pt-7">
+      <footer className="min-h-max h-20   w-full flex justify-center items-center">
         <div className="flex-shrink-0 bg-primary text-white font-bold text-sm sm:text-xl w-full  rounded-lg h-11 flex justify-center items-center ">
           <Link href={`/${href}`} className={`${lexend.className} `}>
             +INFORMACIÓN

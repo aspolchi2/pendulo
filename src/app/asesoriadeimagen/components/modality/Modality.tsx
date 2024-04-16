@@ -28,7 +28,9 @@ const lexend = Lexend({ weight: ["800", "500"], subsets: ["latin"] });
 
 const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
   return (
-    <section className={`${lexend.className} ${lexend.style} sm:p-32 p-10`}>
+    <section
+      className={`${lexend.className} ${lexend.style} lg:p-32 sm:py-24 p-10 `}
+    >
       <Divider title={"PROPUESTA EDUCATIVA"} />
       <div className=" flex justify-center align-top gap-6 py-16">
         <div className="">
@@ -54,7 +56,7 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
             <div className="sm:w-8 w-5">
               <CheckBox />
             </div>
-            <div className="max-w-p">{item}</div>
+            <div className="">{item}</div>
           </div>
         ))}
       </div>
@@ -64,22 +66,20 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
           <div className="sm:w-8 w-5">
             <PcSmall />
           </div>
-          <div className="max-w-p">
-            <p className="xl:w-[65ch] w-full 2xl:text-2xl xl:text-xl text-primary font-extrabold text-xs">
-              Tener computadora o celular/dispositivo que cuente con conexión a
-              Internet{" "}
-              <span className=" font-medium text-black">
-                en lo posible con cámara y micrófono activados.
-              </span>
-            </p>
-          </div>
+          <p className="xl:w-[65ch] w-full 2xl:text-2xl xl:text-xl text-primary font-extrabold sm:text-lg text-xs">
+            Tener computadora o celular/dispositivo que cuente con conexión a
+            Internet{" "}
+            <span className=" font-medium text-black">
+              en lo posible con cámara y micrófono activados.
+            </span>
+          </p>
         </div>
         <div className=" flex  align-top gap-6">
           <div className="sm:w-8 w-5">
             <SobreSmall />
           </div>
-          <div className="max-w-p">
-            <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold text-xs">
+          <div className="">
+            <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold sm:text-lg text-xs">
               Dirección de correo electrónico (E-mail){" "}
               <span className=" font-medium  text-black">
                 donde se recibirán los datos de acceso al curso y comunicados
@@ -98,7 +98,7 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
                 <PcSmall />
               </div>
 
-              <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold text-xs">
+              <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold  sm:text-lg text-xs">
                 Computadora portátil o de escritorio que cuente con los
                 programas Adobe Illustrator y Adobe Photoshop instalados.
                 <span className=" font-medium text-black">
@@ -111,8 +111,8 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
               <div className="sm:w-8 w-5">
                 <Ligth />
               </div>
-              <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl w-full  text-primary font-extrabold text-xs">
-                Contar con conocimientos básicos a intermedios de informática. 
+              <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl w-full  text-primary font-extrabold sm:text-lg text-xs">
+                Contar con conocimientos básicos a intermedios de informática.
                 <span className=" font-medium text-black">
                   Se recomienda saber crear carpetas en windows o mac, descargar
                   archivos de internet, copiar y pegar documentos, descargar

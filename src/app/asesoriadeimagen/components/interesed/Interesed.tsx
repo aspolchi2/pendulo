@@ -7,21 +7,18 @@ const hepta_slab = Hepta_Slab({
   weight: ["400", "600", "700", "800", "900"],
 });
 
-export const Interesed = ({
-  filter,
-
-}: {
-  filter?: number;
-}) => {
+export const Interesed = ({ filter }: { filter?: number }) => {
   return (
     <section
-      className=" bg-primary p-24 flex flex-col gap-8 justify-center items-center scroll-m-11"
+      className=" bg-primary p-12 py-24 flex flex-col gap-8 justify-center items-center scroll-m-11"
       id="cursos"
     >
       <div className=" flex flex-col justify-center items-center text-white gap-4">
-        <h2 className="text-4xl">TAMBIÉN TE PUEDE INTERESAR</h2>
+        <h2 className="text-4xl text-balance text-center">
+          TAMBIÉN TE PUEDE INTERESAR
+        </h2>
         <p
-          className={`${hepta_slab.className} text-2xl font-medium text-center`}
+          className={`${hepta_slab.className} text-2xl font-medium text-center text-balance`}
         >
           Si querés seguir formándote en nuestro espacio{" "}
           <span className="font-extrabold">

@@ -27,15 +27,15 @@ export const NextCourses = ({
 
   return (
     <section
-      className="bg-black xl:p-28 lg:p-10 p-4 py-10 lg:py-0 text-white"
+      className="bg-black xl:p-28 lg:p-10 p-4 py-10 lg:py-10 text-white"
       id="prices"
     >
       <div className="flex flex-col gap-6">
-        <h3 className="text-5xl font-bold">Próximos inicios</h3>
-        <div className="border rounded-lg flex p-14 justify-around ">
+        <h3 className="md:text-5xl text-3xl font-bold">Próximos inicios</h3>
+        <div className="border rounded-lg flex py-14 px-10 justify-around ">
           {Object.entries(data).map((key: any, i) => {
             return (
-              <div className="" key={i}>
+              <div className="text-xs" key={i}>
                 <p>{key[0]}</p>
                 <p
                   className="first-line:font-bold lg:text-xl"
@@ -47,7 +47,7 @@ export const NextCourses = ({
           <div className="self-center">
             <button
               onClick={() => scrollToTarget()}
-              className="bg-primary py-3 px-8 rounded-lg w-60"
+              className="bg-primary  rounded-lg lg:w-60 md:w-52 w-40 h-10"
             >
               {booleanValue ? "OCULTAR PRECIOS" : "VER PRECIOS"}
             </button>

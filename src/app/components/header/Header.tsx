@@ -62,7 +62,7 @@ export const Header = ({
           />
           <p className="lg:text-3xl font-[600] text-xl">Péndulo</p>
         </Link>
-        <ul className="sm:flex gap-10 sm:gap-3 items-end md:text-base uppercase text-accent hidden sm:text-xs ">
+        <ul className="sm:flex gap-10 sm:gap-3 items-end md:text-base uppercase text-accent hidden sm:text-xs lg:text-lg lg:gap-6 ">
           <li className="">
             <Link href={"/"}>propuesta</Link>
           </li>

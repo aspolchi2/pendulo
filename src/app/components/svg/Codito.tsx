@@ -8,6 +8,7 @@ export const Codito = ({ fill }: { fill: string }) => {
       height="283"
       viewBox="0 0 279 283"
       fill="none"
+      className="w-full"
     >
       <g clipPath="url(#clip0_3_122)">
         <path

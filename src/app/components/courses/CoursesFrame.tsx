@@ -11,7 +11,7 @@ export const CoursesFrame = () => {
       <CoursesCardList isFilter={false} />
 
       <p
-        className={`${hepta_slab.className} xl:text-3xl lg:text-2xl text-center w-10/12`}
+        className={`${hepta_slab.className} xl:text-3xl lg:text-2xl text-center w-10/12 text-balance`}
       >
         Descubrir una nueva disciplina te puede permitir{" "}
         <span className="font-extrabold">

@@ -91,12 +91,12 @@ export const PriceArg = () => {
           title="PRECIOS PARA RESIDENTES EN ARGENTINA"
           description={desc}
         />
-        <div className="sm:flex gap-6 justify-center hidden">
+        <div className="lg:flex gap-6 justify-center hidden">
           {cardData.map((card) => (
             <PriceCard {...card} key={card.id} />
           ))}
         </div>
-        <div className="sm:hidden">
+        <div className="lg:hidden">
           <Carousel text="Ver más" dotsColor="bg-black">
             {cardData.map((card) => (
               <PriceCard {...card} key={card.id} />
