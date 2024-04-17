@@ -12,7 +12,7 @@ type card = {
   id: number;
   year: number;
   title: string;
-  point: string[];
+  point: { title: string }[];
 };
 
 const data: card[] = [
@@ -21,30 +21,38 @@ const data: card[] = [
     year: 2012,
     title: "Nos conocemos",
     point: [
-      "Nos conocemos trabajando en una escuela de fotografía.",
-      "Las dos nos dedicábamos a dar clases en distintos espacios educativos.",
+      { title: "Nos conocemos trabajando en una escuela de fotografía." },
+      {
+        title:
+          "Las dos nos dedicábamos a dar clases en distintos espacios educativos.",
+      },
     ],
   },
   {
     id: 2,
     year: 2014,
     title: "Cierran las escuelas donde trabajabamos",
-    point: ["Nace la idea de crear una propia escuela."],
+    point: [{ title: "Nace la idea de crear una propia escuela." }],
   },
   {
     id: 3,
     year: 2017,
     title: "El sueño se hace realidad",
-    point: ["Abrimos nuestra primera casa en La Plata."],
+    point: [{ title: "Abrimos nuestra primera casa en La Plata." }],
   },
   {
     id: 4,
     year: 2018,
     title: "Ampliamos la oferta de cursos",
     point: [
-      "Comenzamos a ampliar nuestra oferta de cursos alcanzando nuevas disciplinas.",
-      "Conjugamos el dictado de cursos con la gestión de la escuela.",
-      "Nos formamos en marketing digital.",
+      {
+        title:
+          "Comenzamos a ampliar nuestra oferta de cursos alcanzando nuevas disciplinas.",
+      },
+      {
+        title: "Conjugamos el dictado de cursos con la gestión de la escuela.",
+      },
+      { title: "Nos formamos en marketing digital." },
     ],
   },
   {
@@ -52,10 +60,18 @@ const data: card[] = [
     year: 2019,
     title: "Nos mudamos y nos capacitamos en gestión empresarial",
     point: [
-      "Nos mudamos a una casa más grande.",
-      "Llegamos a nuestro record de cantidad de cursos y profesores.",
-      "Dejamos de dar clases en Péndulo para enfocarnos 100% a la gestión de la escuela.",
-      "Nos capacitamos en otras áreas del emprendimiento que requerían nuestra atención: finanzas, organización y gestión del tiempo.",
+      { title: "Nos mudamos a una casa más grande." },
+      {
+        title: "Llegamos a nuestro record de cantidad de cursos y profesores.",
+      },
+      {
+        title:
+          "Dejamos de dar clases en Péndulo para enfocarnos 100% a la gestión de la escuela.",
+      },
+      {
+        title:
+          "Nos capacitamos en otras áreas del emprendimiento que requerían nuestra atención: finanzas, organización y gestión del tiempo.",
+      },
     ],
   },
   {
@@ -63,11 +79,13 @@ const data: card[] = [
     year: 2020,
     title: "Nos transformamos en una academia online",
     point: [
-      "Ampliamos el equipo de colaboradores.",
-      "La pandemia nos exige transformar la metodología de enseñanza.",
-      "Nos transformamos en una escuela 100% online en vivo.",
-      "Llegamos a estudiantes de todo el país.",
-      "Seguimos capacitándonos.",
+      { title: "Ampliamos el equipo de colaboradores." },
+      {
+        title: "La pandemia nos exige transformar la metodología de enseñanza.",
+      },
+      { title: "Nos transformamos en una escuela 100% online en vivo." },
+      { title: "Llegamos a estudiantes de todo el país." },
+      { title: "Seguimos capacitándonos." },
     ],
   },
   {
@@ -75,8 +93,14 @@ const data: card[] = [
     year: 2021,
     title: "Reposicionamos la marca",
     point: [
-      "Identificamos que con el nuevo formato debíamos reposicionar la marca.",
-      "Desarrollamos un rediseño de identidad en equipo con una diseñadora.",
+      {
+        title:
+          "Identificamos que con el nuevo formato debíamos reposicionar la marca.",
+      },
+      {
+        title:
+          "Desarrollamos un rediseño de identidad en equipo con una diseñadora.",
+      },
     ],
   },
   {
@@ -84,8 +108,8 @@ const data: card[] = [
     year: 2022,
     title: "Nos expandimos",
     point: [
-      "Nos expandimos a toda Latinoamérica.",
-      "Llegamos al récord de cantidad de estudiantes anuales.",
+      { title: "Nos expandimos a toda Latinoamérica." },
+      { title: "Llegamos al récord de cantidad de estudiantes anuales." },
     ],
   },
   {
@@ -93,8 +117,8 @@ const data: card[] = [
     year: 2023,
     title: "Ampliamos el equipo",
     point: [
-      "Desarrollamos nuestro sitio web.",
-      "Expandimos nuestro equipo de trabajo y colaboradores.",
+      { title: "Desarrollamos nuestro sitio web." },
+      { title: "Expandimos nuestro equipo de trabajo y colaboradores." },
     ],
   },
 ];
@@ -160,7 +184,7 @@ const NuevaHistoria = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                 >
-                  {point}
+                  {point.title}
                 </motion.p>
               </div>
             ))}
