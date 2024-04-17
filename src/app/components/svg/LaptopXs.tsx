@@ -8,6 +8,7 @@ const LaptopXs = () => {
       viewBox="0 0 41 29"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="w-full"
     >
       <g clipPath="url(#clip0_1_277)">
         <path

@@ -67,7 +67,7 @@ export const AchievedCard: React.FC<Propuesta> = ({
             alt=""
             width={455}
             height={312}
-            className="xl:h-80 xl:w-auto sm:h-56 sm:min-w-64 w-auto"
+            className="xl:h-80 xl:w-auto sm:h-56 sm:min-w-64 w-auto object-cover"
           ></Image>
         </div>
       </div>

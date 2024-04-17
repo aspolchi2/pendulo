@@ -5,7 +5,7 @@ import useBooleanStore from "@/app/zustand/useBooleanStore";
 import { Hepta_Slab } from "next/font/google";
 import Carousel from "@/app/components/carousel/Carousel";
 export const hepta_slab = Hepta_Slab({
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
   display: "swap",
   variable: "--font-hepta-slab",

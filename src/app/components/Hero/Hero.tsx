@@ -29,7 +29,7 @@ export const Hero = () => {
             <span className="font-extrabold">Nosotras te acompañamos.</span>
           </p>
           <div className="mt-14">
-            <Button extraclassname=" relative">
+            <Button extraclassname=" relative sm:p-4 p-2">
               INSCRIBITE EN NUESTROS CURSOS
             </Button>
           </div>

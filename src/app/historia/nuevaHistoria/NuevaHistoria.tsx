@@ -103,10 +103,10 @@ const NuevaHistoria = () => {
   const isEven = (num: number) => num % 2 === 0;
 
   return (
-    <section className="py-20 px-28 ">
+    <section className="lg:py-20 lg:px-28 sm:p-8 ">
       <div className=" flex flex-col gap-8 pb-20">
         <p className="text-2xl font-medium">NUESTRA HISTORIA</p>
-        <div className="w-full h-[2px] bg-black"></div>
+        <div className="w-full h-[1px] bg-black"></div>
       </div>
       {data.map((card, i) => (
         <div
@@ -156,8 +156,8 @@ const NuevaHistoria = () => {
                 ></div>
                 <motion.p
                   className="text-lg w-5/6 relative -top-1.5"
-                  initial={{ x: 300 }}
-                  whileInView={{ x: 0 }}
+                  initial={{ opacity: 0, x: 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                 >
                   {point}

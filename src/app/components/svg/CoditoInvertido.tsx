@@ -8,6 +8,7 @@ export const CoditoInvertido = () => {
       height="257"
       viewBox="0 0 247 257"
       fill="none"
+      className="w-full"
     >
       <g clipPath="url(#clip0_3_128)">
         <path

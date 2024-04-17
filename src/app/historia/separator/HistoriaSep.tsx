@@ -9,9 +9,9 @@ const hepta_slab = Hepta_Slab({
 const HistoriaSep = () => {
   return (
     <section
-      className={`bg-historiaSep lg:bg-cover bg-cover p-24 lg:h-[60vh] h-max justify-center lg:py-28 lg:px-28 text-white ${hepta_slab.className} flex flex-col gap-8`}
+      className={`bg-historiaSep lg:bg-cover bg-cover lg:p-24 sm:p-12 lg:h-[60vh] h-max justify-center lg:py-28 lg:px-28 text-white ${hepta_slab.className} flex flex-col gap-8`}
     >
-      <p className="w-[790px] 2xl:mx-0 lg:text-2xl  text-xl">
+      <p className="lg:w-[790px] 2xl:mx-0 lg:text-2xl  md:text-xl sm:text-base ">
         <span className="font-bold ">
           Péndulo surge con la firme intención de compartir las herramientas
         </span>
@@ -21,7 +21,7 @@ const HistoriaSep = () => {
           profesionales.
         </span>
       </p>
-      <p className="w-[790px] 2xl:mx-0 lg:text-2xl text-xl">
+      <p className="lg:w-[790px] 2xl:mx-0 lg:text-2xl md:text-xl sm:text-base">
         <span className="font-bold ">
           {" "}
           Nuestro compromiso es ofrecer un enfoque integral{" "}

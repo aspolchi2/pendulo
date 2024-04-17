@@ -60,13 +60,31 @@ const Modalidad = ({
       </div>
       <div className="grid grid-cols-5 grid-rows-2 sm:hidden gap-1">
         <div className="col-span-2">
-          <Image src={images[0].image.src} width={135} height={172} className="w-full h-full" alt="fotos de gente trabajando" />
+          <Image
+            src={images[0].image.src}
+            width={135}
+            height={172}
+            className="w-full h-full object-cover"
+            alt="fotos de gente trabajando"
+          />
         </div>
         <div className="col-span-2 col-start-1 row-start-2">
-          <Image src={images[1].image.src} width={135} height={172}  className="w-full h-full" alt="fotos de gente trabajando"/>
+          <Image
+            src={images[1].image.src}
+            width={135}
+            height={172}
+            className="w-full h-full object-cover"
+            alt="fotos de gente trabajando"
+          />
         </div>
         <div className="col-span-3 row-span-2 col-start-3 row-start-1">
-          <Image src={images[2].image.src} width={234} height={400} className="w-full h-full" alt="fotos de gente trabajando"/>
+          <Image
+            src={images[2].image.src}
+            width={234}
+            height={400}
+            className="w-full h-full object-cover"
+            alt="fotos de gente trabajando"
+          />
         </div>
       </div>
     </section>
