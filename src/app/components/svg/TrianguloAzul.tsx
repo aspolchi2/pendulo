@@ -8,7 +8,7 @@ export const TrianguloAzul = () => {
       height="304"
       viewBox="0 0 307 304"
       fill="none"
-      className="w-full"
+      className="w-full h-full"
     >
       <g clipPath="url(#clip0_3_125)">
         <path

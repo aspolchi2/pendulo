@@ -8,7 +8,7 @@ export const TrianguloRosa = ({ fill }: { fill: string }) => {
       height="219"
       viewBox="0 0 236 219"
       fill="none"
-      className="w-full"
+      className="w-full h-full"
     >
       <g clipPath="url(#clip0_3_130)">
         <path

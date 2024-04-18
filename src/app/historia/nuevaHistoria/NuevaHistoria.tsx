@@ -2,13 +2,16 @@
 import { Lexend } from "next/font/google";
 import React from "react";
 import { motion } from "framer-motion";
+import HistoriaCarousel from "../historiaCarousel/HistoriaCarousel";
+import { HistoriaCarouselItem } from "../historiaCarousel/HistoriaCarouselItem";
+import { Divider } from "@/app/asesoriadeimagen/components/modality/Modality";
 
 const lexend = Lexend({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
-type card = {
+export type card = {
   id: number;
   year: number;
   title: string;
@@ -127,71 +130,94 @@ const NuevaHistoria = () => {
   const isEven = (num: number) => num % 2 === 0;
 
   return (
-    <section className="lg:py-20 lg:px-28 sm:p-8 ">
-      <div className=" flex flex-col gap-8 pb-20">
-        <p className="text-2xl font-medium">NUESTRA HISTORIA</p>
-        <div className="w-full h-[1px] bg-black"></div>
-      </div>
-      {data.map((card, i) => (
-        <div
-          key={card.id}
-          className={`grid grid-flow-col grid-cols-8 ${
-            card.point.length < 3 ? "min-h-[150px]" : "min-h-[350px] pb-4"
-          }`}
-        >
-          <motion.div
-            className="w-full border-r-2 border-primaryWash border-dashed col-span-5 "
-            initial={{ borderRightWidth: "0px" }}
-            whileInView={{ borderRightWidth: "2px" }}
+    <>
+      <section className="lg:py-20 lg:px-28 sm:p-8 hidden sm:block">
+        <div className=" flex flex-col gap-8 pb-20">
+          <p className="text-2xl font-medium">NUESTRA HISTORIA</p>
+          <div className="w-full h-[1px] bg-black"></div>
+        </div>
+        {data.map((card, i) => (
+          <div
+            key={card.id}
+            className={`grid grid-flow-col grid-cols-8 ${
+              card.point.length < 3 ? "min-h-[150px]" : "min-h-[350px] pb-4"
+            }`}
           >
             <motion.div
-              className={`w-full h-0.5 ${
-                isEven(card.id) ? "bg-primaryWash" : "bg-primary"
-              } mb-2`}
-              initial={{ width: 0 }}
-              whileInView={{
-                transformOrigin: "left",
-                opacity: 1,
-                width: "100%",
-              }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-            ></motion.div>
-            <div
-              className={`flex gap-2 ${
-                isEven(card.id) ? "text-primaryWash" : "text-primary"
-              }  `}
+              className="w-full border-r-2 border-primaryWash border-dashed col-span-5 "
+              initial={{ borderRightWidth: "0px" }}
+              whileInView={{ borderRightWidth: "2px" }}
             >
-              <p className="font-black xl:text-6xl lg:text-5xl">{card.year}</p>
-              <p className="font-bold xl:text-4xl lg:text-2xl ml-auto mr-auto w-[500px]">
-                {card.title}
-              </p>
-            </div>
-          </motion.div>
-          <div className="flex flex-col gap-4  col-span-3">
-            {card.point.map((point, i) => (
+              <motion.div
+                className={`w-full h-0.5 ${
+                  isEven(card.id) ? "bg-primaryWash" : "bg-primary"
+                } mb-2`}
+                initial={{ width: 0 }}
+                whileInView={{
+                  transformOrigin: "left",
+                  opacity: 1,
+                  width: "100%",
+                }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+              ></motion.div>
               <div
-                key={i}
-                className="flex justify-start items-start relative -top-1.5 -left-2 w-full gap-4 "
+                className={`flex gap-2 ${
+                  isEven(card.id) ? "text-primaryWash" : "text-primary"
+                }  `}
               >
-                <div
-                  className={`w-4 h-4 ${
-                    isEven(card.id) ? "bg-primaryWash" : "bg-primary"
-                  }  rounded-full`}
-                ></div>
-                <motion.p
-                  className="text-lg w-5/6 relative -top-1.5"
-                  initial={{ opacity: 0, x: 100 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
-                >
-                  {point.title}
-                </motion.p>
+                <p className="font-black xl:text-6xl lg:text-5xl">
+                  {card.year}
+                </p>
+                <p className="font-bold xl:text-4xl lg:text-2xl ml-auto mr-auto w-[500px]">
+                  {card.title}
+                </p>
               </div>
-            ))}
+            </motion.div>
+            <div className="flex flex-col gap-4  col-span-3">
+              {card.point.map((point, i) => (
+                <div
+                  key={i}
+                  className="flex justify-start items-start relative -top-1.5 -left-2 w-full gap-4 "
+                >
+                  <div
+                    className={`w-4 h-4 ${
+                      isEven(card.id) ? "bg-primaryWash" : "bg-primary"
+                    }  rounded-full`}
+                  ></div>
+                  <motion.p
+                    className="text-lg w-5/6 relative -top-1.5"
+                    initial={{ opacity: 0, x: 100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                  >
+                    {point.title}
+                  </motion.p>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
-    </section>
+        ))}
+      </section>
+      <section className="sm:hidden p-8 min-h-96 ">
+        <Divider
+          title="NUESTRA HISTORIA"
+          bgcolor="bg-primary"
+          color="text-primary"
+          textPosition="text-left"
+        ></Divider>
+        <HistoriaCarousel>
+          {data.map((item, i) => (
+            <HistoriaCarouselItem
+              key={i}
+              year={item.year}
+              title={item.title}
+              point={item.point}
+              id={item.id}
+            />
+          ))}
+        </HistoriaCarousel>
+      </section>
+    </>
   );
 };
 

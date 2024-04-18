@@ -8,17 +8,21 @@ import { lexend } from "@/app/asesoriadeimagen/components/joinUs/JoinUs";
 
 export const WhyPendulo = () => {
   return (
-    <section className={` ${lexend.className} xl:p-24 sm:py-12 sm:px-8`}>
+    <section
+      className={` ${lexend.className} xl:p-24 sm:py-12 sm:px-8 p-4 py-12`}
+    >
       <div className="md:w-10/12 m-auto  text-primary   ">
         <h3 className="text-black lg:text-2xl">¿POR QUÉ CREAMOS PÉNDULO?</h3>
-        <hr className="text-black mt-5" />
-        <div className="flex flex-col justify-end items-center max-w-full text-balance">
+        <hr className="text-black my-5" />
+        <div className="flex flex-col justify-end items-center max-w-full text-balance sm:gap-8 gap-4">
           <div className="flex items-center gap-10">
-            <span className="animate-wiggle animate-infinite animate-duration-[10000ms] animate-ease-linear sm:w-52 md:w-60">
+            <span className="animate-wiggle animate-infinite animate-duration-[10000ms] animate-ease-linear sm:w-52 md:w-60 ">
               <Codito fill="#E05FE0" />
             </span>
-            <div className=" lg:text-2xl sm:text-lg text-balance">
-              <p className={`${hepta_slab.className} font-black text-5xl`}>
+            <div className=" lg:text-2xl sm:text-lg text-balance text-sm text-right">
+              <p
+                className={`${hepta_slab.className} font-black sm:text-5xl text-xl`}
+              >
                 01.
               </p>
               <p>
@@ -35,8 +39,10 @@ export const WhyPendulo = () => {
             <span className="animate-jump animate-infinite animate-duration-[10000ms] animate-ease-linear sm:w-52 md:w-60 ">
               <TrianguloAzul />
             </span>
-            <div className="lg:text-2xl sm:text-lg text-balance">
-              <p className={`${hepta_slab.className} font-black text-5xl`}>
+            <div className="lg:text-2xl sm:text-lg text-balance text-sm">
+              <p
+                className={`${hepta_slab.className} font-black sm:text-5xl text-xl`}
+              >
                 02.
               </p>{" "}
               <p>
@@ -52,8 +58,10 @@ export const WhyPendulo = () => {
             <span className="animate-wiggle animate-infinite animate-duration-[10000ms] animate-ease-in sm:w-52 md:w-60">
               <CoditoInvertido />
             </span>
-            <div className="lg:text-2xl sm:text-lg text-balance">
-              <p className={`${hepta_slab.className} font-black text-5xl`}>
+            <div className="lg:text-2xl sm:text-lg text-balance text-sm text-right">
+              <p
+                className={`${hepta_slab.className} font-black sm:text-5xl text-2xl`}
+              >
                 03.
               </p>
               <p className="">
@@ -70,8 +78,10 @@ export const WhyPendulo = () => {
             <span className="animate-jump animate-infinite animate-duration-[20000ms] animate-ease-linear sm:w-52 md:w-60 ">
               <TrianguloRosa fill="#E05FE0" />
             </span>
-            <div className="lg:text-2xl sm:text-lg text-balance">
-              <p className={`${hepta_slab.className} font-black text-5xl`}>
+            <div className="lg:text-2xl sm:text-lg text-balance text-sm ">
+              <p
+                className={`${hepta_slab.className} font-black sm:text-5xl text-2xl`}
+              >
                 04.
               </p>{" "}
               <p>

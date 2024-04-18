@@ -1,6 +1,6 @@
 import React from "react";
 
-const Artist = () => {
+const Artist = ({ fill = "white" }) => {
   return (
     <svg
       width="34"
@@ -8,6 +8,7 @@ const Artist = () => {
       viewBox="0 0 38 35"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="w-full h-full"
     >
       <g clipPath="url(#clip0_1_267)">
         <path
@@ -16,16 +17,16 @@ const Artist = () => {
         />
         <path
           d="M11.5016 16.9107C14.1009 16.9107 16.208 14.8967 16.208 12.4124C16.208 9.92803 14.1009 7.91406 11.5016 7.91406C8.90236 7.91406 6.79523 9.92803 6.79523 12.4124C6.79523 14.8967 8.90236 16.9107 11.5016 16.9107Z"
-          fill="white"
+          fill={fill}
         />
         <path
           d="M31.236 17.0411V25.4187H6.76288V19.7704C9.48096 20.5562 14.2855 21.3121 19 18.9581C22.7654 17.1018 27.0469 16.432 31.2348 17.0422L31.236 17.0411Z"
-          fill="white"
+          fill={fill}
         />
       </g>
       <defs>
         <clipPath id="clip0_1_267">
-          <rect width="38" height="35" fill="white" />
+          <rect width="38" height="35" fill={fill} />
         </clipPath>
       </defs>
     </svg>
