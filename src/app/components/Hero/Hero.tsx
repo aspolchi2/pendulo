@@ -6,7 +6,7 @@ import { lexend } from "@/app/asesoriadeimagen/components/joinUs/JoinUs";
 export const Hero = () => {
   return (
     <section
-      className={`${lexend.className} sm:bg-hero-bg bg-homeHeroMobile sm:bg-center  w-full h-svh sm:max-h-[920px] bg-cover md:max-h-[800px] xl:max-h-[920px] overflow-x-hidden`}
+      className={`${lexend.className} sm:bg-hero-bg bg-homeHeroMobile sm:bg-center  w-full h-dvh sm:max-h-[920px] bg-cover md:max-h-[800px] xl:max-h-[920px] overflow-x-hidden`}
     >
       <div className="backdrop-brightness-50 h-full w-full flex items-center">
         <div className=" relative sm:p-12 p-6 pt-56 sm:pt-0">
