@@ -12,14 +12,16 @@ export const Divider = ({
   color,
   bgcolor,
   textPosition = "text-right",
+  width = "w-auto",
 }: {
   title: string;
   color?: string;
   bgcolor?: string;
   textPosition?: string;
+  width?: string;
 }) => {
   return (
-    <div className="flex flex-col gap-5">
+    <div className={`flex flex-col gap-5 ${width}`}>
       <p className={`${color} ${textPosition} `}>{title}</p>
       <div className={`${bgcolor} h-px bg-black`}></div>
     </div>

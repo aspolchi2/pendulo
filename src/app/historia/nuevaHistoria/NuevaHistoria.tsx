@@ -144,7 +144,7 @@ const NuevaHistoria = () => {
             }`}
           >
             <motion.div
-              className="w-full border-r-2 border-primaryWash border-dashed col-span-5 "
+              className="w-full border-r-2 border-primaryWash border-dashed col-span-4 lg:col-span-5  "
               initial={{ borderRightWidth: "0px" }}
               whileInView={{ borderRightWidth: "2px" }}
             >
@@ -173,7 +173,7 @@ const NuevaHistoria = () => {
                 </p>
               </div>
             </motion.div>
-            <div className="flex flex-col gap-4  col-span-3">
+            <div className="flex flex-col gap-4  col-span-4">
               {card.point.map((point, i) => (
                 <div
                   key={i}

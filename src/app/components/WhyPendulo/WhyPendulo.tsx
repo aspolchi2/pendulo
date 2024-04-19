@@ -15,11 +15,11 @@ export const WhyPendulo = () => {
         <h3 className="text-black lg:text-2xl">¿POR QUÉ CREAMOS PÉNDULO?</h3>
         <hr className="text-black my-5" />
         <div className="flex flex-col justify-end items-center max-w-full text-balance sm:gap-8 gap-4">
-          <div className="flex items-center gap-10">
+          <div className="flex items-center gap-10  justify-between w-full lg:w-10/12 ">
             <span className="animate-wiggle animate-infinite animate-duration-[10000ms] animate-ease-linear sm:w-52 md:w-60 ">
               <Codito fill="#E05FE0" />
             </span>
-            <div className=" lg:text-2xl sm:text-lg text-balance text-sm text-right">
+            <div className=" lg:text-2xl sm:text-lg text-balance text-sm text-right ">
               <p
                 className={`${hepta_slab.className} font-black sm:text-5xl text-xl`}
               >
@@ -35,7 +35,7 @@ export const WhyPendulo = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-center lg:gap-10 flex-row-reverse sm:gap-12">
+          <div className="flex items-center gap-10 flex-row-reverse justify-between w-full lg:w-10/12">
             <span className="animate-jump animate-infinite animate-duration-[10000ms] animate-ease-linear sm:w-52 md:w-60 ">
               <TrianguloAzul />
             </span>
@@ -54,7 +54,7 @@ export const WhyPendulo = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-10">
+          <div className="flex items-center gap-10 justify-between w-full lg:w-10/12">
             <span className="animate-wiggle animate-infinite animate-duration-[10000ms] animate-ease-in sm:w-52 md:w-60">
               <CoditoInvertido />
             </span>
@@ -74,7 +74,7 @@ export const WhyPendulo = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-10 flex-row-reverse">
+          <div className="flex items-center gap-10 flex-row-reverse justify-between w-full lg:w-10/12">
             <span className="animate-jump animate-infinite animate-duration-[20000ms] animate-ease-linear sm:w-52 md:w-60 ">
               <TrianguloRosa fill="#E05FE0" />
             </span>

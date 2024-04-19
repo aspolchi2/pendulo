@@ -34,17 +34,28 @@ const Founders = () => {
                 MARCIA FILZ
               </p>
               <div className=" flex justify-start gap-5 items-start xl:w-96 lg:w-72 px-4">
-                <Cam /> <p className="lg:text-2xl">Fotógrafa.</p>
+                <div className="">
+                  {" "}
+                  <Cam />{" "}
+                </div>
+                <p className="lg:text-2xl">Fotógrafa.</p>
               </div>
-              <div className="w-full h-px bg-white"></div>
+              <div className="sm:w-11/12 h-px bg-white"></div>
               <div className=" flex justify-start gap-5 items-start xl:w-96 lg:w-72 px-4">
-                <Educadora /> <p className="lg:text-2xl">Educadora.</p>
+                <div className="">
+                  <Educadora />
+                </div>{" "}
+                <p className="lg:text-2xl">Educadora.</p>
               </div>
-              <div className="w-full h-px bg-white"></div>
+              <div className="sm:w-11/12 h-px bg-white"></div>
               <div className=" flex justify-start gap-5 items-start xl:w-96 lg:w-72 px-4">
-                <Artist /> <p className="lg:text-2xl">Artista visual.</p>
+                <div className="">
+                  {" "}
+                  <Artist />
+                </div>{" "}
+                <p className="lg:text-2xl">Artista visual.</p>
               </div>
-              <div className="w-full h-px bg-white"></div>
+              <div className="sm:w-11/12 h-px bg-white"></div>
             </div>
           </div>
           <div className="md:col-span-6 sm:col-span-6 sm:col-start-4 2xl:w-8/12 flex flex-col gap-6 mx-auto">
@@ -103,19 +114,29 @@ const Founders = () => {
               </p>
               <div className=" flex justify-start gap-5 items-start xl:w-96 lg:w-72 px-4">
                 <div className="">
-                  <LaptopXs />{" "}
+                  <div className="">
+                    <LaptopXs />{" "}
+                  </div>{" "}
                 </div>{" "}
                 <p className="lg:text-2xl">Diseñadora gráfica.</p>
               </div>
-              <div className="w-full h-px bg-white"></div>
+              <div className="sm:w-11/12 h-px bg-white"></div>
               <div className=" flex justify-start gap-5 items-start xl:w-96 lg:w-72 px-4">
-                <Cam /> <p className="lg:text-2xl">Fotógrafa.</p>
+                <div className="">
+                  {" "}
+                  <Cam />{" "}
+                </div>
+                <p className="lg:text-2xl">Fotógrafa.</p>
               </div>
-              <div className="w-full h-px bg-white"></div>
+              <div className="sm:w-11/12 h-px bg-white"></div>
               <div className=" flex justify-start gap-5 items-start xl:w-96 lg:w-72 px-4">
-                <Educadora /> <p className="lg:text-2xl">Educadora.</p>
+                <div className="">
+                  {" "}
+                  <Educadora />
+                </div>{" "}
+                <p className="lg:text-2xl">Educadora.</p>
               </div>
-              <div className="w-full h-px bg-white "></div>
+              <div className="sm:w-11/12 h-px bg-white "></div>
             </div>
           </div>
           <div className="md:col-span-6 sm:col-span-6 sm:col-start-4 2xl:w-8/12 flex flex-col gap-6 mx-auto">
@@ -159,14 +180,14 @@ const Founders = () => {
           </div>
         </div>
       </section>
-      <section className="bg-primary p-8 space-y-8">
+      <section className="bg-primary p-8 space-y-8 sm:hidden">
         <Divider
           title="¿QUIENES SOMOS?"
           bgcolor="bg-white"
           color="text-white"
           textPosition="text-left"
         />
-        <Carousel>
+        <Carousel color="text-white" fill="fill-white">
           {FoundersElements.map((item, i) => (
             <React.Fragment key={i}>{item.item}</React.Fragment>
           ))}

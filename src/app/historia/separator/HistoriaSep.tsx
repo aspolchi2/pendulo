@@ -9,9 +9,9 @@ const hepta_slab = Hepta_Slab({
 const HistoriaSep = () => {
   return (
     <section
-      className={`sm:bg-historiaSep bg-historiaMobileDiv lg:bg-cover bg-cover lg:p-24 sm:p-12 lg:h-[60vh] h-max sm:justify-center lg:py-28 lg:px-28 text-white ${hepta_slab.className} flex flex-col sm:gap-8 h-svh bg-center justify-end pb-12 text-center sm:text-left text-balance`}
+      className={`sm:bg-historiaSep bg-historiaMobileDiv lg:bg-cover bg-cover lg:p-24 sm:p-12 lg:h-[60vh] h-max sm:justify-center lg:py-28 lg:px-28 text-white ${hepta_slab.className} flex flex-col sm:gap-8 h-[600px] bg-center justify-end pb-12 text-center sm:text-left text-balance gap-2`}
     >
-      <p className="lg:w-[790px] 2xl:mx-0 lg:text-2xl  md:text-xl sm:text-base text-[10px]  px-10">
+      <p className="lg:w-[790px] 2xl:mx-0 lg:text-2xl  md:text-xl sm:text-base text-xs  px-10">
         <span className="font-bold ">
           Péndulo surge con la firme intención de compartir las herramientas
         </span>
@@ -21,7 +21,7 @@ const HistoriaSep = () => {
           profesionales.
         </span>
       </p>
-      <p className="lg:w-[790px] 2xl:mx-0 lg:text-2xl md:text-xl sm:text-base text-[10px] px-10">
+      <p className="lg:w-[790px] 2xl:mx-0 lg:text-2xl md:text-xl sm:text-base text-xs px-10">
         <span className="font-bold ">
           {" "}
           Nuestro compromiso es ofrecer un enfoque integral{" "}

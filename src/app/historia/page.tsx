@@ -10,6 +10,7 @@ import { Quotes } from "../components/quotes/Quotes";
 import { Stadistics } from "../components/stadistics/Stadistics";
 import { Testimonials } from "../components/testimonials/Testimonials";
 import { Interesed } from "../asesoriadeimagen/components/interesed/Interesed";
+import { CoursesFrame } from "../components/courses/CoursesFrame";
 
 const hepta_slab = Hepta_Slab({
   subsets: ["latin"],
@@ -42,7 +43,9 @@ export default function Page() {
       <Founders />
       <Stadistics />
       <Testimonials />
-      <Interesed  />
+      
+      <CoursesFrame historia/>
+
       <Footer />
     </main>
   );

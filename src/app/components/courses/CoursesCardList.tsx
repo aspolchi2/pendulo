@@ -5,6 +5,7 @@ import asesoria from "@/app/../../public/images/asesoria.png";
 import interiores from "@/app/../../public/images/interiores.png";
 import { CoursesCard } from "./CoursesCard";
 import Carousel from "../carousel/Carousel";
+import { Divider } from "@/app/asesoriadeimagen/components/modality/Modality";
 
 export type cardsProps = {
   id: number;
@@ -54,15 +55,24 @@ export const cards: cardsProps[] = [
 export const CoursesCardList = ({
   filter,
   isFilter,
+  historia,
 }: {
   filter?: number;
   isFilter: boolean;
+  historia?: boolean;
 }) => {
   const filteredCards = filter
     ? cards.filter((card) => card.id !== filter)
     : cards;
   return (
     <>
+      {historia && (
+        <Divider
+          title="Nuestros cursos"
+          width="w-10/12"
+          textPosition="text-left"
+        />
+      )}
       <div
         className={`lg:grid gap-4 hidden ${
           filter

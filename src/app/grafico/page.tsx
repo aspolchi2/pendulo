@@ -24,6 +24,7 @@ import {
 } from "../asesoriadeimagen/components/modality/data";
 import Teacher from "../asesoriadeimagen/components/teacher/Teacher";
 import TeacherGrafico from "./TeacherGrafico";
+import { CoursesFrame } from "../components/courses/CoursesFrame";
 
 export default function Home() {
   const { booleanValue } = useBooleanStore();

@@ -24,7 +24,7 @@ export const CoursesCard = ({
       transition={{ duration: 0.275 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="bg-white shadow-md flex flex-col justify-center  p-7 sm:p-5    lg:w-72 max-w-[450px] "
+      className="bg-white shadow-md flex flex-col justify-center  p-7 sm:p-5    lg:w-72 max-w-[481px] "
     >
       <header>
         {!isFilter && (
@@ -36,11 +36,11 @@ export const CoursesCard = ({
         )}
       </header>
       <main className="flex flex-col gap-1">
-        <h2 className="font-semibold text-primary md:text-4xl sm:text-3xl text-2xl">
+        <h2 className="font-semibold text-primary md:text-4xl sm:text-3xl text-2xl h-14 md:h-20">
           {title}
         </h2>
         <p
-          className={`${hepta_slab.className} font-normal  text-sm sm:h-40 leading-4 pt-3 `}
+          className={`${hepta_slab.className} font-normal  text-xs  leading-4 pt-3 h-28 sm:h-32`}
         >
           {description}
         </p>
