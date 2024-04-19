@@ -15,7 +15,7 @@ const HistoriaHero = () => {
   return (
     <>
       <div
-        className={`${lexend.className} sm:bg-historiaHero  bg-historiaMobileHero bg-center w-full xl:p-28 sm:p-8 sm:h-lvh  lg:h-[700px] xl:h-lvh h-[529px] text-white bg-cover bg-no-repeat sm:flex flex-col sm:justify-center justify-end p-4 hidden`}
+        className={`${lexend.className} sm:bg-historiaHero  bg-historiaMobileHero bg-center w-full xl:p-28 sm:p-8 sm:h-svh  lg:h-[700px] xl:h-svh h-[529px] text-white bg-cover bg-no-repeat sm:flex flex-col sm:justify-center justify-end p-4 hidden`}
       >
         <h1 className="font-bold lg:text-[55px] lg:w-[450px] lg:leading-[50px] pb-3  sm:text-4xl md:text-5xl sm:w-3/6 md:w-4/6 text-xl">
           Somos Péndulo <br /> una escuela
