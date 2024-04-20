@@ -8,14 +8,14 @@ export const TestimonialsCardList = ({ filter }: { filter: number }) => {
   const slicedCards = cards.slice(filter - 3, filter);
   return (
     <>
-      <div className="lg:flex gap-7 justify-center hidden">
+      <div className="md:flex gap-7 justify-center hidden">
         <AnimatePresence initial={false}>
           {slicedCards.map((card) => (
             <TestimonialsCard key={card.id} {...card} />
           ))}
         </AnimatePresence>
       </div>
-      <div className="lg:hidden h-[500px]">
+      <div className="md:hidden ">
         <Carousel text="Conoce más experiencias" dotsColor="bg-black">
           {cards.map((item) => (
             <TestimonialsCard key={item.id} {...item} />

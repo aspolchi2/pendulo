@@ -8,19 +8,27 @@ type props = {
   span: string;
   text: string;
   extra?: string;
+  itemsPosition?: string;
 };
 const lexend = Lexend({
   weight: ["400", "700"],
   subsets: ["latin"],
 });
 
-export const Hero = ({ bg, span, text, title, extra }: props) => {
+export const Hero = ({
+  bg,
+  span,
+  text,
+  title,
+  extra,
+  itemsPosition = "items-start",
+}: props) => {
   const splitedText = text.split(" + ");
   return (
     <section
       className={`${bg} ${lexend.className} max-h-[842px] bg-no-repeat bg-cover bg-blend-multiply bg-center sm:h-dvh h-[530px] `}
     >
-      <div className="w-full sm:h-full h-4/6 flex items-center ">
+      <div className={`w-full sm:h-full flex h-full ${itemsPosition} pt-20 `}>
         <div className=" lg:ml-40 md:ml-24 sm:ml-4 ml-3 flex flex-col sm:gap-6 gap-3 ">
           <h1 className="sm:text-8xl text-5xl font-black  text-yellow sm:leading-[95px]">
             {title} <br /> <span className="">{span}</span>{" "}

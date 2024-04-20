@@ -21,7 +21,7 @@ export default function Page() {
   const Text = () => {
     return (
       <p
-        className={`${hepta_slab.className}  text-white z-20 text-center text-3xl w-11/12 m-auto`}
+        className={`${hepta_slab.className}  text-white z-20 text-center text-3xl  m-auto`}
       >
         Creemos que la <span className="font-semibold">magia </span> surge en la{" "}
         <span className="font-semibold">intersección de diversos mundos </span>{" "}
@@ -31,13 +31,13 @@ export default function Page() {
   };
 
   return (
-    <main className="overflow-x-hidden max-w-[1920px] m-auto">
+    <main className="overflow-x-hidden ">
       <HistoriaHero />
       <NuevaHistoria />
       <HistoriaSep />
       <WhyPendulo />
       <Quotes bg="bg-black">
-        {" "}
+        
         <Text />
       </Quotes>
       <Founders />

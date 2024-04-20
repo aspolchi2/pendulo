@@ -52,13 +52,14 @@ export default function Home() {
   );
   const { booleanValue } = useBooleanStore();
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Hero
-        bg="bg-marketingBg"
+        bg="sm:bg-marketingBg bg-marketingMobileHero"
         title="Marketing "
         span="Digital +"
         text="COMMUNITY MANAGER"
         extra="CAPACITACIÓN PROFESIONAL"
+        itemsPosition={"items-end pb-20"}
       />
       <Modalidad images={marketingArray} formacion={formacion} />
       <Description />
@@ -83,7 +84,7 @@ export default function Home() {
       )}
       <Stadistics />
       <Testimonials />
-      <Interesed  filter={1} />
+      <Interesed filter={1} />
       <Footer />
     </main>
   );

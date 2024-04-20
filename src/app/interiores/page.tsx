@@ -57,7 +57,7 @@ export default function Interiores() {
     </p>
   );
   return (
-    <div className={`${lexend.className} max-w-[1920px] m-auto`}>
+    <div className={`${lexend.className}  overflow-x-hidden`}>
       <Hero
         bg="md:bg-interioresBg bg-interioresMobileHero"
         title="Diseño"

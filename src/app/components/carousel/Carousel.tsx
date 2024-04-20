@@ -50,7 +50,7 @@ const Carousel = ({
             key={i}
             className={`
               transition-all w-3 h-3 ${dotsColor} rounded-full
-              ${curr === i ? "p-2" : "bg-opacity-50"}
+              ${curr === i ? "" : "bg-opacity-50"}
             `}
           />
         ))}

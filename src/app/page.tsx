@@ -18,7 +18,7 @@ const hepta_slab = Hepta_Slab({
 const Text = () => {
   return (
     <p
-      className={`${hepta_slab.className}  sm:text-white text-black z-20 text-center text-3xl  sm:w-11/12 m-auto`}
+      className={`${hepta_slab.className}  sm:text-white text-black z-20 text-center text-3xl  `}
     >
       Nos interesan las personas que{" "}
       <span className="font-semibold">
@@ -31,7 +31,7 @@ const Text = () => {
 
 export default function Home() {
   return (
-    <main className="max-w-[1920px] m-auto">
+    <main className="">
       <Hero />
       <CoursesFrame />
       <Accomplish />

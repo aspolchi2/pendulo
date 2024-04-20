@@ -49,7 +49,7 @@ export const Header = ({
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <header
-      className={`w-full max-w-[1920px] m-auto sm:h-28 h-20 flex items-end ${position} ${bg} z-50 `}
+      className={`w-full  m-auto sm:h-28 h-20 flex items-end ${position} ${bg} z-50 `}
     >
       <nav className="flex justify-between w-11/12 m-auto h-full pb-6 z-20">
         <Link href={"/"} className="flex items-end  gap-2 cursor-pointer ">

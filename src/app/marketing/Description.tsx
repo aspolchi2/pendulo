@@ -5,17 +5,17 @@ import { lexend } from "../asesoriadeimagen/components/joinUs/JoinUs";
 
 const Description = () => {
   return (
-    <section className="px-32 py-28 flex flex-col gap-16 ">
-      <div className="grid grid-flow-col grid-cols-2">
+    <section className="lg:px-32 lg:py-28 md:p-12 md:py-18  sm:p-8 sm:py-16 flex flex-col gap-4 py-10 px-14 ">
+      <div className="sm:grid grid-flow-col grid-cols-2 space-y-4 sm:space-y-0">
         <div className="col-span-1 ">
-          <p className="font-bold text-primary xl:text-3xl  xl:w-[512px] md:text-2xl m-auto">
+          <p className="font-bold text-primary xl:text-3xl  xl:w-[512px] md:text-2xl m-auto text-balance sm:text-xl text-xs">
             ¿Por qué aprender Marketing Digital en Péndulo?
           </p>
         </div>
         <div
-          className={`${hepta_slab.className} col-span-2 flex flex-col   xl:text-xl text-base gap-10`}
+          className={`${hepta_slab.className} col-span-2 flex flex-col   xl:text-xl text-[9px] gap-4 text-balance sm:text-sm`}
         >
-          <p className="w-9/12 m-auto">
+          <p className="lg:w-9/12 m-auto text-balance">
             En esta capacitación, el participante va a adquirir{" "}
             <span className="text-primary font-bold">
               {" "}
@@ -25,7 +25,7 @@ const Description = () => {
             que podrá ir desarrollando y poniendo en práctica durante el año,
             asimilando poco a poco los contenidos.
           </p>
-          <p className="w-9/12 m-auto">
+          <p className="lg:w-9/12 m-auto text-balance">
             Además, el participante aprenderá a{" "}
             <span className="text-primary font-bold">
               {" "}
@@ -36,7 +36,7 @@ const Description = () => {
             en las agencias de publicidad. Es decir adquirirá las herramientas
             para poder ejercer como un Community Manager.
           </p>
-          <p className="w-9/12 m-auto">
+          <p className="lg:w-9/12 m-auto text-balance">
             El contenido de esta capacitación{" "}
             <span className="text-primary font-bold">
               está pensado para ser funcional a lo largo del tiempo con
@@ -49,19 +49,19 @@ const Description = () => {
         </div>
       </div>
       <div className="w-full h-px bg-primary"></div>
-      <div className="grid grid-flow-col grid-cols-2">
+      <div className="sm:grid grid-flow-col grid-cols-2 space-y-4 sm:space-y-0">
         <div className="col-span-1">
           <p
-            className={`${lexend.className} font-bold text-primary xl:text-3xl md:text-2xl xl:w-8/12  2xl:m-auto `}
+            className={`${lexend.className} font-bold text-primary xl:text-3xl  xl:w-[512px] md:text-2xl m-auto text-balance sm:text-xl text-xs`}
           >
             ¿Cómo se va a trabajar en clase?
           </p>
         </div>
         <div
-          className={`${hepta_slab.className} col-span-2 flex flex-col xl:text-xl md:text-base gap-10`}
+          className={`${hepta_slab.className}  col-span-2 flex flex-col   xl:text-xl text-[9px] text-balance sm:text-sm`}
         >
-          <div className="flex flex-col gap-10">
-            <p className="w-9/12 m-auto">
+          <div className="flex flex-col gap-4">
+            <p className="lg:w-9/12 m-auto text-balance">
               Durante el primer módulo se irá analizando la marca poco a poco,
               luego el producto o servicio y a lo largo de las clases, en
               conjunto con la profesora,{" "}
@@ -73,7 +73,7 @@ const Description = () => {
               Es decir, el contenido teórico abordado en el curso se pondrá en
               práctica a un proyecto real desde la primera clase.
             </p>
-            <p className="w-9/12 m-auto">
+            <p className="lg:w-9/12 m-auto text-balance">
               En el segundo módulo{" "}
               <span className="text-primary font-bold">
                 se aprenderá a desarrollar y ejecutar un plan de redes sociales
@@ -86,7 +86,7 @@ const Description = () => {
               desarrollada en el primer cuatrimestre, ya sea para un empren-
               dimiento propio como para el de un cliente.
             </p>
-            <p className="w-9/12 m-auto">
+            <p className="lg:w-9/12 m-auto text-balance">
               Cada unidad tiene su trabajo práctico para afianzar los
               conocimientos adquiridos. En las últimas clases se aprenderá a
               <span className="text-primary font-bold">
@@ -100,25 +100,25 @@ const Description = () => {
         </div>
       </div>
       <div className="w-full h-px bg-primary"></div>
-      <div className="grid grid-flow-col grid-cols-2">
+      <div className="sm:grid grid-flow-col grid-cols-2 space-y-4 sm:space-y-0">
         <div className="col-span-1">
           <p
-            className={`${lexend.className} font-bold text-primary xl:text-3xl md:text-2xl xl:w-[512px] m-auto`}
+            className={`${lexend.className} font-bold text-primary xl:text-3xl  xl:w-[512px] md:text-2xl m-auto text-balance sm:text-xl text-xs`}
           >
             ¿El curso sirve para trabajar en esta profesión?
           </p>
         </div>
         <div
-          className={`${hepta_slab.className} col-span-2 flex flex-col  xl:text-xl md:text-base gap-0`}
+          className={`${hepta_slab.className}  col-span-2 flex flex-col   xl:text-xl text-[9px] sm:text-sm text-balance`}
         >
-          <div className="flex flex-col gap-10 ">
-            <p className="w-9/12 m-auto">
+          <div className="flex flex-col gap-4 ">
+            <p className="lg:w-9/12 m-auto text-balance">
               Para ejercer esta profesión lo más importante es poder demostrar a
               un potencial cliente o empresa el tipo de trabajo que puedas ser
               capaz de realizar. Para lograr eso es necesario compartir trabajos
               reales que permitan evidenciar tus capacidades.
             </p>
-            <p className="w-9/12 m-auto">
+            <p className="lg:w-9/12 m-auto text-balance">
               El curso está acompañado de actividades prácticas para ir
               implementando desde las primeras clases el contenido en proyectos
               reales.{" "}

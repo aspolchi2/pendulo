@@ -79,12 +79,12 @@ const Modules = ({
                   <div
                     className={`opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-base text-white font-semibold bg-primary flex-col`}
                   >
-                    <ul className="bg-primary  flex flex-col gap-1 w-1/2">
+                    <ul className="bg-primary  flex flex-col gap-1 w-11/12 text-balance">
                       {description.map((desc, i) => (
                         <span key={i} className="flex gap-1">
                           <span>·</span>
                           <li
-                            className={`${lexend.className} leading-6 text-base`}
+                            className={`${lexend.className} leading-5 text-base text-balance`}
                           >
                             {desc}
                           </li>
@@ -130,7 +130,7 @@ const Modules = ({
                 )}
               </div>
               <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex justify-center items-center text-6xl text-white font-semibold bg-primary flex-col w-full">
-                <ul className="bg-primary text-base  flex flex-col  gap-1 w-1/2">
+                <ul className="bg-primary text-base  flex flex-col  gap-1 w-11/12">
                   {description.map((desc, i) => (
                     <span key={i} className="flex gap-1 ">
                       <span className="">·</span>
@@ -146,11 +146,15 @@ const Modules = ({
         {show && (
           <div className="flex justify-center items-center">
             <div className="relative bg-primary flex justify-center items-center text-white w-full">
-              <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 h-72 flex justify-center items-center">
-                <p className="w-[60 ch] text-center text-2xl">
-                  HERRAMIENTAS PARA EL DESARROLLO EFECTIVO <br /> DE LA RELACIÓN
-                  CLIENTE - PROFESIONAL
+              <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 h-72 flex justify-center items-center gap-1">
+                <p className="text-center sm:text-2xl text-xs text-balance ">
+                  HERRAMIENTAS PARA EL DESARROLLO EFECTIVO{" "}
+                  <br className="hidden sm:block" /> DE LA RELACIÓN CLIENTE -
+                  PROFESIONAL
                 </p>
+                <span className="flex justify-end">
+                  <ArrowDown />
+                </span>
               </div>
               <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex  justify-center items-center text-6xl text-white font-semibold bg-primary flex-col w-full">
                 <ul className="bg-primary text-lg  flex flex-col  ">
@@ -225,7 +229,9 @@ const Modules = ({
                             key={i}
                             className="flex gap-1 justify-center items-center text-center"
                           >
-                            <li className={`${lexend.className}  text-sm`}>
+                            <li
+                              className={`${lexend.className}  sm:text-sm text-xs`}
+                            >
                               {desc}
                             </li>
                           </span>
@@ -299,27 +305,32 @@ const Modules = ({
             );
           })}
           {show && (
-            <div className="flex justify-center items-center">
+            <div
+              className={` ${lexend.className} flex justify-center items-center`}
+            >
               <div className="relative bg-primary flex justify-center items-center text-white w-full">
-                <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 h-72 flex justify-center items-center">
-                  <p className="w-[60 ch] text-center text-2xl">
+                <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 h-40 flex justify-center items-center gap-2">
+                  <p className=" text-center text-sm font-semibold">
                     HERRAMIENTAS PARA EL DESARROLLO EFECTIVO <br /> DE LA
                     RELACIÓN CLIENTE - PROFESIONAL
                   </p>
+                  <span className="flex justify-end">
+                    <ArrowDown />
+                  </span>
                 </div>
-                <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex  justify-center items-center text-6xl text-white font-semibold bg-primary flex-col w-full">
-                  <ul className="bg-primary text-lg  flex flex-col  ">
+                <div className="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-0 flex  justify-center items-center  text-white font-semibold bg-primary flex-col w-full">
+                  <ul className="bg-primary text-sm  flex flex-col text-center  ">
                     <li className="">
-                      · Cómo planificar objetivos y realizar el seguimiento
+                      Cómo planificar objetivos y realizar el seguimiento
                     </li>
                     <li className="">
-                      · Análisis de las necesidades del cliente
+                      Análisis de las necesidades del cliente
                     </li>
                     <li className="">
-                      · Herramientas para llevar adelante los objetivos de la
+                      Herramientas para llevar adelante los objetivos de la
                       imagen interna
                     </li>
-                    <li className="">· Lenguaje no verbal y rapport</li>
+                    <li className=""> Lenguaje no verbal y rapport</li>
                   </ul>
                 </div>
               </div>

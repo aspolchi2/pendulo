@@ -47,10 +47,11 @@ export default function Home() {
   return (
     <main className={lexend.className}>
       <Hero
-        bg="bg-asesoriadeimagen"
+        bg="sm:bg-asesoriadeimagen bg-asesoriaMobileHero"
         span="de Imagen"
         text="CAPACITACIÓN PROFESIONAL"
         title="Asesoría"
+        itemsPosition="items-end pb-20"
       />
       <Modalidad images={imagesForModalidad} formacion={formacion} />
       <Questions />

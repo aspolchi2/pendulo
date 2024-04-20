@@ -13,7 +13,7 @@ const ModulesGrafico = () => {
       </p>
       <div className="h-px bg-white"></div>
       <div
-        className={`hepta_slab text-yellow  sm:px-10 pt-[98px] sm:text-6xl font-bold sm:pb-16 text-2xl mb-6`}
+        className={` text-yellow  sm:px-10 pt-[98px] sm:text-6xl font-bold sm:pb-16 text-2xl mb-6`}
       >
         <div className={`${hepta_slab.className} flex justify-between w-full `}>
           <p>Módulo</p>

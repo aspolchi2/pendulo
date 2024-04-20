@@ -24,23 +24,21 @@ export const CoursesCard = ({
       transition={{ duration: 0.275 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="bg-white shadow-md flex flex-col justify-center  p-7 sm:p-5    lg:w-72 max-w-[481px] "
+      className="bg-white shadow-md flex flex-col justify-center  p-4 sm:p-5 lg:w-72 max-w-[481px] h-[600px]  "
     >
       <header>
-        {!isFilter && (
-          <p
-            className={`${hepta_slab.className} font-semibold sm:text-[5vw] xl:text-[3vw] text-gray leading-none text-5xl`}
-          >
-            0{id}.
-          </p>
-        )}
+        <p
+          className={`${hepta_slab.className} font-semibold sm:text-[5vw] xl:text-[3vw] text-gray leading-none text-5xl`}
+        >
+          0{id}.
+        </p>
       </header>
       <main className="flex flex-col gap-1">
-        <h2 className="font-semibold text-primary md:text-4xl sm:text-3xl text-2xl h-14 md:h-20">
+        <h2 className="font-semibold text-primary md:text-4xl sm:text-4xl text-2xl   text-balance h-20 w-10/12">
           {title}
         </h2>
         <p
-          className={`${hepta_slab.className} font-normal  text-xs  leading-4 pt-3 h-28 sm:h-32`}
+          className={`${hepta_slab.className} font-normal  pt-3 h-50 text-sm leading-4`}
         >
           {description}
         </p>
@@ -52,7 +50,7 @@ export const CoursesCard = ({
           className=" w-full sm:h-52 object-cover pt-4"
         />
       </main>
-      <footer className="min-h-max h-20   w-full flex justify-center items-center">
+      <footer className=" h-20   w-full flex justify-center items-center">
         <div className="flex-shrink-0 bg-primary text-white font-bold text-sm sm:text-xl w-full  rounded-lg h-11 flex justify-center items-center ">
           <Link href={`/${href}`} className={`${lexend.className} `}>
             +INFORMACIÓN
