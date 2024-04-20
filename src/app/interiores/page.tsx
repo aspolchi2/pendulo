@@ -59,9 +59,9 @@ export default function Interiores() {
   return (
     <div className={`${lexend.className} max-w-[1920px] m-auto`}>
       <Hero
-        bg="bg-interioresBg"
-        span="Interior"
+        bg="md:bg-interioresBg bg-interioresMobileHero"
         title="Diseño"
+        span="Interior"
         text="CAPACITACIÓN PROFESIONAL"
       />
       <Modalidad images={interioresArray} formacion={formacion} />
@@ -97,7 +97,7 @@ export default function Interiores() {
         </>
       )}{" "}
       <Testimonials />
-      <Interesed filter={4}  />
+      <Interesed filter={4} />
       <Footer />
     </div>
   );

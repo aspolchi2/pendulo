@@ -28,6 +28,7 @@ const config: Config = {
         graficoMobile: "url('./images/graficoMobile.png')",
         historiaMobileDiv: "url('./images/historiaMobileDiv.png')",
         historiaMobileHero: "url('./images/historiaMobileHero.png')",
+        interioresMobileHero: "url('./images/interioresMobileHero.png')",
       },
       colors: {
         accent: "#E05FE0",

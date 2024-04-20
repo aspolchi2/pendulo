@@ -29,11 +29,11 @@ export const Hero = ({ bg, span, text, title, extra }: props) => {
             {text}
           </p>
           <div className="sm:hidden">
-            <p className="text-white sm:text-3xl sm:leading-3 sm:max-w-xl text-2xl  leading-6">
+            <p className="text-white sm:text-3xl sm:leading-3 sm:max-w-xl text-xl  leading-6">
               {splitedText[0]}
             </p>
             {splitedText[1] && (
-              <p className="text-white sm:text-3xl sm:leading-3 sm:max-w-xl text-2xl  leading-6">
+              <p className="text-white sm:text-3xl sm:leading-3 sm:max-w-xl text-xl  leading-6">
                 + {splitedText[1]}
               </p>
             )}

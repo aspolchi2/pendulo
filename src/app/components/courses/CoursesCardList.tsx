@@ -93,7 +93,7 @@ export const CoursesCardList = ({
           />
         ))}
       </div>
-      <div className="flex justify-center items-center p-8 lg:hidden">
+      <div className="flex justify-center items-center max-w-screen-sm lg:hidden">
         <div className="w-screen flex justify-center">
           <Carousel
             autoSlide={false}
