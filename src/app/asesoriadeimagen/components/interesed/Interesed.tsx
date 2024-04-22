@@ -14,11 +14,11 @@ export const Interesed = ({ filter }: { filter?: number }) => {
       id="cursos"
     >
       <div className=" flex flex-col justify-center items-center text-white gap-4">
-        <h2 className="sm:text-4xl text-balance text-center text-xs">
+        <h2 className="sm:text-4xl text-balance text-center text-base">
           TAMBIÉN TE PUEDE INTERESAR
         </h2>
         <p
-          className={`${hepta_slab.className} sm:text-2xl text-center text-balance text-xs`}
+          className={`${hepta_slab.className} sm:text-2xl text-center text-balance text-sm`}
         >
           Si querés seguir formándote en nuestro espacio{" "}
           <span className="font-bold">
