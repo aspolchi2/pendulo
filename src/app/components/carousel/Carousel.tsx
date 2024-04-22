@@ -39,8 +39,44 @@ const Carousel = ({
     return () => clearInterval(slideInterval);
   }, []);
 
+  const [startX, setStartX] = useState(null);
+  const [endX, setEndX] = useState(null);
+
+  const handleTouchStart = (event: any) => {
+    setStartX(event.touches[0].clientX);
+  };
+
+  const handleTouchMove = (event: any) => {
+    setEndX(event.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (startX && endX) {
+      const deltaX = endX - startX;
+      if (Math.abs(deltaX) > 100) {
+        if (deltaX > 0) {
+          // Swipe hacia la derecha
+          // Aquí puedes llamar a una función para manejar el swipe hacia la derecha
+          prev();
+        } else {
+          // Swipe hacia la izquierda
+          next();
+          // Aquí puedes llamar a una función para manejar el swipe hacia la izquierda
+        }
+      }
+    }
+    // Reiniciar valores
+    setStartX(null);
+    setEndX(null);
+  };
+
   return (
-    <div className="overflow-hidden relative flex flex-col gap-12">
+    <div
+      className="overflow-hidden relative flex flex-col gap-12"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
       <div className="flex transition-transform ease-out duration-500">
         {slides[curr]}
       </div>
