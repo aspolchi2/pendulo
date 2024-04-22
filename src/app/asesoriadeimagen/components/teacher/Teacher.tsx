@@ -23,22 +23,26 @@ const Teacher = ({
         <Image
           src={teacher}
           alt={`Foto de ${name}`}
-          className="xl:w-64 md:w-40 sm:w-32 w-24 aspect-square"
+          className="xl:w-64 md:w-40 sm:w-32 w-16 aspect-square"
         />
         <div className="w-[769px] md:h-[360px] md:ml-10 sm:ml-4 ml-2 flex flex-col md:gap-14 sm:gap-16 relative md:justify-around gap-8">
           <p
-            className={`${hepta_slab.className} text-white md:text-6xl sm:text-3xl w-8/12 text-base font-bold`}
+            className={`${hepta_slab.className} text-white md:text-6xl sm:text-3xl  sm:w-2/6 text-base w-2/6 font-bold`}
           >
             {name}
           </p>
-          <div className="float-right absolute md:right-0 sm:right-28 top-0 sm:w-3/12 md:w-auto w-2/6 right-0">
+          <div className="float-right absolute md:right-0 sm:right-28 top-0 sm:w-3/12 md:w-auto w-3/12 right-0">
             <TrianguloRosa fill="white" />
           </div>
-          <ul className="text-white sm:text-xl text-[9px] text-balance">
+          <ul className="text-white sm:text-xl text-xs text-balance hidden sm:block">
             {li}
           </ul>
         </div>
       </div>
+      <ul className="text-white sm:text-xl text-xs text-balance text-center pt-4 sm:hidden">
+        {li}
+      </ul>
+
       <div className="flex justify-center pt-8 text-white">
         <p
           className={`${lexend.className} 2xl:w-8/12 xl:text-2xl text-md hidden sm:block `}

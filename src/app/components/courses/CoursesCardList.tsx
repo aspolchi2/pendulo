@@ -70,7 +70,7 @@ export const CoursesCardList = ({
         <Divider
           title="Nuestros cursos"
           width="w-10/12"
-          textPosition="text-left"
+          textPosition="text-left "
         />
       )}
       <div
@@ -94,7 +94,7 @@ export const CoursesCardList = ({
         ))}
       </div>
       <div className="flex justify-center items-center max-w-screen-sm lg:hidden">
-        <div className="w-screen flex justify-center">
+        <div className="w-screen flex justify-center mt-8">
           <Carousel
             autoSlide={false}
             color={`${isFilter && "text-white"}`}

@@ -15,7 +15,7 @@ export const Testimonials = () => {
   };
   return (
     <section
-      className="flex flex-col items-center gap-5 sm:gap-9 lg:p-28   xl:scale-100 max-xl:scale-75 "
+      className="flex flex-col items-center gap-5 sm:gap-9 lg:p-28 p-8 "
       id="testimonios"
     >
       <h3 className="lg:text-[55px] md:text-5xl sm:text-4xl text-2xl ">
@@ -27,20 +27,22 @@ export const Testimonials = () => {
       <div
         className={`${hepta_slab.className} flex sm:gap-9 text-xs sm:flex-row sm:text-base flex-col gap-0 text-center sm:text-left text-balance`}
       >
-        <p className="lg:w-[601px] ">
+        <p className="lg:max-w-[601px] ">
           Durante los últimos 7 años que contamos con esta capacitación han
           ampliado sus herramientas personales y laborales estudiantes y
           profesionales del área del estilismo, producción de moda, diseño de
           indumentaria, maquillaje profesional, emprendedores
         </p>
-        <p className="lg:w-[601px] ">
+        <p className="lg:max-w-[601px] ">
           y comerciantes del rubro de la moda y belleza y amantes de la moda y
           la imagen personal que han querido incursionar en esta disciplina
           tanto para trabajar su propia imagen como para incursionar en una
           nueva profesión.
         </p>
       </div>
-      <TestimonialsCardList filter={filter} />
+      <div className="p-2">
+        <TestimonialsCardList filter={filter} />
+      </div>
       <button
         className="md:flex gap-2 text-3xl justify-center items-center mt-14 hidden"
         onClick={() => handleAdd()}

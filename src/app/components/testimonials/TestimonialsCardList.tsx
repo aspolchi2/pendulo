@@ -8,7 +8,7 @@ export const TestimonialsCardList = ({ filter }: { filter: number }) => {
   const slicedCards = cards.slice(filter - 3, filter);
   return (
     <>
-      <div className="md:flex gap-7 justify-center hidden">
+      <div className="md:flex gap-7 md:gap-2 lg:gap-5 justify-center hidden">
         <AnimatePresence initial={false}>
           {slicedCards.map((card) => (
             <TestimonialsCard key={card.id} {...card} />

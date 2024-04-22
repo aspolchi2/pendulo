@@ -122,16 +122,16 @@ export const Header = ({
           {isNavOpen && (
             <div className="absolute top-20 left-0 w-full bg-white z-10">
               <ul className="flex flex-col gap-4 p-4">
-                <li className="">
+                <li className="" onClick={() => setIsNavOpen(false)}>
                   <Link href={"/"}>propuesta</Link>
                 </li>
-                <li className="">
+                <li className="" onClick={() => setIsNavOpen(false)}>
                   <Link href={"/historia"}>historia</Link>
                 </li>
-                <li className="">
+                <li className="" onClick={() => setIsNavOpen(false)}>
                   <Link href={"#testimonios"}>testimonios</Link>
                 </li>
-                <li className="">
+                <li className="" onClick={() => setIsNavOpen(false)}>
                   <Link href={"#cursos"}>cursos</Link>
                 </li>
               </ul>

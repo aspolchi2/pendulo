@@ -24,7 +24,7 @@ export const CoursesCard = ({
       transition={{ duration: 0.275 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="bg-white shadow-md flex flex-col justify-center  p-4 sm:p-5 lg:w-72 max-w-[481px] h-[600px]  "
+      className="bg-white shadow-md flex flex-col justify-center  p-4 sm:p-5 md:p-6 lg:w-72 max-w-[481px] h-[500px] sm:h-[600px]   "
     >
       <header>
         <p
@@ -33,12 +33,12 @@ export const CoursesCard = ({
           0{id}.
         </p>
       </header>
-      <main className="flex flex-col gap-1">
-        <h2 className="font-semibold text-primary md:text-4xl sm:text-4xl text-2xl   text-balance h-20 w-10/12">
+      <main className="flex flex-col gap-3 ">
+        <h2 className="font-semibold text-primary md:text-4xl sm:text-4xl text-2xl   text-balance  w-10/12 leading-6">
           {title}
         </h2>
         <p
-          className={`${hepta_slab.className} font-normal  pt-3 h-50 text-sm leading-4`}
+          className={`${hepta_slab.className} font-normal  md:h-40 sm:h-40 sm:text-sm text-xs leading-[.90rem] text-balance`}
         >
           {description}
         </p>
@@ -47,10 +47,10 @@ export const CoursesCard = ({
           alt="image"
           width={300}
           height={224}
-          className=" w-full sm:h-52 object-cover pt-4"
+          className=" w-full  object-cover "
         />
       </main>
-      <footer className=" h-20   w-full flex justify-center items-center">
+      <footer className=" w-full pt-4">
         <div className="flex-shrink-0 bg-primary text-white font-bold text-sm sm:text-xl w-full  rounded-lg h-11 flex justify-center items-center ">
           <Link href={`/${href}`} className={`${lexend.className} `}>
             +INFORMACIÓN

@@ -214,9 +214,9 @@ const ModulesMarketing = () => {
         </div>
 
         <div className="h-px bg-white"></div>
-        <div className=" col-span-2 flex justify-center items-center h-96 bg-primary">
+        <div className=" col-span-2 flex justify-center items-center sm:h-96 h-60 bg-primary">
           <p
-            className={`${lexend.className} text-center w-[55ch] text-white xl:text-2xl text-xl xl:font-bold font-semibold`}
+            className={`${lexend.className} text-center w-[55ch] text-white xl:text-2xl sm:text-xl xl:font-bold font-semibold text-sm`}
           >
             Al finalizar el curso cada participante presentará su proyecto de
             organización de un esquema de un espacio interior implementando todo

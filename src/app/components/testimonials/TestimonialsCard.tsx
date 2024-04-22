@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export const TestimonialsCard = ({ pic, name, course, testimonial }: card) => {
   return (
     <motion.article
-      className="bg-yellow flex flex-col md:py-4 md:px-3 py-6 px-9 rounded-[40px] justify-start items-center gap-7  h-96 "
+      className="bg-yellow flex flex-col md:py-4 md:px-3 py-6 px-9 rounded-[40px] justify-center items-center gap-7  h-80  w-full min-w-60 max-w-72 "
       initial={{ transform: "scale(0)" }}
       animate={{ transform: "scale(1)" }}
       viewport={{ once: true }}
@@ -16,10 +16,10 @@ export const TestimonialsCard = ({ pic, name, course, testimonial }: card) => {
       transition={{ duration: 0.5 }}
     >
       <div className="flex flex-col items-center gap-2 ">
-        <Image src={pic} alt="" width={107} height={107} className="w-28" />
+        <Image src={pic} alt="" width={107} height={107} className="w-20" />
         <div className="flex flex-col items-center">
-          <h3 className="text-2xl">{name}</h3>
-          <p className="text-base">{course}</p>
+          <h3 className="text-xl">{name}</h3>
+          <p className="text-sm">{course}</p>
           <div className="flex mt-2">
             <Star />
             <Star />
@@ -31,7 +31,7 @@ export const TestimonialsCard = ({ pic, name, course, testimonial }: card) => {
       </div>
 
       <div>
-        <p className="lg:w-80 w-72 text-center text-sm">{testimonial}</p>
+        <p className="  text-center text-xs">{testimonial}</p>
       </div>
     </motion.article>
   );

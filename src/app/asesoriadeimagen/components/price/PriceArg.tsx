@@ -84,7 +84,7 @@ export const PriceArg = () => {
   );
 
   return (
-    <section className="max-h-full  opacity-100 sm:p-28 transition-opacity  duration-500 p-12">
+    <section className="max-h-full  opacity-100 sm:p-28 transition-opacity  duration-500 p-8 bg-[#F3F3F3]">
       <div className="flex flex-col gap-12">
         <PriceInfo
           color="text-primary"
@@ -96,7 +96,7 @@ export const PriceArg = () => {
             <PriceCard {...card} key={card.id} />
           ))}
         </div>
-        <div className="lg:hidden">
+        <div className="lg:hidden ">
           <Carousel text="Ver más" dotsColor="bg-black">
             {cardData.map((card) => (
               <PriceCard {...card} key={card.id} />

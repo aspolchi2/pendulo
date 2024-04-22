@@ -1,5 +1,5 @@
 const textAsesoria1 = (
-  <p className="xl:w-[71ch] 2xl:text-2xl xl:text-xl  text-xl">
+  <p className="xl:w-[71ch] 2xl:text-2xl xl:text-xl">
     <span className="text-primary font-extrabold ">
       Profesionales de disciplinas afines que busquen adquirir mayores
       herramientas para el ejercicio de su Profesión:{" "}
@@ -10,7 +10,7 @@ const textAsesoria1 = (
 );
 
 const textAsesoria2 = (
-  <p className="xl:w-[71ch] 2xl:text-2xl xl:text-xl  text-xl ">
+  <p className="xl:w-[71ch] 2xl:text-2xl xl:text-xl ">
     <span className="text-primary font-extrabold ">
       {" "}
       Personas que busquen iniciarse en el Asesoramiento de Imagen{" "}
@@ -20,7 +20,7 @@ const textAsesoria2 = (
 );
 
 const textAsesoria3 = (
-  <p className="xl:w-[71ch] 2xl:text-2xl xl:text-xl  text-xl">
+  <p className="xl:w-[71ch] 2xl:text-2xl xl:text-xl">
     <span className="text-primary font-extrabold ">
       Personas interesadas en adquirir las principales herramientas{" "}
     </span>{" "}
@@ -31,7 +31,7 @@ const textAsesoria3 = (
 export const dataAsesoria = [textAsesoria1, textAsesoria2, textAsesoria3];
 
 const textInterior1 = (
-  <p className="xl:w-[71ch] 2xl:text-2xl xl:text-xl  text-xl">
+  <p className="xl:w-[71ch] 2xl:text-2xl xl:text-xl">
     Personas que busquen{" "}
     <span className="text-primary font-extrabold ">
       iniciarse por primera vez en el Diseño de Interiores para la práctica
@@ -73,7 +73,7 @@ export const dataInterior = [
 ];
 
 const grafico1 = (
-  <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl sm:text-xl text-primary font-extrabold text-xs">
+  <p className="xl:w-[71ch] 2xl:text-2xl xl:text-xl text-primary font-semibold">
     Estudiantes y profesionales{" "}
     <span className=" font-medium xl:text-2xl text-black">
       de diseño, arquitectura, informática, artes audiovisuales, periodismo,
@@ -82,7 +82,7 @@ const grafico1 = (
   </p>
 );
 const grafico2 = (
-  <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl sm:text-xl text-primary font-extrabold text-xs">
+  <p className="xl:w-[71ch] 2xl:text-2xl xl:text-xl text-primary font-semibold">
     Emprendedores o personas que tengan su propio negocio{" "}
     <span className="font-medium xl:text-2xl text-black">
       y quieran desarrollar de manera autónoma las piezas gráficas de su propio
@@ -92,7 +92,7 @@ const grafico2 = (
 );
 
 const grafico3 = (
-  <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl sm:text-xl text-primary font-extrabold text-xs">
+  <p className="xl:w-[71ch] 2xl:text-2xl xl:text-xl text-primary font-semibold">
     Cualquier persona interesada en desarrollar sus propias piezas de diseño
     gráfico{" "}
     <span className="text-black  xl:text-2xl font-medium">

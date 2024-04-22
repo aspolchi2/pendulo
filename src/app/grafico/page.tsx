@@ -19,12 +19,12 @@ import { Offering } from "../components/offering/Offering";
 import JoinUs from "../asesoriadeimagen/components/joinUs/JoinUs";
 import NextCoursesData from "../asesoriadeimagen/nextCourses/NextCoursesData";
 import Modality from "../asesoriadeimagen/components/modality/Modality";
-import {
-  dataGrafico,
-} from "../asesoriadeimagen/components/modality/data";
+import { dataGrafico } from "../asesoriadeimagen/components/modality/data";
 import Teacher from "../asesoriadeimagen/components/teacher/Teacher";
 import TeacherGrafico from "./TeacherGrafico";
 import { CoursesFrame } from "../components/courses/CoursesFrame";
+import { lexend } from "../layout";
+import taniaPaez from "/public/images/taniaPaez.png";
 
 export default function Home() {
   const { booleanValue } = useBooleanStore();
@@ -37,6 +37,13 @@ export default function Home() {
     <p className="text-white text-center">
       FORMACION <br /> ANUAL
     </p>
+  );
+
+  const teacherPoints = (
+    <li>
+      · Diseñadora y profesora de Diseño en Comunicación Visual, graduada en la
+      Facultad de Artes, Universidad Nacional de La Plata, Argentina.
+    </li>
   );
 
   return (
@@ -62,7 +69,7 @@ export default function Home() {
         />
       </div>
       <Modality text={dataGrafico} extra />
-      <TeacherGrafico />
+      <Teacher li={teacherPoints} name={"Tania Paez"} teacher={taniaPaez} />
 
       <Offering />
       <JoinUs />

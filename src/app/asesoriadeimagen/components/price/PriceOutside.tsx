@@ -15,10 +15,10 @@ export const hepta_slab = Hepta_Slab({
 });
 const descOne = (
   <p
-    className={`${hepta_slab.className} text-lg leading-6 font-medium  sm:text-black`}
+    className={`${hepta_slab.className} sm:text-lg text-base leading-6 font-medium  sm:text-black`}
   >
     {" "}
-    La cuota se{" "}
+    La cuota{" "}
     <span className="font-extrabold">
       {" "}
       se debitará de forma automática mes a mes durante 6 meses
@@ -96,7 +96,7 @@ const PriceOutside = () => {
   return (
     <section
       className={`
-          max-h-full  opacity-100 lg:p-28 transition-opacity  duration-500 p-12 bg-black sm:bg-white`}
+          max-h-full  opacity-100 lg:p-28 transition-opacity  duration-500 p-8 bg-black sm:bg-[#F3F3F3]`}
     >
       <div className="lg:flex flex-col gap-12 hidden">
         <PriceInfo
@@ -110,7 +110,7 @@ const PriceOutside = () => {
           ))}
         </div>
       </div>
-      <div className="lg:hidden bg-black sm:bg-white space-y-5 w-full">
+      <div className="lg:hidden bg-black sm:bg-[#F3F3F3] space-y-5 w-full">
         <PriceInfo
           color="text-pink"
           title="PRECIOS PARA RESIDENTES FUERA DE ARGENTINA"

@@ -33,14 +33,14 @@ const lexend = Lexend({ weight: ["800", "500"], subsets: ["latin"] });
 const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
   return (
     <section
-      className={`${lexend.className} ${lexend.style} lg:p-32 sm:py-24 p-10 `}
+      className={`${lexend.className} ${lexend.style} lg:p-32 sm:py-24 p-8 `}
     >
       <Divider title={"PROPUESTA EDUCATIVA"} />
       <div className=" flex justify-center align-top gap-6 py-16">
         <div className="">
           <Ligth />
         </div>
-        <div className=" 2xl:text-2xl sm:text-xl 2xl:w-8/12 text-xs">
+        <div className=" 2xl:text-2xl  2xl:w-8/12 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl ">
           <p className="">
             Nuestros planes de estudio son desarrollados por educadores de
             amplia trayectoria y se actualizan de forma constante con el
@@ -54,7 +54,7 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
         </div>
       </div>
       <Divider title={"DESTINATARIOS"} />
-      <div className="flex flex-col py-16 gap-12 justify-start items-start 2xl:items-center  ">
+      <div className="flex flex-col py-16 gap-12 justify-start items-start 2xl:items-center sm:text-sm md:text-base lg:text-lg xl:text-xl text-xs">
         {text.map((item: any, index: number) => (
           <div key={index} className=" flex  align-top gap-6">
             <div className="sm:w-8 w-5">
@@ -65,12 +65,12 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
         ))}
       </div>
       <Divider title="REQUISITOS" />
-      <div className="flex flex-col py-16 gap-12 justify-start items-start 2xl:items-center ">
+      <div className="flex flex-col py-16 gap-12 justify-start items-start 2xl:items-center sm:text-sm md:text-base lg:text-lg xl:text-xl text-xs">
         <div className=" flex  align-top gap-6">
           <div className="sm:w-8 w-5">
             <PcSmall />
           </div>
-          <p className="xl:w-[65ch] w-full 2xl:text-2xl xl:text-xl text-primary font-extrabold sm:text-lg text-xs">
+          <p className="xl:w-[65ch] w-full 2xl:text-2xl xl:text-xl text-primary font-extrabold ">
             Tener computadora o celular/dispositivo que cuente con conexión a
             Internet{" "}
             <span className=" font-medium text-black">
@@ -83,7 +83,7 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
             <SobreSmall />
           </div>
           <div className="">
-            <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold sm:text-lg text-xs">
+            <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold ">
               Dirección de correo electrónico (E-mail){" "}
               <span className=" font-medium  text-black">
                 donde se recibirán los datos de acceso al curso y comunicados
@@ -96,13 +96,12 @@ const Modality = ({ text, extra }: { text: any; extra?: boolean }) => {
       {extra && (
         <>
           <Divider title="REQUISITOS PARA TOMAR LA CAPACITACIÓN" />
-          <div className="flex flex-col py-16 gap-12 justify-start items-start 2xl:items-center">
+          <div className="flex flex-col py-16 gap-12 justify-start items-start 2xl:items-center ">
             <div className=" flex  align-top gap-6">
               <div className="sm:w-8 w-5">
                 <PcSmall />
               </div>
-
-              <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold  sm:text-lg text-xs">
+              <p className="xl:w-[65ch] 2xl:text-2xl xl:text-xl text-primary font-extrabold  sm:text-lg text-xs text-balance">
                 Computadora portátil o de escritorio que cuente con los
                 programas Adobe Illustrator y Adobe Photoshop instalados.
                 <span className=" font-medium text-black">

@@ -57,7 +57,7 @@ const Carousel = ({
       </div>
       <button
         onClick={next}
-        className={`w-full m-auto flex justify-center items-center gap-4 ${color}`}
+        className={`w-full m-auto flex justify-center items-center gap-4 mb-8 ${color}`}
       >
         {text} <ArrowSmall fill={fill} />
       </button>
