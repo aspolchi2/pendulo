@@ -14,7 +14,7 @@ export const Interesed = ({ filter }: { filter?: number }) => {
       id="cursos"
     >
       <div className=" flex flex-col justify-center items-center text-white gap-4">
-        <h2 className="sm:text-4xl text-balance text-center text-base">
+        <h2 className="sm:text-4xl text-balance text-center text-lg">
           TAMBIÉN TE PUEDE INTERESAR
         </h2>
         <p
