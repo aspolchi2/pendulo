@@ -176,7 +176,7 @@ const Modules = ({
         )}
         <div className="h-px bg-white"></div>
         <div className=" flex justify-center items-center h-96">
-          <p className="text-center w-[55ch] text-white text-2xl font-bold">
+          <p className="text-center w-[55ch] text-yellow sm:text-sm md:text-base lg:text-lg md:font-bold">
             {text}
           </p>
         </div>
@@ -310,7 +310,7 @@ const Modules = ({
             >
               <div className="relative bg-primary flex justify-center items-center text-white w-full">
                 <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 h-40 flex justify-center items-center gap-2">
-                  <p className=" text-center text-sm font-semibold">
+                  <p className=" text-center text-sm font-semibold ">
                     HERRAMIENTAS PARA EL DESARROLLO EFECTIVO <br /> DE LA
                     RELACIÓN CLIENTE - PROFESIONAL
                   </p>

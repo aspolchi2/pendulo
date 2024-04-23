@@ -14,7 +14,7 @@ const Questions = () => {
             interiorismo?
           </p>
           <p
-            className={`${hepta_slab.className} xl:w-[563px] sm:text-primary text-primaryWash font-bold text-[9px] text-balance sm:text-sm md:text-base xl:text-2xl`}
+            className={`${hepta_slab.className} xl:w-[563px] text-primary  font-bold text-[9px] text-balance sm:text-sm md:text-base xl:text-2xl`}
           >
             Un espacio bien pensado con valor agregado logra una mejor recepción
             por parte del que está del otro lado.{" "}
@@ -34,7 +34,7 @@ const Questions = () => {
             className={`${hepta_slab.className} xl:w-[563px] text-[9px] text-balance sm:text-sm md:text-base xl:text-2xl`}
           >
             Aprenderás a diseñar espacios donde haya un{" "}
-            <span className="sm:text-primary text-primaryWash font-bold ">
+            <span className="text-primary  font-bold ">
               equilibrio entre dimensiones, objetos, materiales, texturas y
               colores,
             </span>{" "}
@@ -51,7 +51,7 @@ const Questions = () => {
             className={`${hepta_slab.className} xl:w-[563px] text-balance text-[9px]  sm:text-sm md:text-base xl:text-2xl`}
           >
             En el transcurso del curso,
-            <span className="sm:text-primary text-primaryWash font-bold">
+            <span className="text-primary  font-bold">
               {" "}
               se brindarán las herramientas para que los participantes puedan
               realizar un proyecto de diseño de interiores, ya sea para reformas
@@ -60,7 +60,7 @@ const Questions = () => {
             <br /> <br /> A lo largo de la capacitación, se brindará una
             introducción al mundo de la producción de espacios, usando como eje
             la{" "}
-            <span className="sm:text-primary text-primaryWash font-bold">
+            <span className="text-primary  font-bold">
               espacialidad, la dimensión, estética y el control del color como
               generador de espacios y las tendencias.{" "}
             </span>{" "}
@@ -69,7 +69,7 @@ const Questions = () => {
             que existen. <br />
             <br /> Al finalizar el curso, no sólo vas a completar el diseño de
             tu propio espacio, sino que{" "}
-            <span className="sm:text-primary text-primaryWash font-bold">
+            <span className="text-primary  font-bold">
               {" "}
               vas a llevarte las herramientas para poder aplicarlo a cualquier
               otro espacio que quieras.

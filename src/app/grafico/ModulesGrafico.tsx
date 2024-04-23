@@ -6,7 +6,7 @@ import { hepta_slab } from "../asesoriadeimagen/components/price/PriceOutside";
 const ModulesGrafico = () => {
   return (
     <section
-      className={`${lexend.className} bg-primary xl:p-32 p-11 font-medium`}
+      className={`${lexend.className} bg-primary xl:p-32 p-8 font-medium`}
     >
       <p className="text-right sm:text-xl text-white pb-2 text-base">
         CONTENIDOS
@@ -114,7 +114,6 @@ const ModulesGrafico = () => {
             </ul>
           </div>
         </div>
-        <div className="h-px bg-white sm:hidden"></div>
 
         <div className="col-span-2 relative bg-primary sm:flex justify-center items-center text-white sm:h-64 hidden ">
           <div className="inset-0 bg-cover bg-center hover:opacity-0 z-0 flex items-center gap-2">
@@ -286,9 +285,9 @@ const ModulesGrafico = () => {
         </div>
         <div className="h-px bg-white sm:hidden"></div>
 
-        <div className=" flex justify-center items-center   bg-primary col-span-2">
+        <div className=" flex justify-center items-center   bg-primary col-span-2 pt-8  sm:h-60 ">
           <p
-            className={`${hepta_slab.className} text-center sm:w-10/12 text-yellow xl:text-xl sm:text-sm md:text-base   sm:font-bold text-xs pt-8 text-balance`}
+            className={`${hepta_slab.className} text-center text-yellow text-[9px] font-bold text-balance sm:text-sm md:text-base `}
           >
             Al finalizar el curso cada participante habrá desarrollado el diseño
             completo de una marca o emprendimiento a elección desde la
